@@ -2,10 +2,32 @@
 title: "5 Links to Further Resources"
 ---
 
-- present the quarto webpage and documentation
-- link to other quarto workshops
+## Official Quarto documentation
 
-- list further topics:
-    - interactive elements
-    - websites and books
-    - journal articles
+- The official [Quarto&copy;](https://quarto.org/) webpage
+    - Get started tutorials
+    - Quarto Guide
+    - Quarto Options reference
+    - Quarto formats:
+        - interactive elements
+        - websites and books
+        - journal articles
+
+## Other Quarto and Rmarkdown workshops
+
+- <https://rstudio-conf-2022.github.io/get-started-quarto/>
+- <https://github.com/resulumit/rmd_workshop>
+
+## Other resources
+
+- Awesome-Quarto link collection: <https://github.com/mcanouil/awesome-quarto>
+
+- Quarto section in the r4ds book: <https://r4ds.hadley.nz/quarto.html>
+    - Efficient strategies on how to set the figure size in .qmd documents:
+        - <https://r4ds.hadley.nz/quarto.html#figure-sizing>
+        - <https://www.tidyverse.org/blog/2020/08/taking-control-of-plot-scaling/>
+    - Tips on how to use cache in quarto: <https://r4ds.hadley.nz/quarto.html#sec-caching>
+    
+- Quarto for academics:
+    - Blog post: <https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/>
+    - Quarto manuscripts: <https://quarto.org/docs/manuscripts/>

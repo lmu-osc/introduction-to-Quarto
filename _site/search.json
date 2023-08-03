@@ -25,7 +25,7 @@
     "href": "5_Links.html",
     "title": "5 Links to Further Resources",
     "section": "",
-    "text": "present the quarto webpage and documentation\nlink to other quarto workshops\nlist further topics:\n\ninteractive elements\nwebsites and books\njournal articles"
+    "text": "The official Quarto© webpage\n\nGet started tutorials\nQuarto Guide\nQuarto Options reference\nQuarto formats:\n\ninteractive elements\nwebsites and books\njournal articles"
   },
   {
     "objectID": "index.html",
@@ -61,5 +61,19 @@
     "title": "2 Installation Instructions",
     "section": "",
     "text": "Explain how to install Quarto and RStudio"
+  },
+  {
+    "objectID": "5_Links.html#other-quarto-and-rmarkdown-workshops",
+    "href": "5_Links.html#other-quarto-and-rmarkdown-workshops",
+    "title": "5 Links to Further Resources",
+    "section": "Other Quarto and Rmarkdown workshops",
+    "text": "Other Quarto and Rmarkdown workshops\n\nhttps://rstudio-conf-2022.github.io/get-started-quarto/\nhttps://github.com/resulumit/rmd_workshop"
+  },
+  {
+    "objectID": "5_Links.html#other-resources",
+    "href": "5_Links.html#other-resources",
+    "title": "5 Links to Further Resources",
+    "section": "Other resources",
+    "text": "Other resources\n\nAwesome-Quarto link collection: https://github.com/mcanouil/awesome-quarto\nQuarto section in the r4ds book: https://r4ds.hadley.nz/quarto.html\n\nEfficient strategies on how to set the figure size in .qmd documents:\n\nhttps://r4ds.hadley.nz/quarto.html#figure-sizing\nhttps://www.tidyverse.org/blog/2020/08/taking-control-of-plot-scaling/\n\nTips on how to use cache in quarto: https://r4ds.hadley.nz/quarto.html#sec-caching\n\nQuarto for academics:\n\nBlog post: https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/\nQuarto manuscripts: https://quarto.org/docs/manuscripts/"
   }
 ]
