@@ -1,0 +1,13 @@
+---
+title: "About"
+date: today
+---
+
+This workshop was developed by
+
+- Florian Pargent
+- Philipp Sckopke
+- Florian Kohrt
+- Lena Schiestel
+
+at LMU Munich.

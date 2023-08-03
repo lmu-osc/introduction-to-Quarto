@@ -1,0 +1,1 @@
+Repository containing the website and all materials for the **Quarto Workshop LMU OSC Summer School 2023**.

@@ -1,0 +1,48 @@
+---
+title: "Welcome to the Quarto Workshop"
+---
+
+Welcome to the [Quarto workshop](https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/Workshops.html#quarto) of the [LMU OSC Summer School 2023](https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/).
+
+## Structure and Workflow of the Workshop
+
+This is a **self-paced tutorial** of about **2 hours** aimed at **early-career researchers**.
+It covers the absolute basics of the scientific and technical publishing system [Quarto&copy;](https://quarto.org/).
+
+The workshop is structured in 5 consecutive parts you can navigate to on the top of the website:
+
+1. [Welcome](index.qmd) to the Quarto Workshop (**you are here now**)
+2. [How to install](2_Installation.qmd) Quarto and RStudio
+3. [Exercise One:](3_Exercise_One.qmd) Quarto Basics
+4. [Exercise Two:](4_Exercise_Two.qmd) Scientific Writing
+5. [Links](5_Links.qmd) to further resources
+
+
+The [Quarto&copy;](https://quarto.org/) project has exceptionally well written tutorials ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and online documentation ([Quarto "Guide"](https://quarto.org/docs/guide/)).
+Instead of reinventing the wheel, we will heavily link to these resources.
+
+## What is Quarto
+
+The official [Quarto&copy;](https://quarto.org/) website reads:
+
+::: {.callout-tip appearance="minimal" icon=false}
+## Quote:
+
+An open-source scientific and technical publishing system
+
+- Author using Jupyter notebooks or with plain text markdown in your favorite editor.
+- Create dynamic content with Python, R, Julia, and Observable.
+- Publish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
+- Share knowledge and insights organization-wide by publishing to Posit Connect, Confluence, or other publishing systems.
+- Write using Pandoc markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.
+
+Analyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.
+:::
+
+These features make [Quarto&copy;](https://quarto.org/) an extremely useful tools for researchers to:
+
+- write reproducible research reports, presentations or scientific articles
+- create personal of project websites
+- publish tutorials, textbooks, or other educational resources online
+- and much more...
+

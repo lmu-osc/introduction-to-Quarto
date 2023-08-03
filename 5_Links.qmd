@@ -1,0 +1,11 @@
+---
+title: "5 Links to Further Resources"
+---
+
+- present the quarto webpage and documentation
+- link to other quarto workshops
+
+- list further topics:
+    - interactive elements
+    - websites and books
+    - journal articles

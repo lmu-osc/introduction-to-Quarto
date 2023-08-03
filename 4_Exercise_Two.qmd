@@ -1,0 +1,14 @@
+---
+title: "4 Exercise Two: Scientific Writing"
+---
+
+- work with a dataset
+- analyse data
+- add figures with caption
+- add bibfile and cite references
+
+Download the raw .qmd file for this exercise:
+
+{{< downloadthis 4_Exercise_Two.qmd dname="Exercise_Two.qmd" label="Download .qmd">}}
+
+Download the rendered .qmd file in different formats:

@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "Quarto Workshop LMU OSC Summer School 2023"
+  page-navigation: true
+  page-footer: "Copyright by Lehrstuhl Psychologische Methodenlehre und Diagnostik, LMU Munich" 
+  navbar:
+    left:
+      - text: "1. Welcome"
+        href: "index.qmd"
+      - text: "2. Installation"
+        file: "2_Installation.qmd"
+      - text: "3. Exercise One"
+        file: "3_Exercise_One.qmd"
+      - text: "4. Exercise Two"
+        file: "4_Exercise_Two.qmd"
+      - text: "5. Links"
+        file: "5_Links.qmd"
+      - text: "About"
+        file: "about.qmd"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    link-external-newwindow: true
+
+
+
