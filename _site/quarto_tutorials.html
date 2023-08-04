@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Workshop LMU OSC Summer School 2023 - 4 Exercise Two: Scientific Writing</title>
+<title>Quarto Workshop LMU OSC Summer School 2023 - 2. Quarto Tutorials</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./preparations.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -64,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -85,20 +86,16 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">1. Welcome</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./2_Installation.html">
- <span class="menu-text">2. Installation</span></a>
+    <a class="nav-link active" href="./quarto_tutorials.html" aria-current="page">
+ <span class="menu-text">2. Quarto Tutorials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./3_Exercise_One.html">
- <span class="menu-text">3. Exercise One</span></a>
+    <a class="nav-link" href="./discussion.html">
+ <span class="menu-text">3. Discussion</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./4_Exercise_Two.html" aria-current="page">
- <span class="menu-text">4. Exercise Two</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./5_Links.html">
- <span class="menu-text">5. Links</span></a>
+    <a class="nav-link" href="./links.html">
+ <span class="menu-text">4. Links</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html">
@@ -109,10 +106,49 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">2. Quarto Tutorials</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quarto_tutorials.html" class="sidebar-item-text sidebar-link active">2. Quarto Tutorials</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preparations.html" class="sidebar-item-text sidebar-link">Preparations</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./get-started_1.html" class="sidebar-item-text sidebar-link">Tutorial: Hello, Quarto</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./get-started_2.html" class="sidebar-item-text sidebar-link">Tutorial: Compuations</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./get-started_3.html" class="sidebar-item-text sidebar-link">Tutorial: Authoring</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
@@ -122,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">4 Exercise Two: Scientific Writing</h1>
+<h1 class="title d-none d-lg-block">2. Quarto Tutorials</h1>
 </div>
 
 
@@ -137,22 +173,18 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<ul>
-<li>work with a dataset</li>
-<li>analyse data</li>
-<li>add figures with caption</li>
-<li>add bibfile and cite references</li>
-</ul>
 <p>Download the raw .qmd file for this exercise:</p>
-<p><a href="#dnldts45949" onclick="fetch('data:text/plain;base64,LS0tCnRpdGxlOiAiNCBFeGVyY2lzZSBUd286IFNjaWVudGlmaWMgV3JpdGluZyIKLS0tCgotIHdvcmsgd2l0aCBhIGRhdGFzZXQKLSBhbmFseXNlIGRhdGEKLSBhZGQgZmlndXJlcyB3aXRoIGNhcHRpb24KLSBhZGQgYmliZmlsZSBhbmQgY2l0ZSByZWZlcmVuY2VzCgpEb3dubG9hZCB0aGUgcmF3IC5xbWQgZmlsZSBmb3IgdGhpcyBleGVyY2lzZToKCnt7PCBkb3dubG9hZHRoaXMgNF9FeGVyY2lzZV9Ud28ucW1kIGRuYW1lPSJFeGVyY2lzZV9Ud28ucW1kIiBsYWJlbD0iRG93bmxvYWQgLnFtZCI+fX0KCkRvd25sb2FkIHRoZSByZW5kZXJlZCAucW1kIGZpbGUgaW4gZGlmZmVyZW50IGZvcm1hdHM6').then(res => res.blob()).then(blob => {
+<p><a href="#dnldts11221" onclick="fetch('data:text/plain;base64,LS0tCnRpdGxlOiAiMi4gUXVhcnRvIFR1dG9yaWFscyIKLS0tCgpEb3dubG9hZCB0aGUgcmF3IC5xbWQgZmlsZSBmb3IgdGhpcyBleGVyY2lzZToKCnt7PCBkb3dubG9hZHRoaXMgcXVhcnRvX3R1dG9yaWFscy5xbWQgZG5hbWU9IkV4ZXJjaXNlX09uZS5xbWQiIGxhYmVsPSJEb3dubG9hZCAucW1kIj59fQoKRG93bmxvYWQgdGhlIHJlbmRlcmVkIC5xbWQgZmlsZSBpbiBkaWZmZXJlbnQgZm9ybWF0czoKCgpEb3dubG9hZCB0aGUgcmF3IC5xbWQgZmlsZSBmb3IgdGhpcyBleGVyY2lzZToKCnt7PCBkb3dubG9hZHRoaXMgNF9FeGVyY2lzZV9Ud28ucW1kIGRuYW1lPSJFeGVyY2lzZV9Ud28ucW1kIiBsYWJlbD0iRG93bmxvYWQgLnFtZCI+fX0KCkRvd25sb2FkIHRoZSByZW5kZXJlZCAucW1kIGZpbGUgaW4gZGlmZmVyZW50IGZvcm1hdHM6Cgo=').then(res => res.blob()).then(blob => {
       const downloadURL = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       document.body.appendChild(a);
       a.href = downloadURL;
-      a.download = 'Exercise_Two.qmd.qmd'; a.click();
+      a.download = 'Exercise_One.qmd.qmd'; a.click();
       window.URL.revokeObjectURL(downloadURL);
       document.body.removeChild(a);
-        });"><button class="btn btn-default downloadthis  " id="dnldts45949"><i class="bi bi-download"></i> Download .qmd </button></a></p>
+        });"><button class="btn btn-default downloadthis  " id="dnldts11221"><i class="bi bi-download"></i> Download .qmd </button></a></p>
+<p>Download the rendered .qmd file in different formats:</p>
+<p>Download the raw .qmd file for this exercise:</p>
 <p>Download the rendered .qmd file in different formats:</p>
 
 
@@ -305,6 +337,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./preparations.html" class="pagination-link">
+        <span class="nav-page-text">Preparations</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

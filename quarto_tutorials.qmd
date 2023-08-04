@@ -1,0 +1,17 @@
+---
+title: "2. Quarto Tutorials"
+---
+
+Download the raw .qmd file for this exercise:
+
+{{< downloadthis quarto_tutorials.qmd dname="Exercise_One.qmd" label="Download .qmd">}}
+
+Download the rendered .qmd file in different formats:
+
+
+Download the raw .qmd file for this exercise:
+
+{{< downloadthis 4_Exercise_Two.qmd dname="Exercise_Two.qmd" label="Download .qmd">}}
+
+Download the rendered .qmd file in different formats:
+

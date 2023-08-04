@@ -1,5 +1,6 @@
 ---
 title: "Welcome to the Quarto Workshop"
+sidebar: false
 ---
 
 Welcome to the [Quarto workshop](https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/Workshops.html#quarto) of the [LMU OSC Summer School 2023](https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/).
@@ -12,10 +13,9 @@ It covers the absolute basics of the scientific and technical publishing system 
 The workshop is structured in 5 consecutive parts you can navigate to on the top of the website:
 
 1. [Welcome](index.qmd) to the Quarto Workshop (**you are here now**)
-2. [How to install](2_Installation.qmd) Quarto and RStudio
-3. [Exercise One:](3_Exercise_One.qmd) Quarto Basics
-4. [Exercise Two:](4_Exercise_Two.qmd) Scientific Writing
-5. [Links](5_Links.qmd) to further resources
+2. [Quarto Tutorials](quarto_tutorials.qmd)
+3. [Discussion](discussion.qmd)
+5. [Links](links.qmd) to further resources
 
 
 The [Quarto&copy;](https://quarto.org/) project has exceptionally well written tutorials ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and online documentation ([Quarto "Guide"](https://quarto.org/docs/guide/)).

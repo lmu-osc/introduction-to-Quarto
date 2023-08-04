@@ -1,5 +1,6 @@
 ---
 title: "5 Links to Further Resources"
+sidebar: false
 ---
 
 ## Official Quarto documentation

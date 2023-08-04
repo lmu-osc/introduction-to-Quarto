@@ -1,0 +1,13 @@
+---
+title: "Preparations"
+---
+
+## section 1
+
+- Explain how to install Quarto and RStudio
+- Create Quarto Project
+- Visual Markdown Settings?
+
+## section 2
+
+auch text

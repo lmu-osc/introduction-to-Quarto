@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: today
+sidebar: false
 ---
 
 This workshop was developed by

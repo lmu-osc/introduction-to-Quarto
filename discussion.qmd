@@ -1,0 +1,8 @@
+---
+title: "3. Discussion and Opinions"
+sidebar: false
+---
+
+## Discussion
+
+## Our Personal Opinion on Quarto

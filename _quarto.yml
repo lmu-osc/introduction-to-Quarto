@@ -9,16 +9,25 @@ website:
     left:
       - text: "1. Welcome"
         href: "index.qmd"
-      - text: "2. Installation"
-        file: "2_Installation.qmd"
-      - text: "3. Exercise One"
-        file: "3_Exercise_One.qmd"
-      - text: "4. Exercise Two"
-        file: "4_Exercise_Two.qmd"
-      - text: "5. Links"
-        file: "5_Links.qmd"
+      - text: "2. Quarto Tutorials"
+        file: "quarto_tutorials.qmd"
+      - text: "3. Discussion"
+        file: "discussion.qmd"
+      - text: "4. Links"
+        file: "links.qmd"
       - text: "About"
         file: "about.qmd"
+
+  sidebar:
+    - title: "2. Quarto Tutorials"
+      style: "docked"
+      background: light
+      contents:
+        - quarto_tutorials.qmd
+        - preparations.qmd
+        - get-started_1.qmd
+        - get-started_2.qmd
+        - get-started_3.qmd
 
 format:
   html:
