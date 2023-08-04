@@ -2,12 +2,37 @@
 title: "Preparations"
 ---
 
-## section 1
+## Installation
 
-- Explain how to install Quarto and RStudio
-- Create Quarto Project
-- Visual Markdown Settings?
+During the [Quarto tutorials](https://quarto.org/docs/get-started/), you will be asked to install a number of software packages. Because the installation can take up same time, we recommend to install the following software beforehand, so you can skip these steps later:
 
-## section 2
+- Install a recent version of R and RStudio. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio [here](https://posit.co/download/rstudio-desktop/).
 
-auch text
+- Install a small version of TeX that can be used to build pdf documents with Quarto:
+    - In RStudio, open a Terminal window: Tools **>** Terminal **>** New Terminal
+    - Run the following code in the Terminal:
+    ``` {.bash filename="Terminal"}
+    quarto install tinytex
+    ```
+
+## Create an RStudio project
+
+During the [Quarto tutorials](https://quarto.org/docs/get-started/), you will be asked to work with different files. This will be more intuitive and convenient, if you have performed the following steps beforehand:
+
+- Create an RStudio project for the workshop
+    - In RStudio go to File **>** New Project... **>** New Directory **>** New Project
+    - Select where to put the project on your computer and select a meaningful name, e.g. *Quarto_Workshop*
+    - Press **>** Create Project (then you can always close RStudio and come back there later)
+- When downloading files during the Quarto tutorials, make sure to place all these files in the project folder
+- You can always double click the *.Rproj* file in the project folder on your computer to open RStudio with the appropriate working directory set automatically, and the *Files* window in RStudio showing all files in the project folder
+
+## Optional settings to the visual editor in RStudio
+
+The [Quarto tutorials](https://quarto.org/docs/get-started/) use the Visual editor in RStudio. Whether you like this mode for working in the future is for you to decide. However, we think that the following settings will reduce some of the pains we had with the visual editor. 
+
+- In RStudio go to Tools **>** Global Options **>** R Markdown **>** Visual
+- Choose the options:
+  - Show margin column indicator in code blocks
+	- Default spacing between list items: *spaced*
+	- Automatic text wrapping (line breaks): *sentence*
+    

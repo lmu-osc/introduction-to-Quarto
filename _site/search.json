@@ -25,7 +25,7 @@
     "href": "preparations.html",
     "title": "Preparations",
     "section": "",
-    "text": "Explain how to install Quarto and RStudio\nCreate Quarto Project\nVisual Markdown Settings?"
+    "text": "During the Quarto tutorials, you will be asked to install a number of software packages. Because the installation can take up same time, we recommend to install the following software beforehand, so you can skip these steps later:\n\nInstall a recent version of R and RStudio. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio here.\nInstall a small version of TeX that can be used to build pdf documents with Quarto:\n\nIn RStudio, open a Terminal window: Tools > Terminal > New Terminal\nRun the following code in the Terminal:\n\n\n\nTerminal\n\nquarto install tinytex"
   },
   {
     "objectID": "get-started_3.html",
@@ -96,5 +96,19 @@
     "title": "Preparations",
     "section": "section 2",
     "text": "section 2\nauch text"
+  },
+  {
+    "objectID": "preparations.html#create-an-rstudio-project",
+    "href": "preparations.html#create-an-rstudio-project",
+    "title": "Preparations",
+    "section": "Create an RStudio project",
+    "text": "Create an RStudio project\nDuring the Quarto tutorials, you will be asked to work with different files. This will be more intuitive and convenient, if you have performed the following steps beforehand:\n\nCreate an RStudio project for the workshop\n\nIn RStudio go to File > New Project… > New Directory > New Project\nSelect where to put the project on your computer and select a meaningful name, e.g. Quarto_Workshop\nPress > Create Project (then you can always close RStudio and come back there later)\n\nWhen downloading files during the Quarto tutorials, make sure to place all these files in the project folder\nYou can always double click the .Rproj file in the project folder on your computer to open RStudio with the appropriate working directory set automatically, and the Files window in RStudio showing all files in the project folder"
+  },
+  {
+    "objectID": "preparations.html#optional-settings-to-the-visual-editor-in-rstudio",
+    "href": "preparations.html#optional-settings-to-the-visual-editor-in-rstudio",
+    "title": "Preparations",
+    "section": "Optional settings to the visual editor in RStudio",
+    "text": "Optional settings to the visual editor in RStudio\nThe Quarto tutorials use the Visual editor in RStudio. Whether you like this mode for working in the future is for you to decide. However, we think that the following settings will reduce some of the pains we had with the visual editor.\n\nIn RStudio go to Tools > Global Options > R Markdown > Visual\nChoose the options:\n\nShow margin column indicator in code blocks\n\nDefault spacing between list items: spaced\nAutomatic text wrapping (line breaks): sentence"
   }
 ]

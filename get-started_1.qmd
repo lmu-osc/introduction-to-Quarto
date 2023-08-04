@@ -1,4 +1,11 @@
 
 ## Tutorial: Hello, Quarto
 
+### Some comments before the tutorial
+
+### Start the tutorial
+
 <https://quarto.org/docs/get-started/hello/>
+
+
+### Possible problems during the tutorial
