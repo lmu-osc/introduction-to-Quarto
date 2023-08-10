@@ -8,7 +8,7 @@ During the [Quarto tutorials](https://quarto.org/docs/get-started/), you will be
 
 - Install a recent version of R and RStudio. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio [here](https://posit.co/download/rstudio-desktop/).
 
-- Install a small version of TeX that can be used to build pdf documents with Quarto:
+- Install [tinytex](https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex), a small version of TeX that can be used to build pdf documents with Quarto:
     - In RStudio, open a Terminal window: Tools **>** Terminal **>** New Terminal
     - Run the following code in the Terminal:
     ``` {.bash filename="Terminal"}
@@ -28,11 +28,11 @@ During the [Quarto tutorials](https://quarto.org/docs/get-started/), you will be
 
 ## Optional settings to the visual editor in RStudio
 
-The [Quarto tutorials](https://quarto.org/docs/get-started/) use the Visual editor in RStudio. Whether you like this mode for working in the future is for you to decide. However, we think that the following settings will reduce some of the pains we had with the visual editor. 
+The [Quarto tutorials](https://quarto.org/docs/get-started/) use the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. Whether you like this mode for working in the future is for you to decide. If, *after the workshop*, you come to the conclusion that you want to keep using the Visual Editor, we recommend to read [this page](https://quarto.org/docs/visual-editor/markdown.html) and have a look at the following RStudio settings: 
 
 - In RStudio go to Tools **>** Global Options **>** R Markdown **>** Visual
 - Choose the options:
   - Show margin column indicator in code blocks
 	- Default spacing between list items: *spaced*
 	- Automatic text wrapping (line breaks): *sentence*
-    
+	

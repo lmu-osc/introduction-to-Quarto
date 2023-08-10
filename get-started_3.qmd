@@ -1,4 +1,36 @@
 
 ## Tutorial: Authoring
 
-<https://quarto.org/docs/get-started/authoring/>
+### Some comments before the tutorial
+
+- The tutorial uses the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. We recommend that you frequently switch between *Visual* and *Source* mode during the tutorial to see how the raw markdown syntax looks like.
+
+- We recommend that you skip the [Publishing](https://quarto.org/docs/get-started/authoring/rstudio#publishing) section of the tutorial during the workshop.
+
+### Start the tutorial
+
+:::{.callout-tip}
+## Let's start
+Now you can start the tutorial at <https://quarto.org/docs/get-started/authoring/>.
+:::
+
+If you have problems during the tutorial came back to this page and see the next section for our list of possible issues.
+After completing the third tutorial, come back here to our workshop website and continue with the discussion [here](discussion.qmd).
+
+
+### Possible problems during the tutorial
+
+- The tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is *not* true.
+
+- The tutorial claims that *"the format choice (HTML) is not even reflected in the YAML as it is the default output format for Quarto documents"* when creating a new .qmd document, which is *not* true.
+
+- The tutorial does not talk about where to safe the .qmd file. For our case, it ist most practical to save it in the project folder you have created for the Quarto workshop.
+
+- The tutorial does not mention that the *Render on Save* option in RStudio is document specific and must again be ticked for the new .qmd file if you want to use it as showcased in the tutorial.
+
+- When you render the .qmd file as .docx by use of the *Render* button in RStudio for the first time, RStudio might (misleadingly) ask where to safe the file, even though the .docx file has already been silently created in the background (because the yaml header specifies that all formats should be created on rendering). 
+
+- When you have used the *Render* button in RStudio to render .docx this might break the *Viewer* in RStudio (because RStudio seems to remember the last output format it has rendered and the Viewer does not work for .docx). One solution to fix this is to manually render once as .html or .pdf via the *Render* options, which should reactivate the Viewer.
+
+- The tutorial wants you to add a reference to the equation labeled \#eq-slr, but this reference is actually already included in the .qmd file.
+

@@ -35,6 +35,8 @@ format:
     css: styles.css
     toc: true
     link-external-newwindow: true
+    df-print: paged
+    code-overflow: wrap
 
 
 
