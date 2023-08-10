@@ -23,11 +23,15 @@ website:
       style: "docked"
       background: light
       contents:
-        - quarto_tutorials.qmd
-        - preparations.qmd
-        - get-started_1.qmd
-        - get-started_2.qmd
-        - get-started_3.qmd
+        - section: "2. Quarto Tutorials"
+          contents:
+            - quarto_tutorials.qmd
+            - preparations.qmd
+        - section: "  Quarto Tutorials"
+          contents:
+            - get-started_1.qmd
+            - get-started_2.qmd
+            - get-started_3.qmd
 
 format:
   html:
