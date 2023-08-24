@@ -1,14 +1,73 @@
 ---
-title: "Presentation"
 format:
   revealjs:
     embed-resources: true
+    theme: sky
 ---
 
-## Slide 1
+## Learn to edit one type of document as input...
 
-text
+:::: {.columns}
 
-## Slide 2
+::: {.column width="40%"}
+![](resources/pictures/qmd.png){fig-align=center}
+:::
 
-text
+
+::: {.column width="20%"}
+
+:::
+
+::: {.column width="40%"}
+
+- Text
+- Analyses
+- Source code
+- Graphics
+- Tables
+- Citations
+- ...
+
+:::
+
+::::
+
+## ...and convert it to different output formats
+
+::: r-stack
+![](resources/pictures/Slides.png){height="200"}
+![](resources/pictures/blogs.png){height="200"}
+![](resources/pictures/dashboard.png){height="200"}
+![](resources/pictures/tutorials.png){height="200"}
+![](resources/pictures/websites.png){height="200"}
+![](resources/pictures/article.png){height="200"}
+![](resources/pictures/betterposterport.png){height="200"}
+:::
+
+## Slides (html, pptx, pdf)
+
+![](resources/pictures/Slides.png){fig-align=center}
+
+## Blogs
+
+![](resources/pictures/blogs.png){fig-align=center}
+
+## Dashboards
+
+![](resources/pictures/dashboard.png){fig-align=center}
+
+## Online Tutorials
+
+![](resources/pictures/tutorials.png){fig-align=center}
+
+## Websites
+
+![](resources/pictures/websites.png){fig-align=center}
+
+## Articles
+
+![](resources/pictures/article.png){fig-align=center}
+
+## Posters
+
+![](resources/pictures/betterposterport.png){fig-align=center}

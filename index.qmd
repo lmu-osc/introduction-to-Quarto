@@ -50,5 +50,5 @@ These features make [Quarto&copy;](https://quarto.org/) an extremely useful tool
 <iframe class="slide-deck" width="780" height="500" src="_presentation.html"></iframe>
 ```
 
-```{.markdown code-preview="_presentation.qmd"}
-```
+<!-- ```{.markdown code-preview="_presentation.qmd"} -->
+<!-- ``` -->
