@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Quarto Workshop LMU OSC Summer School 2023"
