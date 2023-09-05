@@ -5,7 +5,10 @@ project:
 website:
   title: "Quarto Workshop LMU OSC"
   page-navigation: true
-  page-footer: "Copyright by Lehrstuhl Psychologische Methodenlehre und Diagnostik, LMU Munich" 
+  page-footer:
+    center: 
+      - text: "About"
+        href: about.qmd
   navbar:
     left:
       - text: "1. Welcome"
@@ -42,6 +45,4 @@ format:
     link-external-newwindow: true
     df-print: paged
     code-overflow: wrap
-
-
 
