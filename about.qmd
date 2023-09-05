@@ -4,11 +4,11 @@ date: today
 sidebar: false
 ---
 
-This workshop was developed by
+This self-paced Quarto tutorial (excluding all other materials we link to) was developed by
 
 - Florian Pargent
-- Philipp Sckopke
 - Florian Kohrt
+- Philipp Sckopke
 - Lena Schiestel
 
 at LMU Munich.

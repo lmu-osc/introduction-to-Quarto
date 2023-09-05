@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Quarto Workshop LMU OSC Summer School 2023"
+  title: "Quarto Workshop LMU OSC"
   page-navigation: true
   page-footer: "Copyright by Lehrstuhl Psychologische Methodenlehre und Diagnostik, LMU Munich" 
   navbar:

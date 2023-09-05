@@ -1,20 +1,21 @@
 
-## Tutorial: Compuations
+## Tutorial: Computations
 
 ### Some comments before the tutorial
 
-- The tutorial uses the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. We recommend that you frequently switch between *Visual* and *Source* mode during the tutorial to see how the raw markdown syntax looks like.
+- The tutorial uses the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. We recommend to frequently switch between *Visual* and *Source* mode during the tutorial to see how the raw markdown syntax looks like.
+
+- Remember to put all *.qmd* files you download during the tutorial into the RStudio project directory you have created [earlier](preparations.qmd).
 
 ### Start the tutorial
 
+If you have problems during the tutorial came back **here** and see the next section for our list of anticipated issues.
+*After* completing the second tutorial, come back **here** and continue with the next tutorial [here](get-started_3.qmd).
+
 :::{.callout-tip}
 ## Let's start
-Now you can start the tutorial at <https://quarto.org/docs/get-started/computations/>.
+Now you can start the second tutorial at <https://quarto.org/docs/get-started/computations/>.
 :::
-
-If you have problems during the tutorial came back to this page and see the next section for our list of possible issues.
-After completing the second tutorial, come back here to our workshop website and continue with the next tutorial [here](get-started_3.qmd).
-
 
 ### Possible problems during the tutorial
 

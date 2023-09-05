@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Workshop LMU OSC Summer School 2023 - 3. Discussion and Opinions</title>
+<title>Quarto Workshop LMU OSC - 3. Discussion and Comments</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Quarto Workshop LMU OSC Summer School 2023</span>
+    <span class="navbar-title">Quarto Workshop LMU OSC</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#discussion" id="toc-discussion" class="nav-link active" data-scroll-target="#discussion">Discussion</a></li>
-  <li><a href="#our-personal-opinion-on-quarto" id="toc-our-personal-opinion-on-quarto" class="nav-link" data-scroll-target="#our-personal-opinion-on-quarto">Our Personal Opinion on Quarto</a></li>
+  <li><a href="#some-personal-comments-on-using-quarto" id="toc-some-personal-comments-on-using-quarto" class="nav-link" data-scroll-target="#some-personal-comments-on-using-quarto">Some Personal Comments on Using Quarto</a></li>
   </ul>
 </nav>
     </div>
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">3. Discussion and Opinions</h1>
+<h1 class="title">3. Discussion and Comments</h1>
 </div>
 
 
@@ -142,8 +142,22 @@ ul.task-list li input[type="checkbox"] {
 <section id="discussion" class="level2">
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 </section>
-<section id="our-personal-opinion-on-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="our-personal-opinion-on-quarto">Our Personal Opinion on Quarto</h2>
+<section id="some-personal-comments-on-using-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="some-personal-comments-on-using-quarto">Some Personal Comments on Using Quarto</h2>
+<ul>
+<li><p>Do not get frustrated when Quarto does not get you all the way to the final result that you want! Tinkering with layout options often takes a lot of time and is not always worth the effort. The most important reason for academics to use Quarto is usually to ensure the reproducibility of your analysis. For everything else, do not feel too bad when using some of the following workarounds:</p>
+<ul>
+<li>Render your document to <em>.tex</em> or <em>.docx</em> and do some manual formatting required by academic journals.</li>
+<li>Instead of forcing all your (very) senior collaborators to learn Quarto, just give them the rendered <em>.pdf</em> or <em>.docx</em> and incorporate their comments into the Quarto document yourself.</li>
+</ul></li>
+<li><p>Make sure that your project still renders without problems as often as possible:</p>
+<ul>
+<li>Frequently use the <strong>Render</strong> button when working on your Quarto documents, to ensure that you have not made a mistake. Debugging Quarto documents is <strong>very hard</strong> when you cannot say for sure which section in your code introduced an error that prevents rendering. <strong>Never</strong> leave a Quarto project at the end of your workday that does not render correctly! Trust us, just don’t do it!</li>
+<li>We highly recommend to always use Quarto together with version control. For an introduction on how to use git within RStudio you can use <a href="https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/">this tutorial</a>. Using version control is even more important when you want <a href="https://malikaihle.github.io/Collaborative-RStudio-GitHub/">to collaborate with your colleagues</a>.</li>
+</ul></li>
+<li><p>When using Quarto together with version control (as recommended!), it is useful to place each sentence in your <em>.qmd</em> document on a separate line. This makes it much easier to follow changes (e.g.&nbsp;fixing a typo in a manuscript), because git can only highlight the line (and not the word or character) in which changes have been made.</p></li>
+<li><p>Do not rely on the visual mode too much: Even if you like the <a href="https://quarto.org/docs/visual-editor/">Visual Editor</a>, make sure that you gradually learn how do do everything in the raw source mode. When learning, using the visual mode and then switching to source mode to see the result is very useful.</p></li>
+</ul>
 
 
 </section>

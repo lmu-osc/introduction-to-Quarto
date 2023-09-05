@@ -2,16 +2,20 @@
 title: "Overview"
 ---
 
-Download the raw .qmd file for this exercise:
+The [Quarto](https://quarto.org/) project provides well written beginner **tutorials** ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and extensive online **documentation** ([Quarto "Guide"](https://quarto.org/docs/guide/)).
+Instead of reinventing the wheel, we build around these tutorials and heavily link to the official resources.
 
-{{< downloadthis quarto_tutorials.qmd dname="Exercise_One.qmd" label="Download .qmd">}}
+## Why work with the official materials?
 
-Download the rendered .qmd file in different formats:
+- The official tutorials are of a very high quality
+- The official tutorials are kept up to date
+- Because Quarto is still relatively new, the usual channels to find help on the internet (Google, Stack Overflow) are not that useful yet. Thus, when using Quarto in your own project, you will probably have to consult the official documentation anyway.
 
+## Let's prepare our setup for the tutorials
 
-Download the raw .qmd file for this exercise:
+Before you start with the tutorial, please follow the preparations on [this page](preparations.qmd) (you can always use the navigation arrows on the bottom of the current page).
 
-{{< downloadthis 4_Exercise_Two.qmd dname="Exercise_Two.qmd" label="Download .qmd">}}
+<!-- Download the raw .qmd file for this exercise: -->
 
-Download the rendered .qmd file in different formats:
+<!-- {{< downloadthis quarto_tutorials.qmd dname="Exercise_One.qmd" label="Download .qmd">}} -->
 

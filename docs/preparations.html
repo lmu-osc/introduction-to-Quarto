@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Workshop LMU OSC Summer School 2023 - Preparations</title>
+<title>Quarto Workshop LMU OSC - Preparations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -136,7 +136,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Quarto Workshop LMU OSC Summer School 2023</span>
+    <span class="navbar-title">Quarto Workshop LMU OSC</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -219,7 +219,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./get-started_2.html" class="sidebar-item-text sidebar-link">Tutorial: Compuations</a>
+  <a href="./get-started_2.html" class="sidebar-item-text sidebar-link">Tutorial: Computations</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -241,6 +241,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation">Installation</a></li>
   <li><a href="#create-an-rstudio-project" id="toc-create-an-rstudio-project" class="nav-link" data-scroll-target="#create-an-rstudio-project">Create an RStudio project</a></li>
   <li><a href="#optional-settings-to-the-visual-editor-in-rstudio" id="toc-optional-settings-to-the-visual-editor-in-rstudio" class="nav-link" data-scroll-target="#optional-settings-to-the-visual-editor-in-rstudio">Optional settings to the visual editor in RStudio</a></li>
+  <li><a href="#lets-start-the-tutorial" id="toc-lets-start-the-tutorial" class="nav-link" data-scroll-target="#lets-start-the-tutorial">Let’s start the tutorial</a></li>
   </ul>
 </nav>
     </div>
@@ -266,9 +267,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="installation" class="level2">
 <h2 class="anchored" data-anchor-id="installation">Installation</h2>
-<p>During the <a href="https://quarto.org/docs/get-started/">Quarto tutorials</a>, you will be asked to install a number of software packages. Because the installation can take up same time, we recommend to install the following software beforehand, so you can skip these steps later:</p>
+<p>During the official <a href="https://quarto.org/docs/get-started/">Quarto tutorials</a>, you will be asked to install a number of software packages. Because the installation can take up some time, we recommend to install the following software beforehand, so you can skip these steps later:</p>
 <ul>
-<li><p>Install a recent version of R and RStudio. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio <a href="https://posit.co/download/rstudio-desktop/">here</a>.</p></li>
+<li><p>Make sure that you have a recent version of R and RStudio installed. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio <a href="https://posit.co/download/rstudio-desktop/">here</a>.</p></li>
 <li><p>Install <a href="https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex">tinytex</a>, a small version of TeX that can be used to build pdf documents with Quarto:</p>
 <ul>
 <li>In RStudio, open a Terminal window: Tools <strong>&gt;</strong> Terminal <strong>&gt;</strong> New Terminal</li>
@@ -286,19 +287,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="create-an-rstudio-project">Create an RStudio project</h2>
 <p>During the <a href="https://quarto.org/docs/get-started/">Quarto tutorials</a>, you will be asked to work with different files. This will be more intuitive and convenient, if you have performed the following steps beforehand:</p>
 <ul>
-<li>Create an RStudio project for the workshop
+<li>Create an RStudio project for the workshop (if you need more details, see this <a href="https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/rstudio_project.html">tutorial</a>)
 <ul>
 <li>In RStudio go to File <strong>&gt;</strong> New Project… <strong>&gt;</strong> New Directory <strong>&gt;</strong> New Project</li>
 <li>Select where to put the project on your computer and select a meaningful name, e.g.&nbsp;<em>Quarto_Workshop</em></li>
 <li>Press <strong>&gt;</strong> Create Project (then you can always close RStudio and come back there later)</li>
 </ul></li>
 <li>When downloading files during the Quarto tutorials, make sure to place all these files in the project folder</li>
-<li>You can always double click the <em>.Rproj</em> file in the project folder on your computer to open RStudio with the appropriate working directory set automatically, and the <em>Files</em> window in RStudio showing all files in the project folder</li>
+<li>You can always double-click the <em>.Rproj</em> file in the project folder on your computer to open RStudio with the appropriate working directory set automatically, and the <em>Files</em> window in RStudio showing all files in the project folder</li>
 </ul>
 </section>
 <section id="optional-settings-to-the-visual-editor-in-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="optional-settings-to-the-visual-editor-in-rstudio">Optional settings to the visual editor in RStudio</h2>
-<p>The <a href="https://quarto.org/docs/get-started/">Quarto tutorials</a> use the <a href="https://quarto.org/docs/visual-editor/">Visual Editor</a> in RStudio. Whether you like this mode for working in the future is for you to decide. If, <em>after the workshop</em>, you come to the conclusion that you want to keep using the Visual Editor, we recommend to read <a href="https://quarto.org/docs/visual-editor/markdown.html">this page</a> and have a look at the following RStudio settings:</p>
+<p>The <a href="https://quarto.org/docs/get-started/">Quarto tutorials</a> use the <a href="https://quarto.org/docs/visual-editor/">Visual Editor</a> in RStudio. Following the tutorials as intended will help you to make up your mind on whether you like this mode when working with Quarto. If, <em>after the workshop</em>, you come to the conclusion that you want to keep using the Visual Editor, we recommend to come back <strong>here</strong>, read <a href="https://quarto.org/docs/visual-editor/markdown.html">this page</a> and have a look at the following RStudio settings:</p>
 <ul>
 <li>In RStudio go to Tools <strong>&gt;</strong> Global Options <strong>&gt;</strong> R Markdown <strong>&gt;</strong> Visual</li>
 <li>Choose the options:
@@ -310,6 +311,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 </ul>
+</section>
+<section id="lets-start-the-tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="lets-start-the-tutorial">Let’s start the tutorial</h2>
+<p>You are now ready to start with the first tutorial <a href="./get-started_1.html">on this page</a>.</p>
 
 
 </section>

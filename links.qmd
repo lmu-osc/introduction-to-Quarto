@@ -1,27 +1,16 @@
 ---
-title: "5 Links to Further Resources"
+title: "4. Links to Further Resources"
 sidebar: false
 ---
 
 ## Official Quarto documentation
 
-- The official [Quarto&copy;](https://quarto.org/) webpage
-    - Get started tutorials
-    - Quarto Guide
-    - Quarto Options reference
-    - Quarto formats:
-        - interactive elements
-        - websites and books
-        - journal articles
+- The official [Quarto](https://quarto.org/) webpage you have already used in this workshop
+    - [Get started tutorials](https://quarto.org/docs/get-started/): after the workshop, you already know these
+    - [Quarto Guide](https://quarto.org/docs/guide/): your main resource for everything Quarto related
+    - [Function Reference](https://quarto.org/docs/reference/): to look up some quarto option you might need
 
-## Other Quarto and Rmarkdown workshops
-
-- <https://rstudio-conf-2022.github.io/get-started-quarto/>
-- <https://github.com/resulumit/rmd_workshop>
-
-## Other resources
-
-- Awesome-Quarto link collection: <https://github.com/mcanouil/awesome-quarto>
+## Other recommended resources
 
 - Quarto section in the r4ds book: <https://r4ds.hadley.nz/quarto.html>
     - Efficient strategies on how to set the figure size in .qmd documents:
@@ -31,4 +20,12 @@ sidebar: false
     
 - Quarto for academics:
     - Blog post: <https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/>
+    - Journal article templates: <https://quarto.org/docs/journals/templates.html>
     - Quarto manuscripts: <https://quarto.org/docs/manuscripts/>
+    
+- Awesome-Quarto link collection: <https://github.com/mcanouil/awesome-quarto>
+    
+## Other Quarto and Rmarkdown workshops
+
+- <https://rstudio-conf-2022.github.io/get-started-quarto/>
+- <https://github.com/resulumit/rmd_workshop>

@@ -3,27 +3,27 @@ title: "Welcome to the Quarto Workshop"
 sidebar: false
 ---
 
-Welcome to the [Quarto workshop](https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/Workshops.html#quarto) of the [LMU OSC Summer School 2023](https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/).
+Welcome to the **Quarto workshop**, initially designed for the [LMU OSC Summer School 2023](https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/).
 
 ## Structure and Workflow of the Workshop
 
 This is a **self-paced tutorial** of about **2 hours** aimed at **early-career researchers**.
-It covers the absolute basics of the scientific and technical publishing system [Quarto&copy;](https://quarto.org/).
+It covers the absolute basics of the scientific and technical publishing system [Quarto](https://quarto.org/).
 
 The workshop is structured in 5 consecutive parts you can navigate to on the top of the website:
 
 1. [Welcome](index.qmd) to the Quarto Workshop (**you are here now**)
-2. [Quarto Tutorials](quarto_tutorials.qmd)
-3. [Discussion](discussion.qmd)
-5. [Links](links.qmd) to further resources
+2. [Quarto Tutorials](quarto_tutorials.qmd) from the official Quarto project
+3. [Discussion](discussion.qmd) and Comments on Quarto
+4. [Links](links.qmd) to further resources
 
 
-The [Quarto&copy;](https://quarto.org/) project has exceptionally well written tutorials ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and online documentation ([Quarto "Guide"](https://quarto.org/docs/guide/)).
+The [Quarto](https://quarto.org/) project has exceptionally well written tutorials ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and online documentation ([Quarto "Guide"](https://quarto.org/docs/guide/)).
 Instead of reinventing the wheel, we will heavily link to these resources.
 
-## What is Quarto
+## What is Quarto?
 
-The official [Quarto&copy;](https://quarto.org/) website reads:
+The official [Quarto](https://quarto.org/) website reads:
 
 ::: {.callout-tip appearance="minimal" icon=false}
 ## Quote:
@@ -39,12 +39,14 @@ An open-source scientific and technical publishing system
 Analyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.
 :::
 
-These features make [Quarto&copy;](https://quarto.org/) an extremely useful tools for researchers to:
+These features make [Quarto](https://quarto.org/) an extremely useful tool for researchers to:
 
 - write reproducible research reports, presentations or scientific articles
 - create personal of project websites
 - publish tutorials, textbooks, or other educational resources online
 - and much more...
+
+If you have not seen many examples yourself, go to the official [Quarto Gallery](https://quarto.org/docs/gallery/) or have a look at the following presentation for a few examples that were created with [Quarto](https://quarto.org/) or its predecessor [R Markdown](https://rmarkdown.rstudio.com/).
 
 ```{=html}
 <iframe class="slide-deck" width="780" height="500" src="_presentation.html"></iframe>
@@ -52,3 +54,7 @@ These features make [Quarto&copy;](https://quarto.org/) an extremely useful tool
 
 <!-- ```{.markdown code-preview="_presentation.qmd"} -->
 <!-- ``` -->
+
+## Learn how to use Quarto yourself
+
+When you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the [Quarto Tutorials](quarto_tutorials.qmd) page next.
