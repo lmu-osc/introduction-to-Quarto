@@ -18,6 +18,7 @@ website:
         file: "comments.qmd"
       - text: "4. Links"
         file: "links.qmd"
+    right:
       - text: "About"
         file: "about.qmd"
 
@@ -35,6 +36,9 @@ website:
             - get-started_1.qmd
             - get-started_2.qmd
             - get-started_3.qmd
+            
+  repo-url: https://github.com/FlorianPargent/Quarto_LMU_OSC
+  repo-actions: [edit, issue]
 
 format:
   html:
