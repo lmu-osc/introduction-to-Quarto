@@ -22,7 +22,7 @@ During the [Quarto tutorials](https://quarto.org/docs/get-started/), you will be
 - Create an RStudio project for the workshop (if you need more details, see this [tutorial](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/rstudio_project.html))
     - In RStudio go to File **>** New Project... **>** New Directory **>** New Project
     - Select where to put the project on your computer and select a meaningful name, e.g. *Quarto_Workshop*
-    - Press **>** Create Project (then you can always close RStudio and come back there later)
+    - Press Create Project (then you can always close RStudio and come back there later)
 - When downloading files during the Quarto tutorials, make sure to place all these files in the project folder
 - You can always double-click the *.Rproj* file in the project folder on your computer to open RStudio with the appropriate working directory set automatically, and the *Files* window in RStudio showing all files in the project folder
 
