@@ -16,3 +16,9 @@ sidebar: false
 - When using Quarto together with version control (as recommended!), it is useful to place each sentence in your *.qmd* document on a separate line. This makes it much easier to follow changes (e.g. fixing a typo in a manuscript), because git can only highlight the line (and not the word or character) in which changes have been made.
 
 - Do not rely on the visual mode too much: Even if you like the [Visual Editor](https://quarto.org/docs/visual-editor/), make sure that you gradually learn how do do everything in the raw source mode. When learning, using the visual mode and then switching to source mode to see the result is very useful.
+
+## Conclusion
+
+To conclude the workshop, you can have a look at our collection of links to our most recommended resources on Quarto [on this page](links.qmd).
+
+We wish you all the best on your future Quarto journeys! :partying_face: :clap:

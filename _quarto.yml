@@ -45,3 +45,4 @@ format:
     df-print: paged
     code-overflow: wrap
 
+from: markdown+emoji
