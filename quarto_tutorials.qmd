@@ -1,19 +1,21 @@
 ---
-title: "Overview"
+title: "2. Quarto Tutorials"
 ---
 
-The [Quarto](https://quarto.org/) project provides well written beginner **tutorials** ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and extensive online **documentation** ([Quarto "Guide"](https://quarto.org/docs/guide/)).
+## Overview
+
+The [Quarto](https://quarto.org/) website provides well written beginner **tutorials** ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and extensive online **documentation** ([Quarto "Guide"](https://quarto.org/docs/guide/)).
 Instead of reinventing the wheel, we build around these tutorials and heavily link to the official resources.
 
 ## Why work with the official materials?
 
-- The official tutorials are of a very high quality
-- The official tutorials are kept up to date
+- The official tutorials are of a high quality.
+- The Quarto team keeps the official tutorials up to date.
 - Because Quarto is still relatively new, the usual channels to find help on the internet (Google, Stack Overflow) are not that useful yet. Thus, when using Quarto in your own project, you will probably have to consult the official documentation anyway.
 
 ## Let's prepare our setup for the tutorials
 
-Before you start with the tutorial, please follow the preparations on [this page](preparations.qmd) (you can always use the navigation arrows on the bottom of the current page).
+Before you start with the tutorials, please follow the preparations [on this page](preparations.qmd) (you can always use the navigation arrows on the bottom of the current page).
 
 <!-- Download the raw .qmd file for this exercise: -->
 

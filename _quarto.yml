@@ -29,7 +29,8 @@ website:
       contents:
         - section: "2. Quarto Tutorials"
           contents:
-            - quarto_tutorials.qmd
+            - text: "Overview"
+              href: "quarto_tutorials.qmd"
             - preparations.qmd
         - section: "  Quarto Tutorials"
           contents:

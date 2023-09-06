@@ -9,7 +9,7 @@
 
 ### Start the tutorial
 
-If you have problems during the tutorial came back **here** and see the next section for our list of anticipated issues.
+If you have problems during the tutorial come back **here** and see the next section for our list of anticipated issues.
 *After* completing the second tutorial, come back **here** and continue with the next tutorial [on this page](get-started_3.qmd).
 
 :::{.callout-tip}

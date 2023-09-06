@@ -9,7 +9,7 @@
 
 ### Start the tutorial
 
-If you have problems during the tutorial came back **here** and see the next section for our list of anticipated issues.
+If you have problems during the tutorial come back **here** and see the next section for our list of anticipated issues.
 *After* completing the first tutorial, come back **here** and continue with the next tutorial [on this page](get-started_2.qmd).
 
 :::{.callout-tip}
@@ -19,4 +19,4 @@ Now you can start the first tutorial at <https://quarto.org/docs/get-started/hel
 
 ### Possible problems during the tutorial
 
-- none that we anticipate
+- None that we anticipate

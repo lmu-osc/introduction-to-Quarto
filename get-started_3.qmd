@@ -11,7 +11,7 @@
 
 ### Start the tutorial
 
-If you have problems during the tutorial came back **here** and see the next section for our list of anticipated issues.
+If you have problems during the tutorial come back **here** and see the next section for our list of anticipated issues.
 *After* completing the third tutorial, come back **here** and continue with our personal tips and comments on using Quarto [on this page](comments.qmd).
 
 :::{.callout-tip}

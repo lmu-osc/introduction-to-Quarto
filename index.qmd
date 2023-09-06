@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the Quarto Workshop"
+title: "1. Welcome to the Quarto Workshop"
 sidebar: false
 ---
 
@@ -10,7 +10,7 @@ Welcome to the **Quarto workshop**, initially designed for the [LMU OSC Summer S
 This is a **self-paced tutorial** of about **2 hours** aimed at **early-career researchers**.
 It covers the absolute basics of the scientific and technical publishing system [Quarto](https://quarto.org/).
 
-The workshop is structured in 5 consecutive parts you can navigate to on the top of the website:
+The workshop is structured in 4 consecutive parts you can navigate to on the top of the website:
 
 1. [Welcome](index.qmd) to the Quarto Workshop (**you are here now**)
 2. [Quarto Tutorials](quarto_tutorials.qmd) from the official Quarto project
