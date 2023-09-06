@@ -49,12 +49,12 @@ These features make [Quarto](https://quarto.org/) an extremely useful tool for r
 If you have not seen many examples yourself, go to the official [Quarto Gallery](https://quarto.org/docs/gallery/) or have a look at the following presentation for a few examples that were created with [Quarto](https://quarto.org/) or its predecessor [R Markdown](https://rmarkdown.rstudio.com/).
 
 ```{=html}
-<iframe class="slide-deck" width="780" height="500" src="_presentation.html"></iframe>
+<iframe class="slide-deck" width="780" height="500" src="presentation.html"></iframe>
 ```
 
-<!-- ```{.markdown code-preview="_presentation.qmd"} -->
+<!-- ```{.markdown code-preview="presentation.qmd" width="780" height="500"} -->
 <!-- ``` -->
 
 ## Learn how to use Quarto yourself
 
-When you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the [Quarto Tutorials](quarto_tutorials.qmd) page next.
+When you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the [Quarto Tutorials](quarto_tutorials.qmd) page next. :computer: :scream_cat:

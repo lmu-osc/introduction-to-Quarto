@@ -21,4 +21,4 @@ sidebar: false
 
 To conclude the workshop, you can have a look at our collection of links to our most recommended resources on Quarto [on this page](links.qmd).
 
-We wish you all the best on your future Quarto journeys! :partying_face: :clap:
+We wish you all the best on your future Quarto journeys! :partying_face: :clap: :tada:
