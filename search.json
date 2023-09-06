@@ -21,6 +21,69 @@
     "text": "Let’s prepare our setup for the tutorials\nBefore you start with the tutorial, please follow the preparations on this page (you can always use the navigation arrows on the bottom of the current page)."
   },
   {
+    "objectID": "presentation.html#learn-to-edit-one-type-of-document-as-input",
+    "href": "presentation.html#learn-to-edit-one-type-of-document-as-input",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "Learn to edit one type of document as input…",
+    "text": "Learn to edit one type of document as input…\n\n\n\n\n\n\n\n\n\n\n\nText\nAnalyses\nSource code\nGraphics\nTables\nCitations\n…"
+  },
+  {
+    "objectID": "presentation.html#and-convert-it-to-different-output-formats",
+    "href": "presentation.html#and-convert-it-to-different-output-formats",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "…and convert it to different output formats",
+    "text": "…and convert it to different output formats"
+  },
+  {
+    "objectID": "presentation.html#slides-html-pptx-pdf",
+    "href": "presentation.html#slides-html-pptx-pdf",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "Slides (html, pptx, pdf)",
+    "text": "Slides (html, pptx, pdf)"
+  },
+  {
+    "objectID": "presentation.html#blogs",
+    "href": "presentation.html#blogs",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "Blogs",
+    "text": "Blogs"
+  },
+  {
+    "objectID": "presentation.html#dashboards",
+    "href": "presentation.html#dashboards",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "Dashboards",
+    "text": "Dashboards"
+  },
+  {
+    "objectID": "presentation.html#online-tutorials",
+    "href": "presentation.html#online-tutorials",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "Online Tutorials",
+    "text": "Online Tutorials"
+  },
+  {
+    "objectID": "presentation.html#websites",
+    "href": "presentation.html#websites",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "Websites",
+    "text": "Websites"
+  },
+  {
+    "objectID": "presentation.html#articles",
+    "href": "presentation.html#articles",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "Articles",
+    "text": "Articles"
+  },
+  {
+    "objectID": "presentation.html#posters",
+    "href": "presentation.html#posters",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "Posters",
+    "text": "Posters"
+  },
+  {
     "objectID": "comments.html",
     "href": "comments.html",
     "title": "3. Tips and Comments",
@@ -32,7 +95,7 @@
     "href": "comments.html#conclusion",
     "title": "3. Tips and Comments",
     "section": "Conclusion",
-    "text": "Conclusion\nTo conclude the workshop, you can have a look at our collection of links to our most recommended resources on Quarto on this page.\nWe wish you all the best on your future Quarto journeys! 🥳 👏"
+    "text": "Conclusion\nTo conclude the workshop, you can have a look at our collection of links to our most recommended resources on Quarto on this page.\nWe wish you all the best on your future Quarto journeys! 🥳 👏 🎉"
   },
   {
     "objectID": "preparations.html",
@@ -109,7 +172,7 @@
     "href": "index.html#learn-how-to-use-quarto-yourself",
     "title": "Welcome to the Quarto Workshop",
     "section": "Learn how to use Quarto yourself",
-    "text": "Learn how to use Quarto yourself\nWhen you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the Quarto Tutorials page next."
+    "text": "Learn how to use Quarto yourself\nWhen you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the Quarto Tutorials page next. 💻 🙀"
   },
   {
     "objectID": "about.html",
