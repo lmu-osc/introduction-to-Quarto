@@ -9,7 +9,6 @@ This self-paced Quarto tutorial (excluding the external materials we link to) wa
 - [Florian Pargent](https://www.psy.lmu.de/pm/personen/lehrstuhlmitarbeiter/pargent/index.html)
 - [Florian Kohrt](https://www.psy.lmu.de/pm/personen/lehrstuhlmitarbeiter/kohrt_florian/index.html)
 - [Philipp Sckopke](https://www.psy.lmu.de/pm/personen/lehrstuhlmitarbeiter/sckopke/index.html)
-- [Lena Schiestel](https://www.psy.lmu.de/pm/personen/lehrstuhlmitarbeiter/schiestel/index.html)
 
 and is published under a Creative Commons [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) license.
 You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
