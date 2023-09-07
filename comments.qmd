@@ -1,6 +1,6 @@
 ---
 title: "3. Tips and Comments"
-sidebar: false
+sidebar: true
 ---
 
 ## Some Personal Experiences from Using Quarto (or R Markdown)

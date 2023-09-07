@@ -9,6 +9,9 @@ website:
       - text: "About"
         href: about.qmd
   navbar:
+    tools:
+      - icon: github
+        href: https://github.com/FlorianPargent/Quarto_LMU_OSC
     left:
       - text: "1. Welcome"
         href: "index.qmd"
@@ -21,25 +24,40 @@ website:
     right:
       - text: "About"
         file: "about.qmd"
+  
+  sidebar: 
+    contents: 
+      - index.qmd
+      - section: "2. Quarto Tutorials"
+        contents:
+          - text: "Overview"
+            href: "quarto_tutorials.qmd"
+          - preparations.qmd
+          - get-started_1.qmd
+          - get-started_2.qmd
+          - get-started_3.qmd
+      - comments.qmd
+      - links.qmd
 
-  sidebar:
-    - title: "2. Quarto Tutorials"
-      style: "docked"
-      background: light
-      contents:
-        - section: "2. Quarto Tutorials"
-          contents:
-            - text: "Overview"
-              href: "quarto_tutorials.qmd"
-            - preparations.qmd
-        - section: "  Quarto Tutorials"
-          contents:
-            - get-started_1.qmd
-            - get-started_2.qmd
-            - get-started_3.qmd
+        
+  # sidebar:
+  #   - title: "2. Quarto Tutorials"
+  #     style: "docked"
+  #     background: light
+  #     contents:
+  #       - section: "2. Quarto Tutorials"
+  #         contents:
+  #           - text: "Overview"
+  #             href: "quarto_tutorials.qmd"
+  #           - preparations.qmd
+  #       - section: "  Quarto Tutorials"
+  #         contents:
+  #           - get-started_1.qmd
+  #           - get-started_2.qmd
+  #           - get-started_3.qmd
             
   repo-url: https://github.com/FlorianPargent/Quarto_LMU_OSC
-  repo-actions: [edit, issue]
+  repo-actions: [issue, edit]
 
 format:
   html:
