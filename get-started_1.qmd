@@ -3,9 +3,11 @@
 
 ### Some comments before the tutorial
 
-- The tutorial uses the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. We recommend to frequently switch between *Visual* and *Source* mode during the tutorial to see how the raw markdown syntax looks like.
+- The tutorial uses the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. We recommend to frequently switch between *Visual* and *Source* mode (the tutorial will explain how to do that) to see how the raw markdown syntax looks like.
 
 - Remember to put all *.qmd* files you download during the tutorial into the RStudio project directory you have created [earlier](preparations.qmd).
+
+- Skip watching the [video introduction](https://youtu.be/_f3latmOhew) for now (the video is great, but too long for the 2h workshop). 
 
 ### Start the tutorial
 
@@ -14,7 +16,7 @@ If you have problems during the tutorial come back **here** and see the next sec
 
 :::{.callout-tip}
 ## Let's start
-Now you can start the first tutorial at <https://quarto.org/docs/get-started/hello/>.
+Now you can start the first tutorial at <https://quarto.org/docs/get-started/hello/rstudio.html>.
 :::
 
 ### Possible problems during the tutorial

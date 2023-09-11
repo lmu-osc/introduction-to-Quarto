@@ -14,7 +14,7 @@ If you have problems during the tutorial come back **here** and see the next sec
 
 :::{.callout-tip}
 ## Let's start
-Now you can start the second tutorial at <https://quarto.org/docs/get-started/computations/>.
+Now you can start the second tutorial at <https://quarto.org/docs/get-started/computations/rstudio.html>.
 :::
 
 ### Possible problems during the tutorial
