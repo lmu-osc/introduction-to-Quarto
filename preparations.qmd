@@ -6,10 +6,12 @@ title: "Preparations"
 
 During the official [Quarto tutorials](https://quarto.org/docs/get-started/), you will be asked to install a number of software packages. Because the installation can take up some time, we recommend to install the following software beforehand, so you can skip these steps later:
 
+- In this workshop, we will use Quarto together with [R](https://quarto.org/docs/computations/r.html) but Quarto can also be used with [Python](https://quarto.org/docs/computations/python.html), [Julia](https://quarto.org/docs/computations/julia.html), or [Observable JS](https://quarto.org/docs/computations/ojs.html).
+
 - Make sure that you have a recent version of R and RStudio installed. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio [here](https://posit.co/download/rstudio-desktop/).
 
 - Install [tinytex](https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex), a small version of TeX that can be used to build pdf documents with Quarto:
-    - In RStudio, open a Terminal window: Tools **>** Terminal **>** New Terminal
+    - In RStudio, open a Terminal window: *Tools* **>** *Terminal* **>** *New Terminal*
     - Run the following code in the Terminal:
     ``` {.bash filename="Terminal"}
     quarto install tinytex
@@ -20,21 +22,12 @@ During the official [Quarto tutorials](https://quarto.org/docs/get-started/), yo
 During the [Quarto tutorials](https://quarto.org/docs/get-started/), you will be asked to work with different files. This will be more intuitive and convenient, if you have performed the following steps beforehand:
 
 - Create an RStudio project for the workshop (if you need more details, see this [tutorial](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/rstudio_project.html))
-    - In RStudio go to File **>** New Project... **>** New Directory **>** New Project
+    - In RStudio go to *File* **>** *New Project...* **>** *New Directory* **>** *New Project*
     - Select where to put the project on your computer and select a meaningful name, e.g. *Quarto_Workshop*
-    - Press Create Project (then you can always close RStudio and come back there later)
+    - Press *Create Project* (then you can always close RStudio and come back there later)
 - When downloading files during the Quarto tutorials, make sure to place all these files in the project folder
 - You can always double-click the *.Rproj* file in the project folder on your computer to open RStudio with the appropriate working directory set automatically, and the *Files* window in RStudio showing all files in the project folder
 
-## Optional settings to the visual editor in RStudio
-
-The [Quarto tutorials](https://quarto.org/docs/get-started/) use the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. Following the tutorials as intended will help you to make up your mind on whether you like this mode when working with Quarto. If, *after the workshop*, you come to the conclusion that you want to keep using the Visual Editor, we recommend to come back **here**, read [this page](https://quarto.org/docs/visual-editor/markdown.html) and have a look at the following RStudio settings: 
-
-- In RStudio go to Tools **>** Global Options **>** R Markdown **>** Visual
-- Choose the options:
-  - Show margin column indicator in code blocks
-	- Default spacing between list items: *spaced*
-	- Automatic text wrapping (line breaks): *sentence*
 
 ## Let's start the tutorial
 	

@@ -4,7 +4,7 @@ title: "2. Quarto Tutorials"
 
 ## Overview
 
-The [Quarto](https://quarto.org/) website provides well written beginner **tutorials** ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and extensive online **documentation** ([Quarto "Guide"](https://quarto.org/docs/guide/)).
+The [Quarto](https://quarto.org/) website provides very well written beginner **tutorials** ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and extensive online **documentation** ([Quarto "Guide"](https://quarto.org/docs/guide/)).
 Instead of reinventing the wheel, we build around these tutorials and heavily link to the official resources.
 
 ## Why work with the official materials?

@@ -17,6 +17,17 @@ sidebar: true
 
 - Do not rely on the visual mode too much: Even if you like the [Visual Editor](https://quarto.org/docs/visual-editor/), make sure that you gradually learn how do do everything in the raw source mode. When learning, using the visual mode and then switching to source mode to see the result is very useful.
 
+## Optional settings to the visual editor in RStudio
+
+The [Quarto tutorials](https://quarto.org/docs/get-started/) use the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. If you followed the tutorial as intended, this should have helped you to make up your mind on whether you like this mode when working with Quarto. If you have come to the conclusion that you want to keep using the Visual Editor, we recommend to read [this page](https://quarto.org/docs/visual-editor/markdown.html) and have a look at the following RStudio settings: 
+
+- In RStudio go to *Tools* **>** *Global Options* **>** *R Markdown* **>** *Visual*
+- Choose the options:
+  - Show margin column indicator in code blocks
+	- Default spacing between list items: *spaced*
+	- Automatic text wrapping (line breaks): *sentence*
+
+
 ## Conclusion
 
 To conclude the workshop, you can have a look at our collection of links to our most recommended resources on Quarto [on this page](links.qmd).
