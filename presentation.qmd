@@ -35,39 +35,57 @@ format:
 ## ...and convert it to different output formats
 
 ::: r-stack
-![](resources/pictures/Slides.png){height="200"}
+![](resources/pictures/presentation.png){height="200"}
 ![](resources/pictures/blogs.png){height="200"}
 ![](resources/pictures/dashboard.png){height="200"}
-![](resources/pictures/tutorials.png){height="200"}
-![](resources/pictures/websites.png){height="200"}
+![](resources/pictures/tutorial.png){height="200"}
+![](resources/pictures/website.png){height="200"}
 ![](resources/pictures/article.png){height="200"}
 ![](resources/pictures/betterposterport.png){height="200"}
 :::
 
-## Slides (html, pptx, pdf)
 
-![](resources/pictures/Slides.png){fig-align=center}
+## Presentations (html, pptx, pdf)
 
-## Blogs
+![](resources/pictures/presentation.png){fig-align=center}
 
-![](resources/pictures/blogs.png){fig-align=center}
-
-## Dashboards
-
-![](resources/pictures/dashboard.png){fig-align=center}
-
-## Online Tutorials
-
-![](resources/pictures/tutorials.png){fig-align=center}
+The html presentation you see right now.
 
 ## Websites
 
-![](resources/pictures/websites.png){fig-align=center}
+![](resources/pictures/website.png){fig-align=center}
 
-## Articles
 
-![](resources/pictures/article.png){fig-align=center}
+The website we use for the workshop.
 
-## Posters
+## Teaching Materials
 
-![](resources/pictures/betterposterport.png){fig-align=center}
+![](resources/pictures/tutorial.png){fig-align=center}
+
+[Website](https://shiny.psy.lmu.de/oer/) with R exercises from our statistics courses.
+
+## Journal articles (pdf, tex, docx) 
+
+![](resources/pictures/pca_commentary.png){fig-align=center}
+
+[OSF repository](https://osf.io/5symf/) with all materials.
+
+## Other Possible Content
+
+- [Books](https://quarto.org/docs/books/) (html, pdf, docx, epub, ...)
+- [Interactive elements](https://quarto.org/docs/interactive/) (Shiny, htmlwidgets)
+- [Blogs](https://quarto.org/docs/websites/website-blog.html)
+- ...
+
+For more (professional) examples, see the official [Quarto Gallery](https://quarto.org/docs/gallery/).
+
+## Quarto and R Markdown
+
+Quarto is relatively new and some things might still be more convenient with R Markdown...
+
+- [papaja](https://github.com/crsh/papaja): manuscripts formatted in APA style
+- [learnr](https://github.com/rstudio/learnr): interactive tutorials
+- [vitae](https://github.com/mitchelloharawild/vitae): academic CVs
+- [posterdown](https://github.com/brentthorne/posterdown): conference posters
+- [flexdashboard](https://pkgs.rstudio.com/flexdashboard/): flexible dashboards
+
