@@ -7,7 +7,7 @@
 
 - Remember to put all *.qmd* files you download during the tutorial into the RStudio project directory you have created [earlier](preparations.qmd).
 
-- We recommend that you skip the [Publishing](https://quarto.org/docs/get-started/authoring/rstudio#publishing) section of the tutorial for now.
+- We recommend to skip the [Publishing](https://quarto.org/docs/get-started/authoring/rstudio#publishing) section of the tutorial for now.
 
 ### Start the tutorial
 
@@ -20,7 +20,7 @@ Now you can start the third tutorial at <https://quarto.org/docs/get-started/aut
 :::
 
 
-### Possible problems during the tutorial
+### Possible problems and related comments
 
 - The tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is *not* true.
 

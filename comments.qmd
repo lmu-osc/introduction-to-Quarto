@@ -13,9 +13,11 @@ sidebar: true
    - Frequently use the **Render** button when working on your Quarto documents, to ensure that you have not made a mistake. Debugging Quarto documents is **very hard** when you cannot say for sure which section in your code introduced an error that prevents rendering. **Never** leave a Quarto project at the end of your workday that does not render correctly! Trust us, just don't do it!
    - We highly recommend to always use Quarto together with version control. For an introduction on how to use git within RStudio you can use [this tutorial](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/).  Using version control is even more important when you want [to collaborate with your colleagues](https://malikaihle.github.io/Collaborative-RStudio-GitHub/).
 
-- When using Quarto together with version control (as recommended!), it is useful to place each sentence in your *.qmd* document on a separate line. This makes it much easier to follow changes (e.g. fixing a typo in a manuscript), because git can only highlight the line (and not the word or character) in which changes have been made.
+- When using Quarto together with version control (as recommended!), it can be very useful to place each sentence in your *.qmd* document on a separate line. This makes it much easier to follow changes (e.g. fixing a small typo in a manuscript), because git will always highlight the whole line in which changes have been made.
 
-- Do not rely on the visual mode too much: Even if you like the [Visual Editor](https://quarto.org/docs/visual-editor/), make sure that you gradually learn how do do everything in the raw source mode. When learning, using the visual mode and then switching to source mode to see the result is very useful.
+- Be careful if you use the [cache](https://quarto.org/docs/get-started/computations/rstudio.html#caching) feature that we recommended to initially skip in the second tutorial. Although caching is powerful and can be very useful, it can lead to unexpected and invisible problems with respect to reproducibility. We recommend that you do not use the cache by default and that you carefully read [this thoughtful chapter](https://r4ds.hadley.nz/quarto.html#sec-caching) before using the cache in any of your own projects. 
+
+- We recommend that you do not rely on the visual mode in RStudio too much: Even if you like the [Visual Editor](https://quarto.org/docs/visual-editor/), make sure that you also gradually learn how do do everything in the raw source mode. When learning how to use Quarto, using the visual mode and then switching to source mode to see the result can be very useful.
 
 ## Optional settings to the visual editor in RStudio
 
