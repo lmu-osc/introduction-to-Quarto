@@ -36,7 +36,7 @@ Now you can start the third tutorial at <https://quarto.org/docs/get-started/aut
 
 - The tutorial wants you to add a reference to the equation labeled \#eq-slr, but this reference is actually already included in the .qmd file.
 
-- Rendering the final .qmd file you can download at the end of the tutorial (*authoring-complete.qmd*) will only work, if you also have the *references.bib* file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the [citations](https://quarto.org/docs/get-started/authoring/rstudio.html#citations) section of the tutorial. The created bibliography file should look something like this:
+- Rendering the final *authoring-complete.qmd* file you can download at the end of the tutorial will only work, if you also have the *references.bib* file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the [citations](https://quarto.org/docs/get-started/authoring/rstudio.html#citations) section of the tutorial. The created bibliography file should look like this:
 
   {{< downloadthis _references.bib dname="references" label="Download references.bib">}}
   
