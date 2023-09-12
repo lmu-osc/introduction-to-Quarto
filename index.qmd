@@ -18,7 +18,7 @@ The workshop is structured in 4 consecutive parts you can navigate to on the top
 4. [Links](links.qmd) to further resources
 
 
-The [Quarto](https://quarto.org/) project has very well written tutorials ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and online documentation ([Quarto "Guide"](https://quarto.org/docs/guide/)).
+The Quarto project provides well written tutorials ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and online documentation ([Quarto "Guide"](https://quarto.org/docs/guide/)).
 Instead of reinventing the wheel, we will heavily link to these resources.
 
 ## What is Quarto?
@@ -39,14 +39,14 @@ An open-source scientific and technical publishing system
 Analyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.
 :::
 
-These features make [Quarto](https://quarto.org/) an extremely useful tool for researchers to:
+These features make Quarto an extremely useful tool for researchers to:
 
 - write reproducible research reports, presentations or scientific articles
 - create personal of project websites
 - publish tutorials, textbooks, or other educational resources online
 - and much more...
 
-If you have not seen many examples yourself, go to the official [Quarto Gallery](https://quarto.org/docs/gallery/) or have a look at the following presentation for a few examples, where we have used [Quarto](https://quarto.org/) in our own work.
+If you have not seen many examples yourself, go to the official [Quarto Gallery](https://quarto.org/docs/gallery/) or have a look at the following presentation for a few examples, where we have used Quarto in our own work:
 
 ```{=html}
 <iframe class="slide-deck" width="780" height="500" src="presentation.html"></iframe>
