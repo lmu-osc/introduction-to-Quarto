@@ -38,7 +38,7 @@ Now you can start the third tutorial at <https://quarto.org/docs/get-started/aut
 
 - Rendering the final .qmd file you can download at the end of the tutorial (*authoring-complete.qmd*) will only work, if you also have the *references.bib* file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the [citations](https://quarto.org/docs/get-started/authoring/rstudio.html#citations) section of the tutorial. The created bibliography file should look something like this:
 
-  {{< downloadthis references.bib label="Download references.bib">}}
+  {{< downloadthis _references.bib dname="references" label="Download references.bib">}}
   
   When the .bib file is present, rendering *authoring-complete.qmd* should produce the following three output files (we have added `embed-resources: true` to the html options in the YAML header to produce a standalone html file that can be shared with others):
   

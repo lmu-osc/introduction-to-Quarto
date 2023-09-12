@@ -14,7 +14,7 @@ format:
       - top=30mm
       - left=30mm
   docx: default
-bibliography: references.bib
+bibliography: _references.bib
 ---
 
 ## Introduction
