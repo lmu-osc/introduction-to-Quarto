@@ -123,21 +123,21 @@
     "href": "get-started_3.html",
     "title": "Quarto Workshop LMU OSC",
     "section": "",
-    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend that you skip the Publishing section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the third tutorial, come back here and continue with our personal tips and comments on using Quarto on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the third tutorial at https://quarto.org/docs/get-started/authoring/.\n\n\n\n\n\n\nThe tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is not true.\nThe tutorial claims that “the format choice (HTML) is not even reflected in the YAML as it is the default output format for Quarto documents” when creating a new .qmd document, which is not true.\nThe tutorial does not talk about where to save the .qmd file. For our case, it ist most practical to save it in the project folder you have created for the Quarto workshop.\nThe tutorial does not mention that the Render on Save option in RStudio is document specific and must again be ticked for the new .qmd file if you want to use it as showcased in the tutorial.\nWhen you render the .qmd file as .docx by use of the Render button in RStudio for the first time, RStudio might (misleadingly) ask where to safe the file, even though the .docx file has already been silently created in the background (because the yaml header specifies that all formats should be created on rendering).\nWhen you have used the Render button in RStudio to render .docx this might break the Viewer in RStudio (because RStudio seems to remember the last output format it has rendered and the Viewer does not work for .docx). One solution to fix this is to manually render once as .html or .pdf via the Render options, which should reactivate the Viewer.\nThe tutorial wants you to add a reference to the equation labeled #eq-slr, but this reference is actually already included in the .qmd file."
+    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend that you skip the Publishing section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the third tutorial, come back here and continue with our personal tips and comments on using Quarto on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the third tutorial at https://quarto.org/docs/get-started/authoring/rstudio.html.\n\n\n\n\n\n\nThe tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is not true.\nThe tutorial claims that “the format choice (HTML) is not even reflected in the YAML as it is the default output format for Quarto documents” when creating a new .qmd document, which is not true.\nThe tutorial does not talk about where to save the .qmd file. For our case, it ist most practical to save it in the project folder you have created for the Quarto workshop.\nThe tutorial does not mention that the Render on Save option in RStudio is document specific and must again be ticked for the new .qmd file if you want to use it as showcased in the tutorial.\nWhen you render the .qmd file as .docx by use of the Render button in RStudio for the first time, RStudio might (misleadingly) ask where to safe the file, even though the .docx file has already been silently created in the background (because the yaml header specifies that all formats should be created on rendering).\nWhen you have used the Render button in RStudio to render .docx this might break the Viewer in RStudio (because RStudio seems to remember the last output format it has rendered and the Viewer does not work for .docx). One solution to fix this is to manually render once as .html or .pdf via the Render options, which should reactivate the Viewer.\nThe tutorial wants you to add a reference to the equation labeled #eq-slr, but this reference is actually already included in the .qmd file.\nRendering the final authoring-complete.qmd file you can download at the end of the tutorial will only work, if you also have the references.bib file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the citations section of the tutorial. The created bibliography file should look like this:\n Download references.bib \nWhen the .bib file is present, rendering authoring-complete.qmd should produce the following three output files (we have added embed-resources: true to the html options in the YAML header to produce a standalone html file that can be shared with others):\n Download .html   Download .pdf   Download .docx"
   },
   {
     "objectID": "get-started_2.html",
     "href": "get-started_2.html",
     "title": "Quarto Workshop LMU OSC",
     "section": "",
-    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the second tutorial, come back here and continue with the next tutorial on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the second tutorial at https://quarto.org/docs/get-started/computations/.\n\n\n\n\n\n\nThe tutorial discusses yaml options (e.g. df-print: paged) on how to display data.frames but does not actually print any data.frame in the .qmd document. You can add the following chunk to test the different df-print options:\n\n```{r}\nlibrary(palmerpenguins)\npenguins\n```\n\n\n\n  \n\n\n\nThe Figures section wants you to copy the following code for referencing a figure into your .qmd document.\n@fig-scatterplot shows a positive, strong, and linear relationship between the city and highway mileage of these cars.\nMake sure to copy the code into your RStudio in Source mode, instead of Visual mode. Otherwise it will not work…"
+    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the second tutorial, come back here and continue with the next tutorial on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the second tutorial at https://quarto.org/docs/get-started/computations/rstudio.html.\n\n\n\n\n\n\nThe tutorial discusses yaml options (e.g. df-print: paged) on how to display data.frames but does not actually print any data.frame in the .qmd document. You can add the following chunk to test the different df-print options:\n\n```{r}\nlibrary(palmerpenguins)\npenguins\n```\n\n\n\n  \n\n\n\nThe Figures section wants you to copy the following code for referencing a figure into your .qmd document.\n@fig-scatterplot shows a positive, strong, and linear relationship between the city and highway mileage of these cars.\nMake sure to copy the code into your RStudio in Source mode, instead of Visual mode. Otherwise it will not work…\nWhen you render the final .qmd document, this will produce an html file (computations.html) that you might want to share with some colleagues to show them your new analysis. However, be aware that the html file does not contain all necessary content. You can verify this by moving the computations.html file to another folder on your computer (e.g. the Desktop) and open it from there with your browser. You will see that it does not contain the figures and is also not nicely formatted. To produce a single standalone .html file that you can share with others, add embed-resources: true to the html options in the YAML header. The final .html then should look something like this:\n Download standalone .html"
   },
   {
     "objectID": "get-started_1.html",
     "href": "get-started_1.html",
     "title": "Quarto Workshop LMU OSC",
     "section": "",
-    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the first tutorial, come back here and continue with the next tutorial on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the first tutorial at https://quarto.org/docs/get-started/hello/.\n\n\n\n\n\n\nNone that we anticipate"
+    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode (the tutorial will explain how to do that) to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nSkip watching the video introduction for now (the video is great, but too long for the 2h workshop).\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the first tutorial, come back here and continue with the next tutorial on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the first tutorial at https://quarto.org/docs/get-started/hello/rstudio.html.\n\n\n\n\n\n\nThe tutorial discusses the format: html option in the YAML header and implies that you could also use pdf or docx. Unfortunately, format: pdf will not render for this particular .qmd document because the image of the penguins is added from an URL (you can see this when switching to Source mode), which for some reason does not work for pdfs…\nHowever, rendering with format: docx works and the result will look like this:\n Download .docx file"
   },
   {
     "objectID": "index.html",
@@ -194,68 +194,5 @@
     "title": "4. Links to Further Resources",
     "section": "Other Quarto and Rmarkdown workshops",
     "text": "Other Quarto and Rmarkdown workshops\n\nhttps://rstudio-conf-2022.github.io/get-started-quarto/\nhttps://github.com/resulumit/rmd_workshop"
-  },
-  {
-    "objectID": "presentation_v0.html#learn-to-edit-one-type-of-document-as-input",
-    "href": "presentation_v0.html#learn-to-edit-one-type-of-document-as-input",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "Learn to edit one type of document as input…",
-    "text": "Learn to edit one type of document as input…\n\n\n\n\n\n\n\n\n\n\n\nText\nAnalyses\nSource code\nGraphics\nTables\nCitations\n…"
-  },
-  {
-    "objectID": "presentation_v0.html#and-convert-it-to-different-output-formats",
-    "href": "presentation_v0.html#and-convert-it-to-different-output-formats",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "…and convert it to different output formats",
-    "text": "…and convert it to different output formats"
-  },
-  {
-    "objectID": "presentation_v0.html#slides-html-pptx-pdf",
-    "href": "presentation_v0.html#slides-html-pptx-pdf",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "Slides (html, pptx, pdf)",
-    "text": "Slides (html, pptx, pdf)"
-  },
-  {
-    "objectID": "presentation_v0.html#blogs",
-    "href": "presentation_v0.html#blogs",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "Blogs",
-    "text": "Blogs"
-  },
-  {
-    "objectID": "presentation_v0.html#dashboards",
-    "href": "presentation_v0.html#dashboards",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "Dashboards",
-    "text": "Dashboards"
-  },
-  {
-    "objectID": "presentation_v0.html#online-tutorials",
-    "href": "presentation_v0.html#online-tutorials",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "Online Tutorials",
-    "text": "Online Tutorials"
-  },
-  {
-    "objectID": "presentation_v0.html#websites",
-    "href": "presentation_v0.html#websites",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "Websites",
-    "text": "Websites"
-  },
-  {
-    "objectID": "presentation_v0.html#articles",
-    "href": "presentation_v0.html#articles",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "Articles",
-    "text": "Articles"
-  },
-  {
-    "objectID": "presentation_v0.html#posters",
-    "href": "presentation_v0.html#posters",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "Posters",
-    "text": "Posters"
   }
 ]
