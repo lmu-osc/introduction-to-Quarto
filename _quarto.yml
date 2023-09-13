@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - "gt.html"
 
 website:
   title: "Quarto Workshop LMU OSC"
