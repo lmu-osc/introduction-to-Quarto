@@ -1,6 +1,8 @@
 ---
 title: "Hello, Quarto"
-format: docx
+format: 
+  pdf: default
+  docx: default
 editor: visual
 ---
 

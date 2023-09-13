@@ -21,9 +21,10 @@ Now you can start the first tutorial at <https://quarto.org/docs/get-started/hel
 
 ### Possible problems and related comments
 
+- If the preview does not automatically open on the right side when you click **Render**, go to the gear wheel next to the **Render** button, select *Preview in Viewer Pane* and then click **Render** again.
+
 - The tutorial mentions the Markdown syntax (e.g. `**bold**`) used in Quarto but never gives you [this link](https://quarto.org/docs/authoring/markdown-basics.html) where the Pandoc Markdown syntax is described in-depth. 
 
-- The tutorial discusses the `format: html` option in the YAML header and implies that you could also use `pdf` or `docx`. Unfortunately, `format: pdf` will not render for this particular *.qmd* document because the image of the penguins is added from an URL (you can see this when switching to *Source* mode), which for some reason does not work for pdfs...  
-However, rendering with `format: docx` works and the result will look like this:
+- The tutorial discusses the `format: html` option in the YAML header and implies that you can also use `format: pdf` or `format: docx`. Indeed the results for these two options will look like this:
 
-  {{< downloadthis _hello.docx dname="hello" label="Download .docx file">}}
+  {{< downloadthis _hello.pdf dname="hello" label="Download .pdf file">}}  {{< downloadthis _hello.docx dname="hello" label="Download .docx file">}}
