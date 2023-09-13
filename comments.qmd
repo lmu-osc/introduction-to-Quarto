@@ -19,6 +19,8 @@ sidebar: true
 
 - We recommend that you do not rely on the visual mode in RStudio too much: Even if you like the [Visual Editor](https://quarto.org/docs/visual-editor/), make sure that you also gradually learn how do do everything in the raw source mode. When learning how to use Quarto, using the visual mode and then switching to source mode to see the result can be very useful.
 
+- Make it a habit to set the `lang`uage of a document right from the start. Hyphenation, for example, relies on having the correct language set.
+
 ## Optional settings to the visual editor in RStudio
 
 The [Quarto tutorials](https://quarto.org/docs/get-started/) use the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. If you followed the tutorial as intended, this should have helped you to make up your mind on whether you like this mode when working with Quarto. If you have come to the conclusion that you want to keep using the Visual Editor, we recommend to read [this page](https://quarto.org/docs/visual-editor/markdown.html) and have a look at the following RStudio settings: 

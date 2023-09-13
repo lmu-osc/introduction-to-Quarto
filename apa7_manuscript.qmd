@@ -1,0 +1,212 @@
+---
+title: "Exercise: Formatting Quarto documents in APA 7 style"
+lang: en
+---
+
+## Description
+
+Pick a preprint of your own and implement it using Quarto in the APA 7 manuscript style. You also can view an [example document](demo_manuscript.pdf) that incorporates all features from this exercise.
+
+## Getting started
+
+Currently, there is no official Quarto extension to format documents according to the APA 7 guidelines^[For a list of official Quarto extensions, see [Journal Articles](https://quarto.org/docs/extensions/listing-journals.html).]. However, the inofficial [`apaquarto`](https://github.com/wjschne/apaquarto) extension can be utilized until better options emerge^[One can follow the discussion on GitHub at [quarto-journals/article-format-template#11](https://github.com/quarto-journals/article-format-template/issues/11)]. After installing it into the current project, we can set the `format` to `apaquarto-pdf` or `apaquarto-docx`. Also, we need to add the shortcode `{{< include _extensions/wjschne/apaquarto/_apa_title.qmd >}}` just below the YAML header. Here are the detailed steps that are necessary to create a manuscript in APA 7 style -- skip step 1 if you want to use an existing Quarto document.
+
+0. Prerequisites
+   - Install required packages
+     - Click on _Console_
+     - Enter\
+       ```r
+       install.packages(c("rmarkdown", "conflicted", "tidyverse", "flextable", "ftExtra"))
+       ```
+   - Install TinyTeX
+     - Click on _Terminal_
+     - Enter `quarto install tinytex`
+1. optional: Create a new Quarto Document
+   - Click on _File_ > _New File_ > _Quarto Document_
+   - Fill _Title_ and _Author_
+   - Choose _PDF_
+   - Click _Create_
+2. Add APA 7 Quarto extension
+   - Go to _Terminal_
+   - Enter `quarto add wjschne/apaquarto`
+   - Confirm installation by entering <kbd>Y</kbd> twice
+3. Declare the language of the document by setting e.g. `lang: en` in the YAML header
+4. Change `format` as follows:\
+   ```yaml
+   format:
+    apaquarto-pdf:
+      documentmode: man
+      a4paper: true
+      pdf-engine: lualatex
+      floatsintext: false
+      keep-tex: false
+   ```
+5. Add the shortcode `{{< include _extensions/wjschne/apaquarto/_apa_title.qmd >}}` below the YAML header
+6. Click on the disk symbol to save (maybe call the file `manuscript.qmd`)
+7. Click on _Render_
+
+We can now provide additional information in the YAML header as detailed below.
+
+## Short title
+
+A running header in upper case can be added like this:
+
+```yaml
+shorttitle: "My short title"
+```
+
+## Authors
+
+Say we have two authors called _Ana Fulana_ and _Blanca Zutana_, each with their own ORCID, email address and [<abbr title="Contributor Roles Taxonomy">CRediT</abbr> roles](https://credit.niso.org/)^[Unfortunately, `apaquarto` uses a slightly different YAML header to denote CRediT roles than "standard Quarto", see the Quarto documentation on [Author Roles](https://quarto.org/docs/authoring/front-matter.html#roles).]. They have a common affiliation and Ana acts as corresponding author. In the YAML header this looks as follows:
+
+```yaml
+author:
+  - name: Ana Fulana
+    corresponding: true
+    orcid: "0000-0000-0000-0000"
+    email: "sm@example.org"
+    role:
+      - Conceptualization
+      - Writing - original draft
+    affiliations:
+      - id: "lmu"
+        name: "Ludwig-Maximilians-Universität München, Munich, Germany"
+        department: "Department of Psychology"
+        ror: "https://ror.org/05591te55"
+        url: "https://www.lmu.de/"
+  - name: Blanca Zutana
+    role:
+      - Project administration
+    affiliations: 
+      - ref: lmu
+```
+
+Available CRediT roles are:
+
+- Conceptualization
+- Data curation
+- Formal Analysis
+- Funding acquisition
+- Investigation
+- Methodology
+- Project administration
+- Resources
+- Software
+- Supervision
+- Validation
+- Visualization
+- Writing – original draft
+- Writing – review & editing
+
+## Abstract
+
+You can add an abstract using the `abstract` YAML key:
+
+```yaml
+abstract: "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+```
+
+## Keywords
+
+One can add multiple keywords by using a list:
+
+```yaml
+keywords:
+  - meta science
+  - replication
+  - multiverse analysis
+```
+
+## Author Note
+
+The author note can be populated with various disclosures as follows:
+
+```yaml
+author-note:
+  disclosures:
+    study-registration: "This study was preregistered at OSF at ...."
+    data-sharing: "Code and data of this study are available at ..."
+    related-report: "This article is based on data published in ..."
+    conflict-of-interest: "We declare we have no competing interests."
+    financial-support: "This research was funded by the German Research Foundation (DFG SCHO ..., Blanca Zutana)."
+    gratitude: "We would like to thank Carina Mengana and Dolorita Perengana for their very helpful comments and discussions on this project."
+    authorship-agreements: "Because the authors are equal contributors, order of authorship was determined by a fair coin toss."
+```
+
+## Figures
+
+For including images, the `apaquarto` extension requires the use of R code blocks, which need to have a label that starts with `apafg-`:
+
+<!-- image from <https://picsum.photos/id/360/1000/1000.jpg> -->
+
+``````qmd
+```{{r}}
+#| label: apafg-flower
+#| apa-cap: This image depicts a flower.
+#| out-height: 5cm
+#| out-width: 5cm
+
+knitr::include_graphics("flower.jpg")
+```
+``````
+
+When using the `apaquarto` extension, by default figures appear at the end of the document, unless one sets `floatsintext: true` in the YAML header. Therefore it might make sense to add a final heading `Appendix` below which the figures will appear. Figures can be cross-referenced by putting their label in curly braces: `For an image of a flower, see {apafg-flower}.`
+
+## Tables
+
+The `apaquarto` extension is also special when it comes to tables. The R packages `tibble` and `flextable` are required for the following to work:
+
+``````qmd
+```{{r}}
+#| label: apatb-ingredients
+#| apa-cap: Substances and their key ingredients.
+
+tibble::tribble(
+  ~"Substance", ~"Key Ingredient",
+  "a",   "None",
+  "b",   "Sugar",
+  "c",   "Salt"
+  ) |>
+  flextable::flextable() |>
+  flextable::theme_apa()
+```
+``````
+
+When using the `apaquarto` extension, by default tables appear at the end of the document, unless one sets `floatsintext: true` in the YAML header. One can refer to tables by putting their labels in curly braces: `Key ingredients are given in {apatb-ingredients}.`
+
+## Footnotes
+
+The following serves as an example for how to add footnotes:
+
+```md
+Here is an inline note.^[This text appears as a footnote.]
+```
+
+## References
+
+Put your bibliography in a BibTeX file (extension `.bib`) and reference it in your YAML metadata:
+
+```yaml
+bibliography: literature.bib
+```
+
+Add a level one heading and a Div with the id `refs` at the end of the document:
+
+```md
+# References
+
+::: {#refs}
+:::
+```
+
+You can now cite from your bibliography using the syntax `[@id]`.
+
+## Generate `.tex` file
+
+Sometimes you might need the intermediate `.tex` file in addition to the final `.pdf` file. In order to keep that, set `keep-tex: true` in the YAML header.
+
+## Final notes
+
+You can download a manuscript with all the features presented on this page via the following button:
+
+{{< downloadthis demo_manuscript.zip dname="demo_manuscript" label="Download source files as ZIP">}}

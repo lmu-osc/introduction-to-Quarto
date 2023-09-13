@@ -19,7 +19,9 @@ website:
         file: "quarto_tutorials.qmd"
       - text: "3. Tips and Comments"
         file: "comments.qmd"
-      - text: "4. Links"
+      - text: "4. Advanced Exercises"
+        file: "quarto_exercises.qmd"
+      - text: "5. Links"
         file: "links.qmd"
     right:
       - text: "About"
@@ -37,6 +39,14 @@ website:
           - get-started_2.qmd
           - get-started_3.qmd
       - comments.qmd
+      - section: "4. Advanced Exercises"
+        contents:
+          - text: "Overview"
+            href: "quarto_exercises.qmd"
+          - text: "Exercise: APA 7 Manuscripts"
+            file: apa7_manuscript.qmd
+          - text: "Exercise: Slideshows"
+            file: slideshow.qmd
       - links.qmd
 
         
