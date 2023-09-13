@@ -2,7 +2,7 @@ project:
   type: website
   resources:
     - "gt.html"
-    - "lib/*"
+    - "lib"
 
 website:
   title: "Quarto Workshop LMU OSC"
