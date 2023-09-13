@@ -15,7 +15,8 @@ The workshop is structured in 4 consecutive parts you can navigate to on the top
 1. [Welcome](index.qmd) to the Quarto Workshop (**you are here now**)
 2. [Quarto Tutorials](quarto_tutorials.qmd) from the official Quarto project
 3. [Tips and Comments](comments.qmd) from our own experiences of using Quarto
-4. [Links](links.qmd) to further resources
+4. [Advanced Exercises](quarto_exercises.qmd) that are more challenging than the beginner Quarto tutorials
+5. [Links](links.qmd) to further resources
 
 
 The Quarto project provides well written tutorials ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and online documentation ([Quarto "Guide"](https://quarto.org/docs/guide/)).

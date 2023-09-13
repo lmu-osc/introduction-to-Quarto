@@ -34,6 +34,6 @@ The [Quarto tutorials](https://quarto.org/docs/get-started/) use the [Visual Edi
 
 ## Conclusion
 
-To conclude the workshop, you can have a look at our collection of links to our most recommended resources on Quarto [on this page](links.qmd).
+Before we conclude the workshop, we want to point you towards our [advanced exercises](quarto_exercises.qmd) you might be interested in after you have completed the beginner tutorials, as well as a [collection of links](links.qmd) with our most recommended Quarto resources.
 
 We wish you all the best on your future Quarto journeys! :partying_face: :clap: :tada:
