@@ -8,7 +8,7 @@ lang: en
 Pick a previous slideshow of yours and try to recreate it using Quarto. The following slideshow incorporates all features from this exercise. You can download it at the end of this page.
 
 ```{=html}
-<iframe class="slide-deck" width="800" height="450" src="demo_slideshow.html"></iframe>
+<iframe class="slide-deck" width="100%" height="450" src="demo_slideshow.html"></iframe>
 ```
 
 ## Getting started
