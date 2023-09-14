@@ -28,3 +28,5 @@ sidebar: true
     
 - Awesome-Quarto link collection: <https://github.com/mcanouil/awesome-quarto>  
   It also contains an extensive section on other Quarto tutorials & workshops
+
+- [Documentation of the RStudio Visual Markdown Editor](https://rstudio.github.io/visual-markdown-editing/)
