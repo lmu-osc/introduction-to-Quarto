@@ -22,11 +22,11 @@ Now you can start the third tutorial at <https://quarto.org/docs/get-started/aut
 
 ### Possible problems and related comments
 
-- The tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is *not* true.
+- The tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is *not* always true.
 
 - The tutorial claims that *"the format choice (HTML) is not even reflected in the YAML as it is the default output format for Quarto documents"* when creating a new .qmd document, which is *not* true.
 
-- The tutorial does not talk about where to save the .qmd file. For our case, it ist most practical to save it in the project folder you have created for the Quarto workshop.
+- The tutorial does not talk about where to save the .qmd file. For our case, it is most practical to save it in the project folder you have created for the Quarto workshop.
 
 - The tutorial does not mention that the *Render on Save* option in RStudio is document specific and must again be ticked for the new .qmd file if you want to use it as showcased in the tutorial.
 

@@ -21,6 +21,8 @@ Now you can start the second tutorial at <https://quarto.org/docs/get-started/co
 
 ### Possible problems and related comments
 
+- Whenever you copy something from the tutorial website into your own *.qmd* document, always make sure that in RStudio you copy into *Source* mode instead of *Visual* mode. Otherwise, rendering the document will not work correctly because the visual mode adds some extra characters that brake the markdown syntax.
+
 - The tutorial discusses yaml options (e.g. `df-print: paged`) on how to display data.frames but does not actually print any data.frame in the *.qmd* document. You can add the following chunk to test the different `df-print` options:
   ```{r}
   #| echo: fenced
@@ -28,13 +30,8 @@ Now you can start the second tutorial at <https://quarto.org/docs/get-started/co
   penguins
   ```
   
-- The **Figures** section wants you to copy the following code for referencing a figure into your *.qmd* document.
-
-  ```{.md}
-  @fig-scatterplot shows a positive, strong, and linear relationship between the city and highway mileage of these cars.
-  ```
-  Make sure to copy the code into your RStudio in *Source* mode, instead of *Visual* mode. Otherwise it will not work...
+- Code linking (`code-link: true`) sometimes does not seem to work on all systems, we also do not know why...
   
-- When you render the final .qmd document, this will produce an html file (*computations.html*) that you might want to share with some colleagues to show them your new analysis. However, be aware that the html file does not contain all necessary content. You can verify this by moving the *computations.html* file to another folder on your computer (e.g. the Desktop) and open it from there with your browser. You will see that it does not contain the figures and is also not nicely formatted. To produce a single standalone .html file that you can share with others, add `embed-resources: true` to the html options in the YAML header. The final .html then should look something like this:
+- When you render the final .qmd document, this will produce an html file (*computations.html*) that you might want to share with some colleagues to show them your new analysis. However, be aware that the html file does not contain all necessary content and will possibly not display correctly on its own. To produce a single standalone .html file that you can share with others, add `embed-resources: true` to the html options in the YAML header. The final .html then should look something like this (there is also an additional option `self-contained-math: true` which tries to make sure that all your equations can be displayed without a connection to the internet):
 
     {{< downloadthis _computations-complete.html dname="computations-complete-standalone" label="Download standalone .html">}}

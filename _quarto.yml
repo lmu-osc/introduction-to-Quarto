@@ -78,6 +78,8 @@ format:
     css: styles.css
     toc: true
     link-external-newwindow: true
+    link-external-icon: true
+    link-external-filter: ^(?:http:|https:)\/\/www\.florianpargent\.github\.io\/custom
     df-print: paged
     code-overflow: wrap
 
