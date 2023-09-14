@@ -279,6 +279,6 @@ You can now cite from your bibliography using the syntax `[@id]`.
 
 For even more features like remote control, chalkboards, transitions, automatic progress, and link previews, head over to the [Quarto documentation](https://quarto.org/docs/presentations/revealjs/).
 
-You can download a the source of a presentation that uses all the features presented on this page via the following button:
+You can download the source of a presentation that uses all the features presented on this page via the following button:
 
 {{< downloadthis demo_slideshow.zip dname="demo_slideshow" label="Download source files as ZIP">}}
