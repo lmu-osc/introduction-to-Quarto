@@ -1,0 +1,284 @@
+---
+title: "Exercise: Creating a slideshow with Quarto"
+lang: en
+---
+
+## Description
+
+Pick a previous slideshow of yours and try to recreate it using Quarto. The following slideshow incorporates all features from this exercise. You can download it at the end of this page.
+
+```{=html}
+<iframe class="slide-deck" width="800" height="450" src="demo_slideshow.html"></iframe>
+```
+
+## Getting started
+
+You can begin by creating a new Quarto Presentation.
+
+1. Create a new Quarto Presentation
+   - Click on _File_ > _New File_ > _Quarto Presentation_
+   - Fill _Title_ and _Author_
+   - Click _Create_
+2. Declare the language of the document by setting e.g. `lang: en` in the YAML header
+3. Change `format` as follows:\
+   ```yaml
+   format:
+     revealjs:
+       embed-resources: true
+       hash-one-based-index: true
+       slide-number: true
+       navigation-mode: "linear"
+       width: 1600
+       height: 900
+   ```
+4. Click on the disk symbol to save (maybe call the file `presentation.qmd`)
+5. Click on _Render_
+
+## Creating slides
+
+Per default, level-1 and level-2 headings create new slides, but horizontal rules (`---`) work as well:
+
+```md
+# Slide 1
+
+Content on first slide
+
+# Slide 2
+
+Content on second slide
+
+---
+
+Content on third slide
+```
+
+## Usage
+
+- Navigate forward with <kbd>Space</kbd> or <kbd>N</kbd> (for **n**ext)^[The arrow keys <kbd>→</kbd> and <kbd>↓</kbd> are specifically for navigating through [vertical slides](https://quarto.org/docs/presentations/revealjs/advanced.html#vertical-slides).]
+- Navigate backward with <kbd>Shift</kbd> + <kbd>Space</kbd> or <kbd>P</kbd> (for **p**revious)^[The arrow keys <kbd>←</kbd> and <kbd>↑</kbd> are specifically for navigating through [vertical slides](https://quarto.org/docs/presentations/revealjs/advanced.html#vertical-slides).]
+- Press <kbd>F</kbd> to switch to **f**ullscreen
+- Press <kbd>O</kbd> or <kbd>Esc</kbd> to show the slide **o**verview
+- Press <kbd>B</kbd> or <kbd>.</kbd> to pause (**b**lacken) the screen
+- Press <kbd>S</kbd> to open the **s**peaker notes
+- Press <kbd>M</kbd> to toggle a **m**enu that allows you to jump to any slide
+- Press <kbd>Ctrl</kbd> + click on the slide to zoom in
+- Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> to activate search
+- Press <kbd>?</kbd> to show the keyboard help
+
+## Columns
+
+One can create multiple columns next to each other with the following syntax:
+
+```md
+::: {.columns}
+:::: {.column width="33%"}
+Left
+::::
+
+:::: {.column width="33%"}
+Middle
+::::
+
+:::: {.column width="33%"}
+Right
+::::
+:::
+```
+
+## Tabsets
+
+Tabsets allow to put more content on a slide than the available space normally allows:
+
+```md
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+```
+
+## Incremental points
+
+For bullet points to appear step by step, use the following syntax:
+
+```md
+::: {.incremental}
+- first point
+- second point
+- last point
+:::
+```
+
+Other elements, such as columns, can be made incremental by adding the class `fragment`:
+
+```md
+::: {.columns}
+:::: {.column width="40%"}
+- foo
+- bar
+- baz
+::::
+:::: {.column width="60%" .fragment}
+- foo
+- bar
+::::
+:::
+```
+
+The same can be applied to images:
+
+```md
+::: {.fragment}
+![](flower.jpg){width=300px}
+:::
+```
+
+## Typography
+
+### Fit words
+
+You can fit words to the slide by adding the class `r-fit-text`:
+
+```md
+[Two Words]{.r-fit-text}
+
+[Longer Explanation]{.r-fit-text}
+```
+
+### Border
+
+One can add a border around any element by adding the class `r-frame`:
+
+```md
+[Other content]{.r-frame}
+```
+
+## Interactivity
+
+### Videos
+
+Interactive elements can be incorporated by embedding videos:
+
+```md
+{{{< video https://vimeo.com/1084537 width="640px" height="360px" >}}}
+```
+
+### R Code
+
+R code may compute to interactive widgets:
+
+``````qmd
+```{{r}}
+#| output: asis
+
+swiss |>
+  tibble::rownames_to_column(var = "Province") |>
+  gt::gt() |>
+  gt::opt_interactive(
+      use_search = TRUE,
+      use_filters = TRUE,
+      use_resizers = TRUE,
+      use_highlight = TRUE,
+      use_compact_mode = TRUE,
+      use_page_size_select = TRUE
+  ) |>
+  gt::gtsave("gt.html")
+
+cat('<iframe src="gt.html" style="border:none;" width="100%" height="600px" data-external="1"></iframe>')
+```
+``````
+
+### Websites
+
+As the slideshow is a website, other websites can be embedded, too:
+
+``````md
+::: {.columns}
+:::: {.column}
+Discover the elements that make up a neuron.
+::::
+
+:::: {.column}
+```{{=html}}
+<iframe class="r-frame" data-src="https://humanbiology.pressbooks.tru.ca/wp-admin/admin-ajax.php?action=h5p_embed&id=118" width="882" height="533" frameborder="0" allowfullscreen="allowfullscreen" data-external="1"></iframe><script src="https://humanbiology.pressbooks.tru.ca/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+```
+::::
+:::
+``````
+
+## Background
+
+One can put colors, images, videos and whole websites in the background of a slide. E.g. for a aquamarine slide, one can do the following:
+
+```md
+# Aquamarine Slide {data-background-color="aquamarine"}
+
+Some content
+```
+
+An image can be used as background like this:
+
+```md
+# {background-image="https://picsum.photos/1600/900"}
+
+Content with background image
+```
+
+Note that one can also choose to use a GIF as image background and thus achieve a moving background. Alternatively one can show a video in the background of a slide like this:
+
+```md
+# {background-video="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"}
+
+Content with video background
+```
+
+Finally, whole websites can be embedded into slideshows, such as this Google Streetview sight of the Buckingham Palance:
+
+```md
+# {background-iframe="https://www.google.com/maps/embed?pb=!4v1567634732542!6m8!1m7!1sCAoSK0FGMVFpcFBwdDA1a3pFdm9mWVk0Y3Z4dS1zX3JEUGVMT25ib0I3QnRqem8.!2m2!1d51.50178371216957!2d-0.1407569859987906!3f232.50377602784036!4f-2.7819907211537895!5f0.7820865974627469" background-interactive="true"}
+```
+
+## Speaker notes
+
+Speaker notes can be added using Pandoc's fenced divs and the class name `notes`:
+
+```md
+::: {.notes}
+These are speaker notes that belong to the current slide.
+:::
+```
+
+They appear while presenting the slideshow next to the slide's content.
+
+## References
+
+Put your bibliography in a BibTeX file (extension `.bib`) and reference it in your YAML metadata:
+
+```yaml
+bibliography: literature.bib
+```
+
+Add a level one heading and a Div with the id `refs` at the end of the document:
+
+```md
+# References
+
+::: {#refs}
+:::
+```
+
+You can now cite from your bibliography using the syntax `[@id]`.
+
+## Final notes
+
+For even more features like remote control, chalkboards, transitions, automatic progress, and link previews, head over to the [Quarto documentation](https://quarto.org/docs/presentations/revealjs/).
+
+You can download a the source of a presentation that uses all the features presented on this page via the following button:
+
+{{< downloadthis demo_slideshow.zip dname="demo_slideshow" label="Download source files as ZIP">}}

@@ -1,0 +1,16 @@
+---
+title: "4. Advanced Exercises"
+---
+
+## Overview
+
+If you want to go beyond the scope of the previous tutorials, we have prepared two exercises for you to complete. You will get the opportunity to recreate existing material of yours using Quarto, either a manuscript or a slideshow.
+
+## Exercise: APA 7 Manuscripts
+
+Pick a preprint of your own and implement it using Quarto in the APA 7 manuscript style.
+
+## Exercise: Slideshows
+
+Pick a previous slideshow of yours and try to recreate it using Quarto.
+
