@@ -233,7 +233,7 @@ Content with background image
 Note that one can also choose to use a GIF as image background and thus achieve a moving background. Alternatively one can show a video in the background of a slide like this:
 
 ```md
-# {background-video="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.ogg"}
+# {background-video="https://test-videos.co.uk/vids/sintel/mp4/av1/1080/Sintel_1080_10s_1MB.mp4"}
 
 Content with video background
 ```
