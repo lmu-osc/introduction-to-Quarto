@@ -175,8 +175,6 @@ R code may compute to interactive widgets:
 
 ``````qmd
 ```{{r}}
-#| output: asis
-
 swiss |>
   tibble::rownames_to_column(var = "Province") |>
   gt::gt() |>
@@ -186,11 +184,9 @@ swiss |>
       use_resizers = TRUE,
       use_highlight = TRUE,
       use_compact_mode = TRUE,
-      use_page_size_select = TRUE
-  ) |>
-  gt::gtsave("gt.html")
-
-cat('<iframe src="gt.html" style="border:none;" width="100%" height="600px" data-external="1"></iframe>')
+      use_page_size_select = FALSE,
+      page_size_default = 5
+  )
 ```
 ``````
 
