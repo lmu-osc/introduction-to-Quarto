@@ -3,6 +3,10 @@ title: "Exercise: Formatting Quarto documents in APA 7 style"
 lang: en
 ---
 
+::: {.callout-note}
+This exercise is only relevant, if you are a psychologist or want to publish in journals that require manuscripts to be formatted in the APA 7 style (Publication Manual of the American Psychological Association: 7th Edition). If you are from another discipline, checkout whether Quarto already provides [article templates](https://quarto.org/docs/journals/formats.html) for your most beloved journals.
+:::
+
 ## Description
 
 Pick a preprint of your own and implement it using Quarto in the APA 7 manuscript style. You also can view an [example document](demo_manuscript.pdf) that incorporates all features from this exercise.

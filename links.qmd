@@ -23,7 +23,7 @@ sidebar: true
     
 - Quarto for academics:
     - Blog post: <https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/>
-    - Journal article templates: <https://quarto.org/docs/journals/templates.html>
+    - Journal article templates: <https://quarto.org/docs/journals/formats.html>
     - Quarto manuscripts: <https://quarto.org/docs/manuscripts/>
     
 - Awesome-Quarto link collection: <https://github.com/mcanouil/awesome-quarto>  
