@@ -234,7 +234,7 @@ Note that one can also choose to use a GIF as image background and thus achieve 
 Content with video background
 ```
 
-Finally, whole websites can be embedded into slideshows, such as this Google Streetview sight of the Buckingham Palance:
+Finally, whole websites can be embedded into slideshows, such as this Google Streetview sight of the Buckingham Palace:
 
 ```md
 # {background-iframe="https://www.google.com/maps/embed?pb=!4v1567634732542!6m8!1m7!1sCAoSK0FGMVFpcFBwdDA1a3pFdm9mWVk0Y3Z4dS1zX3JEUGVMT25ib0I3QnRqem8.!2m2!1d51.50178371216957!2d-0.1407569859987906!3f232.50377602784036!4f-2.7819907211537895!5f0.7820865974627469" background-interactive="true"}
