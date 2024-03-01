@@ -19,8 +19,8 @@ You can just follow our step-by-step instructions or have a look at the relevant
  
 The final result of the exercise could look something like this:
 
-- [Link to website](https://florianpargent.github.io/mywebr/)
-- [Code on Github](https://github.com/FlorianPargent/mywebr)
+- [Website](https://florianpargent.github.io/mywebr/)
+- [Code](https://github.com/FlorianPargent/mywebr)
 
 # Step by step instructions
 

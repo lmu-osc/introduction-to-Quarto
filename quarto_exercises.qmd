@@ -8,7 +8,7 @@ If you want to go beyond the scope of the previous tutorials, we have prepared t
 
 ## Exercise: WebR
 
-[Create a website with Quarto, WebR, and Github Pages, where you can run R commands on your smartphone](webr.qmd)
+[Create a small website with Quarto, WebR, and Github Pages, where you can run R commands on your smartphone.](webr.qmd)
 
 ## Exercise: Slideshows
 
