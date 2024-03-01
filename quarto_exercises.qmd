@@ -6,6 +6,10 @@ title: "4. Advanced Exercises"
 
 If you want to go beyond the scope of the previous tutorials, we have prepared two exercises for you to complete. You will get the opportunity to recreate existing material of yours using Quarto, either a manuscript or a slideshow.
 
+## Exercise: WebR
+
+[Create a website with Quarto, WebR, and Github Pages, where you can run R commands on your smartphone](webr.qmd)
+
 ## Exercise: Slideshows
 
 [Pick a previous slideshow of yours and try to recreate it using Quarto.](slideshow.qmd)

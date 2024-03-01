@@ -46,6 +46,8 @@ website:
         contents:
           - text: "Overview"
             href: "quarto_exercises.qmd"
+          - text: "Exercise: WebR"
+            href: "webr.qmd"
           - text: "Exercise: Slideshows"
             file: slideshow.qmd
           - text: "Exercise: APA 7 Manuscripts"

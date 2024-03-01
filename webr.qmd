@@ -1,0 +1,127 @@
+---
+title: "Exercise: Create a website with Quarto, Webr, and Github pages, to use R on your smartphone or tablet"
+format: html
+lang: en
+---
+
+# Description
+
+In this exercise you can practice how to ...
+
+- host a Quarto website with Github pages
+- use Webr in a Quarto document that allows you to run R in your browser
+
+The final result of the exercise is a website on which you can run R directly in your browser, without having R installed on your device like your smartphone or tablet.
+
+You can just follow our step-by-step instructions or have a look at the relevant documentation we link to in the blue boxes.
+
+# Final result
+ 
+The final result of the exercise could look something like this:
+
+- [Link to website](https://florianpargent.github.io/mywebr/)
+- [Code on Github](https://github.com/FlorianPargent/mywebr)
+
+# Step by step instructions
+
+1. Log into your Github account and create a new **public** Github repository
+   
+   ::: {.callout-note}
+   - If you need a refresher on how to work with Git and Github you can checkout the following two self-paced online tutorials:
+    
+       - [Introduction to version Control in R with RStudio, Git, and Github](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/)
+        
+       - [Collaborative coding with GitHub and RStudio](https://malikaihle.github.io/Collaborative-RStudio-GitHub/)
+        
+   - You find a screenshot of how to create a new repository [here](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/github_sync.html)
+   :::
+   
+2. Create a new project in RStudio
+
+   ::: {.callout-note}
+   You find a screenshot of how to create a new project [here](https://malikaihle.github.io/Collaborative-RStudio-GitHub/clone.html)
+   :::
+   
+   - Click *File* > *New Project* > *Version control* > *Git*
+   
+   - Go to your Github repository, click on *Code* and copy the *HTTPS URL* to clipboard
+   
+   - In RStudio, insert the URL into the *Repository URL* field 
+   
+   - Optional: 
+       - You can leave the *Project directory* field blank to adopt the name of the Github repository
+       - You can click on *Open in new session* to avoid closing your original RStudio session 
+       
+   - Click *Browse* to select where to save the project on your computer
+   
+   - Click *Create Project*
+   
+3. Download the *webr* Quarto extension
+
+   ::: {.callout-note}
+   You find the *quarto-webr* documentation [here](https://quarto-webr.thecoatlessprofessor.com/)
+   :::
+   
+   - Open the terminal in RStudio
+   
+   - Install the Quarto extension with the following code:
+     ```markdown
+     quarto add coatless/quarto-webr
+     ```
+     
+   - Answer *Yes* that you trust the author
+   
+   - Answer *Yes* that you want to install the webr filter
+   
+   - Answer *Yes* if you now want to open the *quarto-webr* documentation in your default browser (you do not have to)
+   
+   - You should now have a folder *\_extensions/coatless* in your project directory
+
+4. Create a new Quarto document, named e.g. *mywebr.qmd*
+
+   - In RStudio, click *File* > *New File* > *Quarto Document*
+
+   - Add the following options to the YAML header:
+     ```markdown
+     format: html
+     engine: knitr
+     filters:
+       - webr
+     ```
+     
+   - Interactive R chunks must be formatted like this:
+     ````
+     ```{{webr-r}}
+     ```
+     ````
+     
+   - Add some text or other things you want to see on your Quarto website
+   
+5. Check that the *mywebr.qmd* file renders successfully locally. In RStudio you can just click the *Render* button
+   
+6. When you are finished with your Quarto document and everything renders correctly, you can commit the *mywebr.qmd* file and the *\_extensions/coatless* folder to git and push your changes to your Github project (this step is recommended but optional)
+
+   ::: {.callout-note}
+   - You find a screenshot on how to commit changes in RStudio [here](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/commit.html) 
+   - You find a screenshot on hot to push commits in RStudio [here](https://malikaihle.github.io/Collaborative-RStudio-GitHub/push.html)
+   :::
+
+7. Upload the website to Github pages
+
+   ::: {.callout-note}
+   You find the documentation on how to publish Quarto websites on Github pages [here](https://quarto.org/docs/publishing/github-pages.html)
+   :::
+   
+
+   - Publish your website (based on the *mywebr.qmd* file) by running the following command in the terminal within RStudio. This will commit the rendered website to a Github branch named gh-pages:
+     ```markdown
+     quarto publish gh-pages mywebr.qmd
+     ```
+     
+   - Answer *Yes* that you want to upload the website to Github Pages
+   
+   - When ready, a browser window should open automatically
+
+   
+
+
