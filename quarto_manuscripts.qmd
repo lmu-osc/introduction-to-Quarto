@@ -1,0 +1,101 @@
+---
+title: "Exercise: Create a Quarto Manuscripts website for one of your own scientific publications"
+format: html
+lang: en
+---
+
+# Description
+
+In this unstructured exercise we would encourage you to ...
+
+- convert one of your own manuscripts into Quarto
+- use Quarto Manuscripts to create a website for this publication
+- publish this website with Github Pages
+
+The final result of the exercise could be a Quarto Manuscript website which serves as a hub containing everything necessary to reproduce your manuscript.
+
+For this exercise, we do not provide step-by-step instructions. Instead we link to the relevant Quarto Manuscript documentation, provide an example of how the final result of the exercise could look like, and list the most important steps when converting a Quarto document into a Quarto Manuscripts website.
+
+# What are Quarto Manuscripts?
+
+The official [Quarto Manuscripts](https://quarto.org/docs/manuscripts/) website reads:
+
+::: {.callout-tip appearance="minimal" icon=false}
+## Quote:
+
+Quarto manuscript projects provide a framework for writing and publishing scholarly articles. A Quarto manuscript lets you:
+
+- Use one or more notebooks or .qmd documents as the source of content and computations, and then publish these computations alongside the manuscript, allowing readers to dive into your code.
+
+- Produce manuscripts in multiple formats (including LaTeX or MS Word formats required by journals), and give readers easy access to all of the formats through a manuscript website.
+
+The output of a Quarto manuscript is a website (live example). The article itself appears as the content of the website, and can include all the elements common to scholarly writing like figures, tables, equations, cross references and citations. The website also makes available other formats (e.g. PDF, Docx) as well as links to all of the computations used to create the article.
+:::
+
+# Instructions
+
+- We suggest that, before you start with your own Quarto manuscript, you have a look at the [Getting Started](https://quarto.org/docs/manuscripts/) tutorial on how to create a Quarto Manuscript website.
+
+- Additional documentation on Quarto Manuscripts can be found [here](https://quarto.org/docs/manuscripts/components.html).
+
+
+# Final result
+ 
+The final result of the exercise could look something like this:
+
+- [Website](https://florianpargent.github.io/myquartomanuscript/)
+- [Code](https://github.com/FlorianPargent/myquartomanuscript)
+
+
+# Steps to convert a Quarto document into a Quarto Manuscripts project
+
+If you already have written your manuscript with Quarto, there are only a small number of steps necessary to convert your document into a Quarto Manuscripts website. Without guarantee of completeness, the most important steps are:
+
+- Create a *\_quarto.yml* file in your RStudio project. A good starting point for the content of this file is:
+  
+  ```markdown
+  project:
+  type: manuscript
+
+  manuscript:
+    article: index.qmd
+
+  format:
+    html:
+      comments:
+        hypothesis: false
+    pdf: default
+    docx: default
+    jats: default
+
+  execute:
+    freeze: true
+  ```
+
+- The main *.qmd* document containing your manuscript must be named *index.qmd* by default. If you want to use another name, adjust the `article: index.qmd` line in the *\_quarto.yml* file.
+
+- Make sure that you remove unnecessary (or conflicting) YAML options in your article and additional notebook *.qmd* files. We suggest to only use a minimum of options first, test that everything works and then add further options when needed.
+
+- Quarto Manuscripts supports many useful YAML options that can be used in your *index.qmd* file. We suggest that you have a look on the Quarto documentation on scholarly writing [this](https://quarto.org/docs/authoring/front-matter.html) and consecutive pages. 
+
+- If your project contains computations that take a long time to run, we suggest you make sure you understand how the *freeze* functionality of Quarto works by reading [this](https://quarto.org/docs/manuscripts/authoring/rstudio.html#when-is-code-executed) and [this](https://quarto.org/docs/projects/code-execution.html#freeze).
+
+- **Optional:** If you need to format your manuscript in APA style, you might want that 1) your Quarto Manuscripts website uses standard hmtl themes and formatting but uses APA citation style, 2) your downloadable *.pdf* file is nicely formatted as a APA journal article that you can upload to the preprint server of your choice, and 3) your downloadable manuscript in *.docx* format is formatted as a APA manuscript, which is how many APA journals require manuscripts to be sent into peer review.  
+
+  You can achieve this by ...
+  
+  - downloading the *apa-quarto* extension as explained in the previous exercise
+  - using the following code in your *\_quarto.yml* file:
+    
+    ```markdown
+    format:
+      html: default
+      jats: default
+      apaquarto-pdf:
+        documentmode: jou
+      apaquarto-docx: default
+    ```
+  - using the YAML option `csl: apa.csl` in the *index.qmd* file (the *apa.csl* file can be downloaded [here](https://github.com/citation-style-language/styles/blob/master/apa.csl))
+  
+
+

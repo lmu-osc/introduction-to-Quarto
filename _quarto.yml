@@ -52,6 +52,8 @@ website:
             file: slideshow.qmd
           - text: "Exercise: APA 7 Manuscripts"
             file: apa7_manuscript.qmd
+          - text: "Exercise: Quarto Manuscripts"
+            file: quarto_manuscripts.qmd
       - links.qmd
 
         

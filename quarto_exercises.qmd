@@ -4,7 +4,7 @@ title: "4. Advanced Exercises"
 
 ## Overview
 
-If you want to go beyond the scope of the previous tutorials, we have prepared two exercises for you to complete. You will get the opportunity to recreate existing material of yours using Quarto, either a manuscript or a slideshow.
+If you want to go beyond the scope of the previous tutorials, we have prepared some advanced exercises for you to complete. You will also get the opportunity to recreate your own material using Quarto, for example a slideshow or a manuscript.
 
 ## Exercise: WebR
 
@@ -18,3 +18,6 @@ If you want to go beyond the scope of the previous tutorials, we have prepared t
 
 [Pick a preprint of your own and implement it using Quarto in the APA 7 manuscript style.](apa7_manuscript.qmd)
 
+## Exercise: Quarto Manuscripts
+
+[Pick a preprint of your own and convert it into a Quarto Manuscripts website.](quarto_manuscripts.qmd)
