@@ -83,7 +83,7 @@ format:
     toc: true
     link-external-newwindow: true
     link-external-icon: true
-    link-external-filter: ^(?:http:|https:)\/\/www\.florianpargent\.github\.io\/custom
+    link-external-filter: ^(?:http:|https:)\/\/florianpargent\.github\.io\/Quarto_LMU_OSC\/
     df-print: paged
     code-overflow: wrap
 
