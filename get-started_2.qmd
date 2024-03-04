@@ -34,4 +34,4 @@ Now you can start the second tutorial at <https://quarto.org/docs/get-started/co
   
 - When you render the final .qmd document, this will produce an html file (*computations.html*) that you might want to share with some colleagues to show them your new analysis. However, be aware that the html file does not contain all necessary content and will possibly not display correctly on its own. To produce a single standalone .html file that you can share with others, add `embed-resources: true` to the html options in the YAML header. The final .html then should look something like this (there is also an additional option `self-contained-math: true` which tries to make sure that all your equations can be displayed without a connection to the internet):
 
-    {{< downloadthis _computations-complete.html dname="computations-complete-standalone" label="Download standalone .html">}}
+  {{< downloadthis _computations-complete.html dname="computations-complete-standalone" label="Download standalone .html">}}
