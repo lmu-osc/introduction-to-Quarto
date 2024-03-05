@@ -13,7 +13,7 @@ Pick a preprint of your own and implement it using Quarto in the APA 7 manuscrip
 
 ## Getting started
 
-Currently, there is no official Quarto extension to format documents according to the APA 7 guidelines^[For a list of official Quarto extensions, see [Journal Articles](https://quarto.org/docs/extensions/listing-journals.html).]. However, the inofficial [`apaquarto`](https://github.com/wjschne/apaquarto) extension can be utilized until better options emerge^[One can follow the discussion on GitHub at [quarto-journals/article-format-template#11](https://github.com/quarto-journals/article-format-template/issues/11)]. After installing it into the current project, we can set the `format` to `apaquarto-pdf` or `apaquarto-docx`. Also, we need to add the shortcode `{{< include _extensions/wjschne/apaquarto/_apa_title.qmd >}}` just below the YAML header. Here are the detailed steps that are necessary to create a manuscript in APA 7 style -- skip step 1 if you want to use an existing Quarto document.
+Currently, there is no official Quarto extension to format documents according to the APA 7 guidelines^[For a list of official Quarto extensions, see [Journal Articles](https://quarto.org/docs/extensions/listing-journals.html).]. However, the inofficial [`apaquarto`](https://github.com/wjschne/apaquarto) extension can be utilized until better options emerge^[One can follow the discussion on GitHub at [quarto-journals/article-format-template#11](https://github.com/quarto-journals/article-format-template/issues/11)]. After installing it into the current project, we can set the `format` to `apaquarto-pdf` or `apaquarto-docx`. Here are the detailed steps that are necessary to create a manuscript in APA 7 style -- skip step 1 if you want to use an existing Quarto document.
 
 0. Prerequisites
    - Install required packages
@@ -33,21 +33,19 @@ Currently, there is no official Quarto extension to format documents according t
 2. Add APA 7 Quarto extension
    - Go to _Terminal_
    - Enter `quarto add wjschne/apaquarto`
-   - Confirm installation by entering <kbd>Y</kbd> twice
-3. Declare the language of the document by setting e.g. `lang: en` in the YAML header
+   - Confirm installation by entering <kbd>Y</kbd> twice, then avoid opening the documentation by entering <kbd>n</kbd>
+3. Declare the language of the document by setting e.g. `lang: en` in the YAML header (see the [Quarto documentation on document language for more information](https://quarto.org/docs/authoring/language.html))
 4. Change `format` as follows:\
    ```yaml
    format:
-    apaquarto-pdf:
-      documentmode: man
-      a4paper: true
-      pdf-engine: lualatex
-      floatsintext: false
-      keep-tex: false
+     apaquarto-pdf:
+       documentmode: man
+       a4paper: true
+       pdf-engine: lualatex
+       keep-tex: false
    ```
-5. Add the shortcode `{{< include _extensions/wjschne/apaquarto/_apa_title.qmd >}}` below the YAML header
-6. Click on the disk symbol to save (maybe call the file `manuscript.qmd`)
-7. Click on _Render_
+5. Click on the disk symbol to save (maybe call the file `manuscript.qmd`)
+6. Click on _Render_
 
 We can now provide additional information in the YAML header as detailed below.
 
@@ -68,7 +66,7 @@ author:
   - name: Ana Fulana
     corresponding: true
     orcid: "0000-0000-0000-0000"
-    email: "sm@example.org"
+    email: "af@example.org"
     role:
       - Conceptualization
       - Writing - original draft
@@ -139,14 +137,15 @@ author-note:
 
 ## Figures
 
-For including images, the `apaquarto` extension requires the use of R code blocks, which need to have a label that starts with `apafg-`:
+For including images, the `apaquarto` extension requires the use of code blocks, which need to have a label that starts with `fig-`. Captions are in [title case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case):
 
 <!-- image from <https://picsum.photos/id/360/1000/1000.jpg> -->
 
 ``````qmd
 ```{{r}}
-#| label: apafg-flower
-#| apa-cap: This image depicts a flower.
+#| label: fig-flower
+#| fig-cap: This Image Depicts a Flower.
+#| apa-note: This is the note below the figure.
 #| out-height: 5cm
 #| out-width: 5cm
 
@@ -154,7 +153,9 @@ knitr::include_graphics("flower.jpg")
 ```
 ``````
 
-When using the `apaquarto` extension, by default figures appear at the end of the document, unless one sets `floatsintext: true` in the YAML header. Therefore it might make sense to add a final heading `Appendix` below which the figures will appear. Figures can be cross-referenced by putting their label in curly braces: `For an image of a flower, see {apafg-flower}.`
+When using the `apaquarto` extension, by default, figures appear at the end of the document, unless one sets `floatsintext: true` in the YAML header. Therefore it might make sense to add a final heading `Appendix` below which the figures will appear. Figures can be cross-referenced by using the `@` symbol followed by the reference label: `For an image of a flower, see @fig-flower.`
+
+For more information on how to work with figures, head over to the [Quarto documentation on figures](https://quarto.org/docs/authoring/figures.html#computations).
 
 ## Tables
 
@@ -162,8 +163,9 @@ The `apaquarto` extension is also special when it comes to tables. The R package
 
 ``````qmd
 ```{{r}}
-#| label: apatb-ingredients
-#| apa-cap: Substances and their key ingredients.
+#| label: tbl-ingredients
+#| tbl-cap: Substances and Their Key Ingredients.
+#| apa-note: The note below the table.
 
 tibble::tribble(
   ~"Substance", ~"Key Ingredient",
@@ -176,7 +178,9 @@ tibble::tribble(
 ```
 ``````
 
-When using the `apaquarto` extension, by default tables appear at the end of the document, unless one sets `floatsintext: true` in the YAML header. One can refer to tables by putting their labels in curly braces: `Key ingredients are given in {apatb-ingredients}.`
+When using the `apaquarto` extension, by default, tables appear at the end of the document, unless one sets `floatsintext: true` in the YAML header. One can refer to tables by using the `@` symbol followed by the reference label: `Key ingredients are given in @tbl-ingredients.`
+
+For more information on how to work with tables, head over to the [Quarto documentation on tables](https://quarto.org/docs/authoring/tables.html#computations).
 
 ## Footnotes
 
@@ -194,7 +198,7 @@ Put your bibliography in a BibTeX file (extension `.bib`) and reference it in yo
 bibliography: literature.bib
 ```
 
-Add a level one heading and a Div with the id `refs` at the end of the document:
+Add a level one heading and a Div with the id `refs` at the end of the document (but before the appendix, if you have one):
 
 ```md
 # References
@@ -205,12 +209,20 @@ Add a level one heading and a Div with the id `refs` at the end of the document:
 
 You can now cite from your bibliography using the syntax `[@id]`.
 
+For more information on how to cite literature, head over to the [Quarto documentation on citations](https://quarto.org/docs/authoring/footnotes-and-citations.html).
+
 ## Generate `.tex` file
 
 Sometimes you might need the intermediate `.tex` file in addition to the final `.pdf` file. In order to keep that, set `keep-tex: true` in the YAML header.
+
+## Numbered lines
+
+If you would like to have your lines numbered, set `numbered-lines: true` in the YAML header.
 
 ## Final notes
 
 You can download a manuscript with all the features presented on this page via the following button:
 
 {{< downloadthis demo_manuscript.zip dname="demo_manuscript" label="Download source files as ZIP">}}
+
+If you are interested in all the options provided by the `apaquarto` extension (e.g., masked citations for anonymous peer review), have a look at the [apaquarto documentation](https://wjschne.github.io/apaquarto/options.html).
