@@ -69,7 +69,7 @@ If you already have written your manuscript with Quarto, there are only a small 
     jats: default
 
   execute:
-    freeze: true
+    freeze: auto
   ```
 
 - The main *.qmd* document containing your manuscript must be named *index.qmd* by default. If you want to use another name, adjust the `article: index.qmd` line in the *\_quarto.yml* file.
@@ -84,7 +84,7 @@ If you already have written your manuscript with Quarto, there are only a small 
 
   You can achieve this by ...
   
-  - downloading the *apa-quarto* extension as explained in the previous exercise
+  - downloading the *apa-quarto* extension as explained in the [previous exercise](apa7_manuscript.qmd)
   - using the following code in your *\_quarto.yml* file:
     
     ```markdown
