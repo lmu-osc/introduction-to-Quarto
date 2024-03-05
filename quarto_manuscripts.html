@@ -382,7 +382,7 @@ Quote:
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  jats: default</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>execute:</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  freeze: true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  freeze: auto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>The main <em>.qmd</em> document containing your manuscript must be named <em>index.qmd</em> by default. If you want to use another name, adjust the <code>article: index.qmd</code> line in the <em>_quarto.yml</em> file.</p></li>
 <li><p>Make sure that you remove unnecessary (or conflicting) YAML options in your article and additional notebook <em>.qmd</em> files. We suggest to only use a minimum of options first, test that everything works and then add further options when needed.</p></li>
 <li><p>Quarto Manuscripts supports many useful YAML options that can be used in your <em>index.qmd</em> file. We suggest that you have a look on the Quarto documentation on scholarly writing <a href="https://quarto.org/docs/authoring/front-matter.html">this</a> and consecutive pages.</p></li>
@@ -390,7 +390,7 @@ Quote:
 <li><p><strong>Optional:</strong> If you need to format your manuscript in APA style, you might want that 1) your Quarto Manuscripts website uses standard hmtl themes and formatting but uses APA citation style, 2) your downloadable <em>.pdf</em> file is nicely formatted as a APA journal article that you can upload to the preprint server of your choice, and 3) your downloadable manuscript in <em>.docx</em> format is formatted as a APA manuscript, which is how many APA journals require manuscripts to be sent into peer review.</p>
 <p>You can achieve this by …</p>
 <ul>
-<li><p>downloading the <em>apa-quarto</em> extension as explained in the previous exercise</p></li>
+<li><p>downloading the <em>apa-quarto</em> extension as explained in the <a href="./apa7_manuscript.html">previous exercise</a></p></li>
 <li><p>using the following code in your <em>_quarto.yml</em> file:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  html: default</span>
@@ -487,7 +487,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.florianpargent\.github\.io\/custom");
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/florianpargent\.github\.io\/Quarto_LMU_OSC\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
