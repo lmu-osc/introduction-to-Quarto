@@ -177,7 +177,7 @@ More information about callouts is provided in the [Quarto documentation on call
 Asides contain less important content and are displayed at the bottom of a slide:
 
 ```md
-::: aside
+::: {.aside}
 Some additional commentary of more peripheral interest.
 :::
 ```
