@@ -59,7 +59,7 @@
     "href": "apa7_manuscript.html#getting-started",
     "title": "Exercise: Formatting Quarto documents in APA 7 style",
     "section": "Getting started",
-    "text": "Getting started\nCurrently, there is no official Quarto extension to format documents according to the APA 7 guidelines1. However, the inofficial apaquarto extension can be utilized until better options emerge2. After installing it into the current project, we can set the format to apaquarto-pdf or apaquarto-docx. Here are the detailed steps that are necessary to create a manuscript in APA 7 style – skip step 1 if you want to use an existing Quarto document.\n\nPrerequisites\n\nInstall required packages\n\nClick on Console\nEnter\n\ninstall.packages(c(\"rmarkdown\", \"conflicted\", \"tidyverse\", \"flextable\", \"ftExtra\"))\n\nInstall TinyTeX\n\nClick on Terminal\nEnter quarto install tinytex\n\n\noptional: Create a new Quarto Document\n\nClick on File &gt; New File &gt; Quarto Document\nFill Title and Author\nChoose PDF\nClick Create\n\nAdd APA 7 Quarto extension\n\nGo to Terminal\nEnter quarto add wjschne/apaquarto\nConfirm installation by entering Y twice, then avoid opening the documentation by entering n\n\nDeclare the language of the document by setting e.g. lang: en in the YAML header (see the Quarto documentation on document language for more information)\nChange format as follows:\n\nformat:\n  apaquarto-pdf:\n    documentmode: man\n    a4paper: true\n    pdf-engine: lualatex\n    keep-tex: false\nClick on the disk symbol to save (maybe call the file manuscript.qmd)\nClick on Render\n\nWe can now provide additional information in the YAML header as detailed below.",
+    "text": "Getting started\nCurrently, there is no official Quarto extension to format documents according to the APA 7 guidelines1. However, the inofficial apaquarto extension can be utilized until better options emerge2. After installing it into the current project, we can set the format to apaquarto-pdf or apaquarto-docx. Here are the detailed steps that are necessary to create a manuscript in APA 7 style – skip step 1 if you want to use an existing Quarto document.\n\nPrerequisites\n\nInstall required packages\n\nClick on Console\nEnter\n\ninstall.packages(c(\"rmarkdown\", \"conflicted\", \"tidyverse\", \"flextable\", \"ftExtra\"))\n\nInstall TinyTeX\n\nClick on Terminal\nEnter quarto install tinytex\n\n\noptional: Create a new Quarto Document\n\nClick on File &gt; New File &gt; Quarto Document\nFill Title and Author\nChoose PDF\nClick Create\n\nAdd APA 7 Quarto extension\n\nGo to Terminal\nEnter quarto add wjschne/apaquarto\nConfirm installation by entering Y twice, then avoid opening the documentation by entering n\nIf you want to update the extension at a later point, enter quarto update wjschne/apaquarto\n\nDeclare the language of the document by setting e.g. lang: en in the YAML header (see the Quarto documentation on document language for more information)\nChange format as follows:\n\nformat:\n  apaquarto-pdf:\n    documentmode: man\n    a4paper: true\n    pdf-engine: lualatex\n    keep-tex: false\nClick on the disk symbol to save (maybe call the file manuscript.qmd)\nClick on Render\n\nWe can now provide additional information in the YAML header as detailed below.",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -83,7 +83,7 @@
     "href": "apa7_manuscript.html#authors",
     "title": "Exercise: Formatting Quarto documents in APA 7 style",
     "section": "Authors",
-    "text": "Authors\nSay we have two authors called Ana Fulana and Blanca Zutana, each with their own ORCID, email address and CRediT roles3. They have a common affiliation and Ana acts as corresponding author. In the YAML header this looks as follows:\nauthor:\n  - name: Ana Fulana\n    corresponding: true\n    orcid: \"0000-0000-0000-0000\"\n    email: \"af@example.org\"\n    role:\n      - Conceptualization\n      - Writing - original draft\n    affiliations:\n      - id: \"lmu\"\n        name: \"Ludwig-Maximilians-Universität München, Munich, Germany\"\n        department: \"Department of Psychology\"\n        ror: \"https://ror.org/05591te55\"\n        url: \"https://www.lmu.de/\"\n  - name: Blanca Zutana\n    role:\n      - Project administration\n    affiliations: \n      - ref: lmu\nAvailable CRediT roles are:\n\nConceptualization\nData curation\nFormal Analysis\nFunding acquisition\nInvestigation\nMethodology\nProject administration\nResources\nSoftware\nSupervision\nValidation\nVisualization\nWriting – original draft\nWriting – review & editing",
+    "text": "Authors\nSay we have two authors called Ana Fulana and Blanca Zutana, each with their own ORCID, email address and CRediT roles. They have a common affiliation and Ana acts as corresponding author. In the YAML header this looks as follows:\nauthor:\n  - name: Ana Fulana\n    corresponding: true\n    orcid: \"0000-0000-0000-0000\"\n    email: \"af@example.org\"\n    roles:\n      - conceptualization\n      - writing\n    affiliations:\n      - id: \"lmu\"\n        name: \"Ludwig-Maximilians-Universität München, Munich, Germany\"\n        department: \"Department of Psychology\"\n        ror: \"https://ror.org/05591te55\"\n        url: \"https://www.lmu.de/\"\n  - name: Blanca Zutana\n    roles:\n      - project administration\n    affiliations: \n      - ref: lmu\nAvailable CRediT roles are:\n\nconceptualization\ndata curation\nformal analysis\nfunding acquisition\ninvestigation\nmethodology\nproject administration\nresources\nsoftware\nsupervision\nvalidation\nvisualization\nwriting\nediting\n\nSee the Quarto documentation on author roles for more information.",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -155,7 +155,7 @@
     "href": "apa7_manuscript.html#footnotes",
     "title": "Exercise: Formatting Quarto documents in APA 7 style",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor a list of official Quarto extensions, see Journal Articles.↩︎\nOne can follow the discussion on GitHub at quarto-journals/article-format-template#11↩︎\nUnfortunately, apaquarto uses a slightly different YAML header to denote CRediT roles than “standard Quarto”, see the Quarto documentation on Author Roles.↩︎",
+    "text": "Footnotes\n\n\nFor a list of official Quarto extensions, see Journal Articles.↩︎\nOne can follow the discussion on GitHub at quarto-journals/article-format-template#11↩︎",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -175,6 +175,18 @@
     ]
   },
   {
+    "objectID": "apa7_manuscript.html#numbered-lines",
+    "href": "apa7_manuscript.html#numbered-lines",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Numbered lines",
+    "text": "Numbered lines\nIf you would like to have your lines numbered, set numbered-lines: true in the YAML header.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
     "objectID": "apa7_manuscript.html#generate-.tex-file",
     "href": "apa7_manuscript.html#generate-.tex-file",
     "title": "Exercise: Formatting Quarto documents in APA 7 style",
@@ -187,11 +199,11 @@
     ]
   },
   {
-    "objectID": "apa7_manuscript.html#numbered-lines",
-    "href": "apa7_manuscript.html#numbered-lines",
+    "objectID": "apa7_manuscript.html#generate-.docx-file",
+    "href": "apa7_manuscript.html#generate-.docx-file",
     "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Numbered lines",
-    "text": "Numbered lines\nIf you would like to have your lines numbered, set numbered-lines: true in the YAML header.",
+    "section": "Generate .docx file",
+    "text": "Generate .docx file\nIf you prefer to create your manuscript as DOCX rather than PDF, you can set the format as follows:\nformat:\n  apaquarto-docx: default",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -656,7 +668,7 @@
     "href": "slideshow.html#getting-started",
     "title": "Exercise: Creating a slideshow with Quarto",
     "section": "Getting started",
-    "text": "Getting started\nYou can begin by creating a new Quarto Presentation.\n\nCreate a new Quarto Presentation\n\nClick on File &gt; New File &gt; Quarto Presentation\nFill Title and Author\nClick Create\n\nDeclare the language of the document by setting e.g. lang: en in the YAML header\nChange format as follows:\n\nformat:\n  revealjs:\n    embed-resources: true\n    hash-one-based-index: true\n    slide-number: true\n    navigation-mode: \"linear\"\n    width: 1600\n    height: 900\nClick on the disk symbol to save (maybe call the file presentation.qmd)\nClick on Render",
+    "text": "Getting started\nYou can begin by creating a new Quarto Presentation.\n\nCreate a new Quarto Presentation\n\nClick on File &gt; New File &gt; Quarto Presentation\nFill Title and Author\nClick Create\n\nDeclare the language of the document by setting e.g. lang: en in the YAML header (see the Quarto documentation on document language for more information)\nChange format as follows:\n\nformat:\n  revealjs:\n    embed-resources: true\n    hash-one-based-index: true\n    slide-number: true\n    navigation-mode: \"linear\"\n    width: 1600\n    height: 900\nClick on the disk symbol to save (maybe call the file presentation.qmd)\nClick on Render",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -680,7 +692,7 @@
     "href": "slideshow.html#usage",
     "title": "Exercise: Creating a slideshow with Quarto",
     "section": "Usage",
-    "text": "Usage\n\nNavigate forward with Space or N (for next)1\nNavigate backward with Shift + Space or P (for previous)2\nPress F to switch to fullscreen\nPress O or Esc to show the slide overview\nPress B or . to pause (blacken) the screen\nPress S to open the speaker notes\nPress M to toggle a menu that allows you to jump to any slide\nPress Ctrl + click on the slide to zoom in\nPress Ctrl + Shift + F to activate search\nPress ? to show the keyboard help",
+    "text": "Usage\n\nNavigate forward with SpaceSpace or NN (for next)1\nNavigate backward with Shift+SpaceShift+Space or PP (for previous)2\nPress FF to switch to fullscreen\nPress OO or EscEsc to show the slide overview\nPress BB or .. to pause (blacken) the screen\nPress SS to open the speaker notes\nPress MM to toggle a menu that allows you to jump to any slide\nPress CtrlCtrl + click on the slide to zoom in\nPress Ctrl+Shift+FCtrl+Shift+F to activate search\nPress ?? to show the keyboard help",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -688,11 +700,11 @@
     ]
   },
   {
-    "objectID": "slideshow.html#columns",
-    "href": "slideshow.html#columns",
+    "objectID": "slideshow.html#slide-layout",
+    "href": "slideshow.html#slide-layout",
     "title": "Exercise: Creating a slideshow with Quarto",
-    "section": "Columns",
-    "text": "Columns\nOne can create multiple columns next to each other with the following syntax:\n::: {.columns}\n:::: {.column width=\"33%\"}\nLeft\n::::\n\n:::: {.column width=\"33%\"}\nMiddle\n::::\n\n:::: {.column width=\"33%\"}\nRight\n::::\n:::",
+    "section": "Slide layout",
+    "text": "Slide layout\nElements (e.g., text, images) on a slide are typically arranged in the order they appear in the markdown source. There are multiple ways, however, to add more structure to a slide.\n\nColumns\nOne can create multiple columns next to each other by structuring them using Divs with the classes columns and column:\n::: {.columns}\n:::: {.column width=\"33%\"}\nLeft\n::::\n\n:::: {.column width=\"33%\"}\nMiddle\n::::\n\n:::: {.column width=\"33%\"}\nRight\n::::\n:::\n\n\nTabsets\nTabsets allow to put more content on a slide than the available space normally allows. Use a Divs with the class panel-tabset:\n::: {.panel-tabset}\n\n### Tab A\n\nContent for `Tab A`\n\n### Tab B\n\nContent for `Tab B`\n\n:::\n\n\nLayouts\nIf the content on a slide is to be presented within two columns or two rows, one can set layout-ncol or layout-nrow:\n::: {layout-ncol=2}\nContent in first column\n\nContent in second column\n:::\n\n::: {layout-nrow=2}\nContent in first row\n\nContent in second row\n:::\nIf the content of one column/row spans multiple paragraphs, one can nest it inside a Div:\n::: {layout-ncol=2}\n:::: {}\n__Left__\n\n![](image.png)\n::::\n\n:::: {}\n__Right__\n\n![](image.png)\n::::\n:::\nThe Quarto documentation on figure panels provides additional examples.\nMore complex layouts can be achieved by specifying layout:\n::: {layout=\"[[1,1], [1]]\"}\nTop left\n\nTop right\n\nBottom\n:::\nYou can read more about panel layouts in the Quarto documentation.\n\n\nCallouts\nQuarto provides pre-styled blocks in five different flavours that draw the reader’s attention:\n::: {.callout-note}\nNote that there are five types of callouts, including:\n`note`, `warning`, `important`, `tip`, and `caution`.\n:::\nMore information about callouts is provided in the Quarto documentation on callouts.\n\n\nAsides and footer\nAsides contain less important content and are displayed at the bottom of a slide:\n::: aside\nSome additional commentary of more peripheral interest.\n:::\nOne can add a footer on any slide by creating a Divs with the class footer:\n::: {.footer}\nCustom footer\n:::",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -700,11 +712,11 @@
     ]
   },
   {
-    "objectID": "slideshow.html#tabsets",
-    "href": "slideshow.html#tabsets",
+    "objectID": "slideshow.html#positioning-of-elements",
+    "href": "slideshow.html#positioning-of-elements",
     "title": "Exercise: Creating a slideshow with Quarto",
-    "section": "Tabsets",
-    "text": "Tabsets\nTabsets allow to put more content on a slide than the available space normally allows:\n::: {.panel-tabset}\n\n### Tab A\n\nContent for `Tab A`\n\n### Tab B\n\nContent for `Tab B`\n\n:::",
+    "section": "Positioning of elements",
+    "text": "Positioning of elements\n\nCenter content vertically\n## Centered slide {.center}\n\nThis will appear in the middle, rather than the top, of the slide.\n\n\nAbsolute position\nOne can also specify the exact position of elements by using the class absolute:\n![](image.png){.absolute top=\"200\" left=\"50\" width=\"300\"}\n\n[Text at custom position]{.absolute top=\"400\" left=\"600\" width=\"300\"}\n\n\nFit words\nYou can fit words to the slide by adding the class r-fit-text:\n[Two Words]{.r-fit-text}\n\n[Longer Explanation]{.r-fit-text}\n\n\nBorder\nOne can add a border around any element by adding the class r-frame:\n[Other content]{.r-frame}",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -716,19 +728,7 @@
     "href": "slideshow.html#incremental-points",
     "title": "Exercise: Creating a slideshow with Quarto",
     "section": "Incremental points",
-    "text": "Incremental points\nFor bullet points to appear step by step, use the following syntax:\n::: {.incremental}\n- first point\n- second point\n- last point\n:::\nOther elements, such as columns, can be made incremental by adding the class fragment:\n::: {.columns}\n:::: {.column width=\"40%\"}\n- foo\n- bar\n- baz\n::::\n:::: {.column width=\"60%\" .fragment}\n- foo\n- bar\n::::\n:::\nThe same can be applied to images:\n::: {.fragment}\n![](flower.jpg){width=300px}\n:::",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: Slideshows"
-    ]
-  },
-  {
-    "objectID": "slideshow.html#typography",
-    "href": "slideshow.html#typography",
-    "title": "Exercise: Creating a slideshow with Quarto",
-    "section": "Typography",
-    "text": "Typography\n\nFit words\nYou can fit words to the slide by adding the class r-fit-text:\n[Two Words]{.r-fit-text}\n\n[Longer Explanation]{.r-fit-text}\n\n\nBorder\nOne can add a border around any element by adding the class r-frame:\n[Other content]{.r-frame}",
+    "text": "Incremental points\nFor bullet points to appear step by step, use the following syntax:\n::: {.incremental}\n- first point\n- second point\n- last point\n:::\nOther elements, such as columns, can be made incremental by adding the class fragment:\n::: {.columns}\n:::: {.column width=\"40%\"}\n- foo\n- bar\n- baz\n::::\n:::: {.column width=\"60%\" .fragment}\n- foo\n- bar\n::::\n:::\nThe same can be applied to images:\n::: {.fragment}\n![](image.png){width=300px}\n:::",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -740,7 +740,7 @@
     "href": "slideshow.html#interactivity",
     "title": "Exercise: Creating a slideshow with Quarto",
     "section": "Interactivity",
-    "text": "Interactivity\n\nVideos\nInteractive elements can be incorporated by embedding videos:\n{{&lt; video https://vimeo.com/1084537 width=\"640px\" height=\"360px\" &gt;}}\n\n\nR Code\nR code may compute to interactive widgets:\n```{r}\nswiss |&gt;\n  tibble::rownames_to_column(var = \"Province\") |&gt;\n  gt::gt() |&gt;\n  gt::opt_interactive(\n      use_search = TRUE,\n      use_filters = TRUE,\n      use_resizers = TRUE,\n      use_highlight = TRUE,\n      use_compact_mode = TRUE,\n      use_page_size_select = FALSE,\n      page_size_default = 5\n  )\n```\n\n\nWebsites\nAs the slideshow is a website, other websites can be embedded, too:\n::: {.columns}\n:::: {.column}\nDiscover the elements that make up a neuron.\n::::\n\n:::: {.column}\n```{=html}\n&lt;iframe class=\"r-frame\" data-src=\"https://humanbiology.pressbooks.tru.ca/wp-admin/admin-ajax.php?action=h5p_embed&id=118\" width=\"882\" height=\"533\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" data-external=\"1\"&gt;&lt;/iframe&gt;&lt;script src=\"https://humanbiology.pressbooks.tru.ca/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js\" charset=\"UTF-8\"&gt;&lt;/script&gt;\n```\n::::\n:::",
+    "text": "Interactivity\n\nLightbox images\nOne can allow to open an enlarged version of images by adding the class lightbox:\n![](image.png){.lightbox}\n\n\nVideos\nInteractive elements can be incorporated by embedding videos:\n{{&lt; video https://vimeo.com/1084537 width=\"640px\" height=\"360px\" &gt;}}\n\n\nR Code\nR code may compute to interactive widgets:\n```{r}\nswiss |&gt;\n  tibble::rownames_to_column(var = \"Province\") |&gt;\n  gt::gt() |&gt;\n  gt::opt_interactive(\n      use_search = TRUE,\n      use_filters = TRUE,\n      use_resizers = TRUE,\n      use_highlight = TRUE,\n      use_compact_mode = TRUE,\n      use_page_size_select = FALSE,\n      page_size_default = 5\n  )\n```\n\n\nWebsites\nAs the slideshow is a website, other websites can be embedded, too:\n::: {.columns}\n:::: {.column}\nDiscover the elements that make up a neuron.\n::::\n\n:::: {.column}\n```{=html}\n&lt;iframe class=\"r-frame\" data-src=\"https://humanbiology.pressbooks.tru.ca/wp-admin/admin-ajax.php?action=h5p_embed&id=118\" width=\"882\" height=\"533\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" data-external=\"1\"&gt;&lt;/iframe&gt;&lt;script src=\"https://humanbiology.pressbooks.tru.ca/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js\" charset=\"UTF-8\"&gt;&lt;/script&gt;\n```\n::::\n:::",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -776,7 +776,7 @@
     "href": "slideshow.html#references",
     "title": "Exercise: Creating a slideshow with Quarto",
     "section": "References",
-    "text": "References\nPut your bibliography in a BibTeX file (extension .bib) and reference it in your YAML metadata:\nbibliography: literature.bib\nAdd a level one heading and a Div with the id refs at the end of the document:\n# References\n\n::: {#refs}\n:::\nYou can now cite from your bibliography using the syntax [@id].",
+    "text": "References\nPut your bibliography in a BibTeX file (extension .bib) and reference it in your YAML metadata:\nbibliography: literature.bib\nAdd a level one heading and a Div with the id refs at the end of the document:\n# References\n\n::: {#refs}\n:::\nYou can now cite from your bibliography using the syntax [@id].\nFor more information on how to cite literature, head over to the Quarto documentation on citations.",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -788,7 +788,7 @@
     "href": "slideshow.html#final-notes",
     "title": "Exercise: Creating a slideshow with Quarto",
     "section": "Final notes",
-    "text": "Final notes\nFor even more features like remote control, chalkboards, transitions, automatic progress, and link previews, head over to the Quarto documentation.\nYou can download the source of a presentation that uses all the features presented on this page via the following button:\n Download source files as ZIP",
+    "text": "Final notes\nFor even more features like remote control, chalkboards, transitions, automatic progress, and link previews, head over to the Quarto documentation on Reveal.js slides.\nYou can download the source of a presentation that uses all the features presented on this page via the following button:\n Download source files as ZIP",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
@@ -800,7 +800,7 @@
     "href": "slideshow.html#footnotes",
     "title": "Exercise: Creating a slideshow with Quarto",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nThe arrow keys → and ↓ are specifically for navigating through vertical slides.↩︎\nThe arrow keys ← and ↑ are specifically for navigating through vertical slides.↩︎",
+    "text": "Footnotes\n\n\nThe arrow keys →→ and ↓↓ are specifically for navigating through vertical slides.↩︎\nThe arrow keys ←← and ↑↑ are specifically for navigating through vertical slides.↩︎",
     "crumbs": [
       "1. Welcome",
       "4. Advanced Exercises",
