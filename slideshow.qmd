@@ -71,7 +71,7 @@ Elements (e.g., text, images) on a slide are typically arranged in the order the
 
 ### Columns
 
-One can create multiple columns next to each other by structuring them using [Divs](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the classes `columns` and `column`:
+One can create multiple columns next to each other by structuring them using Pandoc's fenced [divs](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the classes `columns` and `column`:
 
 ```md
 ::: {.columns}
@@ -91,7 +91,7 @@ Right
 
 ### Tabsets
 
-Tabsets allow to put more content on a slide than the available space normally allows. Use a [Divs](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the class `panel-tabset`:
+Tabsets allow to put more content on a slide than the available space normally allows. Use a [div](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the class `panel-tabset`:
 
 ```md
 ::: {.panel-tabset}
@@ -125,7 +125,7 @@ Content in second row
 :::
 ```
 
-If the content of one column/row spans multiple paragraphs, one can nest it inside a Div:
+If the content of one column/row spans multiple paragraphs, one can nest it inside a div:
 
 ```md
 ::: {layout-ncol=2}
@@ -182,7 +182,7 @@ Some additional commentary of more peripheral interest.
 :::
 ```
 
-One can add a footer on any slide by creating a [Divs](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the class `footer`:
+A footer can be added on any slide by creating a [div](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the class `footer`:
 
 ```md
 ::: {.footer}
@@ -355,7 +355,7 @@ Finally, whole websites can be embedded into slideshows, such as this Google Str
 
 ## Speaker notes
 
-Speaker notes can be added using Pandoc's fenced divs and the class name `notes`:
+Speaker notes can be added using a div with the class name `notes`:
 
 ```md
 ::: {.notes}
@@ -373,7 +373,7 @@ Put your bibliography in a BibTeX file (extension `.bib`) and reference it in yo
 bibliography: literature.bib
 ```
 
-Add a level one heading and a Div with the id `refs` at the end of the document:
+Add a level one heading and a div with the id `refs` at the end of the document:
 
 ```md
 # References

@@ -222,6 +222,10 @@ If you would like to have your lines numbered, set `numbered-lines: true` in the
 
 Sometimes you might need the intermediate `.tex` file in addition to the final `.pdf` file. In order to keep that, set `keep-tex: true` in the YAML header.
 
+## Use publication style
+
+In the YAML header shared above, the style of the document is a manuscript as required when submitting to an APA journal. To switch to publication style which resembles the format of an article printed in an APA journal, change the document mode by setting `documentmode: jou`
+
 ## Generate `.docx` file
 
 If you prefer to create your manuscript as DOCX rather than PDF, you can set the format as follows:
