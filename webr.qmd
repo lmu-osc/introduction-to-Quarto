@@ -1,5 +1,5 @@
 ---
-title: "Exercise: Create a website with Quarto, webR/Pyodide, and Github pages, to use R/Python on your smartphone or tablet"
+title: "Exercise: Create a website with Quarto, WebR/Pyodide, and Github Pages, to use R/Python on your smartphone or tablet"
 format: html
 lang: en
 ---
@@ -8,8 +8,8 @@ lang: en
 
 In this exercise you can practice how to
 
-- host a Quarto website with Github pages
-- use webR/Pyodide in a Quarto document that allows you to run R/Python in your browser
+- host a Quarto website with Github Pages
+- use WebR/Pyodide in a Quarto document that allows you to run R/Python in your browser
 
 The final result of the exercise is a website on which you can run R/Python directly in your browser, without having it installed on your device like your smartphone or tablet.
 
@@ -76,7 +76,7 @@ The final result of the exercise using webR could look something like this:
    - Answer *Yes* that you trust the author
    - Answer *Yes* that you want to install the pyodide filter
    - Answer *Yes* if you now want to open the *pyodide* documentation in your default browser (you do not have to)
-   - You should now have a folder `\_extensions/coatless-quarto/pyodide` in your project directory
+   - You should now have a folder `_extensions/coatless-quarto/pyodide` in your project directory
 5. Create a new Quarto document, named e.g. `mywebr.qmd`
    - In RStudio, click *File* > *New File* > *Quarto Document*
    - Add the following options to the YAML header (only add the filter relevant to you):

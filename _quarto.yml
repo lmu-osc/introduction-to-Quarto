@@ -46,7 +46,7 @@ website:
         contents:
           - text: "Overview"
             href: "quarto_exercises.qmd"
-          - text: "Exercise: WebR"
+          - text: "Exercise: WebR/Pyodide"
             href: "webr.qmd"
           - text: "Exercise: Slideshows"
             file: slideshow.qmd

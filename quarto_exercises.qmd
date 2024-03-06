@@ -6,9 +6,9 @@ title: "4. Advanced Exercises"
 
 If you want to go beyond the scope of the previous tutorials, we have prepared some advanced exercises for you to complete. You will also get the opportunity to recreate your own material using Quarto, for example a slideshow or a manuscript.
 
-## Exercise: WebR
+## Exercise: WebR/Pyodide
 
-[Create a small website with Quarto, WebR, and Github Pages, where you can run R commands on your smartphone.](webr.qmd)
+[Create a small website with Quarto, WebR/Pyodide, and Github Pages, where you can run R/Python commands on your smartphone.](webr.qmd)
 
 ## Exercise: Slideshows
 
