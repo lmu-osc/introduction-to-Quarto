@@ -159,6 +159,19 @@ Bottom
 
 You can read more about [panel layouts in the Quarto documentation](https://quarto.org/docs/interactive/layout.html#panel-layout).
 
+### Callouts
+
+Quarto provides pre-styled blocks in five different flavours that draw the reader's attention:
+
+```md
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+```
+
+More information about callouts is provided in the [Quarto documentation on callouts](https://quarto.org/docs/authoring/callouts.html).
+
 ### Asides and footer
 
 Asides contain less important content and are displayed at the bottom of a slide:
