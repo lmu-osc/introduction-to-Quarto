@@ -25,13 +25,16 @@ The final result of the exercise using webR could look something like this:
 # Step by step instructions
 
 1. Log into your Github account and create a new **public** Github repository
+
    ::: {.callout-note}
    - If you need a refresher on how to work with Git and Github you can checkout the following two self-paced online tutorials:
      - [Introduction to version Control in R with RStudio, Git, and Github](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/)
      - [Collaborative coding with GitHub and RStudio](https://malikaihle.github.io/Collaborative-RStudio-GitHub/)
    - You find a screenshot of how to create a new repository [here](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/github_sync.html)
    :::
+   
 2. Create a new project in RStudio
+   
    ::: {.callout-note}
    You find a screenshot of how to create a new project [here](https://malikaihle.github.io/Collaborative-RStudio-GitHub/clone.html)
    :::
@@ -45,6 +48,7 @@ The final result of the exercise using webR could look something like this:
    - Click *Browse* to select where to save the project on your computer
    - Click *Create Project*
 3. Download the *webR* Quarto extension
+
    ::: {.callout-note}
    You find the *quarto-webr* documentation [here](https://quarto-webr.thecoatlessprofessor.com/)
    :::
@@ -57,8 +61,9 @@ The final result of the exercise using webR could look something like this:
    - Answer *Yes* that you trust the author
    - Answer *Yes* that you want to install the webR filter
    - Answer *Yes* if you now want to open the *quarto-webr* documentation in your default browser (you do not have to)
-   - You should now have a folder `_extensions/coatless` in your project directory
+   - You should now have a folder `_extensions/coatless/webr` in your project directory
 4. Download the Pyodide Quarto extension
+
    ::: {.callout-note}
    You find the *quarto-pyodide* documentation [here](https://quarto.thecoatlessprofessor.com/pyodide/)
    :::
@@ -69,9 +74,9 @@ The final result of the exercise using webR could look something like this:
      quarto add coatless-quarto/pyodide
      ```
    - Answer *Yes* that you trust the author
-   - Answer *Yes* that you want to install the webR filter
-   - Answer *Yes* if you now want to open the *quarto-webr* documentation in your default browser (you do not have to)
-   - You should now have a folder *\_extensions/coatless* in your project directory
+   - Answer *Yes* that you want to install the pyodide filter
+   - Answer *Yes* if you now want to open the *pyodide* documentation in your default browser (you do not have to)
+   - You should now have a folder `\_extensions/coatless-quarto/pyodide` in your project directory
 5. Create a new Quarto document, named e.g. `mywebr.qmd`
    - In RStudio, click *File* > *New File* > *Quarto Document*
    - Add the following options to the YAML header (only add the filter relevant to you):
@@ -94,6 +99,7 @@ The final result of the exercise using webR could look something like this:
      ````
    - Add some text or other things you want to see on your Quarto website
 6. Check that the file `mywebr.qmd` renders successfully locally. In RStudio you can just click the *Render* button
+
    ::: {.callout-note}
    You might face the issue that the status remains at _Loading..._ because your browser restricts certain features of local files. In this case, spin up a simple web server by running one of the following and go to [`http://localhost:8000/`](http://localhost:8000/):
    
@@ -102,12 +108,16 @@ The final result of the exercise using webR could look something like this:
    python -m http.server 8000
    ```
    :::
+   
 7. When you are finished with your Quarto document and everything renders correctly, you can commit the file `mywebr.qmd` and the *\_extensions/coatless* folder to your git repository and push your changes to your Github project (this step is recommended but optional)
+
    ::: {.callout-note}
    - You find a screenshot on how to commit changes in RStudio [here](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/commit.html) 
    - You find a screenshot on hot to push commits in RStudio [here](https://malikaihle.github.io/Collaborative-RStudio-GitHub/push.html)
    :::
+   
 8. Upload the website to Github pages
+   
    ::: {.callout-note}
    You find the documentation on how to publish Quarto websites on Github pages [here](https://quarto.org/docs/publishing/github-pages.html)
    :::
