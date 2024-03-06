@@ -140,25 +140,33 @@ author-note:
 
 ## Figures
 
-For including images, the `apaquarto` extension requires the use of code blocks, which need to have a label that starts with `fig-`. Captions are in [title case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case):
+For including images, it is recommended to define a label starting with `fig-` to make the figure cross-referencable. One can also add a note and set the image width and height. In APA 7 style, captions are to be written in [title case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case).
 
 <!-- image from <https://picsum.photos/id/360/1000/1000.jpg> -->
 
+```md
+![This Image Depicts a Flower.](flower.jpg){#fig-flower apa-note="This is the note below the figure." out-height="5cm" out-width="5cm"}
+```
+
+For figures that are computed dynamically, the following might serve as an example:
+
 ``````qmd
 ```{{r}}
-#| label: fig-flower
-#| fig-cap: This Image Depicts a Flower.
-#| apa-note: This is the note below the figure.
+#| label: fig-cars
+#| fig-cap: Plot of the cars Dataset.
+#| apa-note: Another note.
 #| out-height: 5cm
 #| out-width: 5cm
+#| fig-height: 3
+#| fig-width: 3
 
-knitr::include_graphics("flower.jpg")
+plot(cars)
 ```
 ``````
 
 When using the `apaquarto` extension, by default, figures appear at the end of the document, unless one sets `floatsintext: true` in the YAML header. Therefore it might make sense to add a final heading `Appendix` below which the figures will appear. Figures can be cross-referenced by using the `@` symbol followed by the reference label: `For an image of a flower, see @fig-flower.`
 
-For more information on how to work with figures, head over to the [Quarto documentation on figures](https://quarto.org/docs/authoring/figures.html#computations).
+For more information on how to work with figures, head over to the [Quarto documentation on figures](https://quarto.org/docs/authoring/figures.html).
 
 ## Tables
 
