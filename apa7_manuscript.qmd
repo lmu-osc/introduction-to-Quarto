@@ -34,7 +34,8 @@ Currently, there is no official Quarto extension to format documents according t
    - Go to _Terminal_
    - Enter `quarto add wjschne/apaquarto`
    - Confirm installation by entering <kbd>Y</kbd> twice, then avoid opening the documentation by entering <kbd>n</kbd>
-3. Declare the language of the document by setting e.g. `lang: en` in the YAML header (see the [Quarto documentation on document language for more information](https://quarto.org/docs/authoring/language.html))
+   - If you want to update the extension at a later point, enter `quarto update wjschne/apaquarto`
+3. Declare the language of the document by setting e.g. `lang: en` in the YAML header (see the [Quarto documentation on document language](https://quarto.org/docs/authoring/language.html) for more information)
 4. Change `format` as follows:\
    ```yaml
    format:
@@ -59,7 +60,7 @@ shorttitle: "My short title"
 
 ## Authors
 
-Say we have two authors called _Ana Fulana_ and _Blanca Zutana_, each with their own ORCID, email address and [<abbr title="Contributor Roles Taxonomy">CRediT</abbr> roles](https://credit.niso.org/)^[Unfortunately, `apaquarto` uses a slightly different YAML header to denote CRediT roles than "standard Quarto", see the Quarto documentation on [Author Roles](https://quarto.org/docs/authoring/front-matter.html#roles).]. They have a common affiliation and Ana acts as corresponding author. In the YAML header this looks as follows:
+Say we have two authors called _Ana Fulana_ and _Blanca Zutana_, each with their own ORCID, email address and [<abbr title="Contributor Roles Taxonomy">CRediT</abbr> roles](https://credit.niso.org/). They have a common affiliation and Ana acts as corresponding author. In the YAML header this looks as follows:
 
 ```yaml
 author:
@@ -67,9 +68,9 @@ author:
     corresponding: true
     orcid: "0000-0000-0000-0000"
     email: "af@example.org"
-    role:
-      - Conceptualization
-      - Writing - original draft
+    roles:
+      - conceptualization
+      - writing
     affiliations:
       - id: "lmu"
         name: "Ludwig-Maximilians-Universität München, Munich, Germany"
@@ -77,28 +78,30 @@ author:
         ror: "https://ror.org/05591te55"
         url: "https://www.lmu.de/"
   - name: Blanca Zutana
-    role:
-      - Project administration
+    roles:
+      - project administration
     affiliations: 
       - ref: lmu
 ```
 
 Available CRediT roles are:
 
-- Conceptualization
-- Data curation
-- Formal Analysis
-- Funding acquisition
-- Investigation
-- Methodology
-- Project administration
-- Resources
-- Software
-- Supervision
-- Validation
-- Visualization
-- Writing – original draft
-- Writing – review & editing
+- [`conceptualization`](https://credit.niso.org/contributor-roles/conceptualization/)
+- [`data curation`](https://credit.niso.org/contributor-roles/data-curation/)
+- [`formal analysis`](https://credit.niso.org/contributor-roles/formal-analysis/)
+- [`funding acquisition`](https://credit.niso.org/contributor-roles/funding-acquisition/)
+- [`investigation`](https://credit.niso.org/contributor-roles/investigation/)
+- [`methodology`](https://credit.niso.org/contributor-roles/methodology/)
+- [`project administration`](https://credit.niso.org/contributor-roles/project-administration/)
+- [`resources`](https://credit.niso.org/contributor-roles/resources/)
+- [`software`](https://credit.niso.org/contributor-roles/software/)
+- [`supervision`](https://credit.niso.org/contributor-roles/supervision/)
+- [`validation`](https://credit.niso.org/contributor-roles/validation/)
+- [`visualization`](https://credit.niso.org/contributor-roles/visualization/)
+- [`writing`](https://credit.niso.org/contributor-roles/writing-original-draft/)
+- [`editing`](https://credit.niso.org/contributor-roles/writing-review-editing/)
+
+See the [Quarto documentation on author roles](https://quarto.org/docs/authoring/front-matter.html#roles) for more information.
 
 ## Abstract
 
@@ -198,7 +201,7 @@ Put your bibliography in a BibTeX file (extension `.bib`) and reference it in yo
 bibliography: literature.bib
 ```
 
-Add a level one heading and a Div with the id `refs` at the end of the document (but before the appendix, if you have one):
+Add a level one heading and a [Div](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the id `refs` at the end of the document (but before the appendix, if you have one):
 
 ```md
 # References
@@ -211,13 +214,22 @@ You can now cite from your bibliography using the syntax `[@id]`.
 
 For more information on how to cite literature, head over to the [Quarto documentation on citations](https://quarto.org/docs/authoring/footnotes-and-citations.html).
 
+## Numbered lines
+
+If you would like to have your lines numbered, set `numbered-lines: true` in the YAML header.
+
 ## Generate `.tex` file
 
 Sometimes you might need the intermediate `.tex` file in addition to the final `.pdf` file. In order to keep that, set `keep-tex: true` in the YAML header.
 
-## Numbered lines
+## Generate `.docx` file
 
-If you would like to have your lines numbered, set `numbered-lines: true` in the YAML header.
+If you prefer to create your manuscript as DOCX rather than PDF, you can set the format as follows:
+
+```yml
+format:
+  apaquarto-docx: default
+```
 
 ## Final notes
 

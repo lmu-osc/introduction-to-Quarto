@@ -19,7 +19,7 @@ You can begin by creating a new Quarto Presentation.
    - Click on _File_ > _New File_ > _Quarto Presentation_
    - Fill _Title_ and _Author_
    - Click _Create_
-2. Declare the language of the document by setting e.g. `lang: en` in the YAML header
+2. Declare the language of the document by setting e.g. `lang: en` in the YAML header  (see the [Quarto documentation on document language](https://quarto.org/docs/authoring/language.html) for more information)
 3. Change `format` as follows:\
    ```yaml
    format:
@@ -54,20 +54,24 @@ Content on third slide
 
 ## Usage
 
-- Navigate forward with <kbd>Space</kbd> or <kbd>N</kbd> (for **n**ext)^[The arrow keys <kbd>→</kbd> and <kbd>↓</kbd> are specifically for navigating through [vertical slides](https://quarto.org/docs/presentations/revealjs/advanced.html#vertical-slides).]
-- Navigate backward with <kbd>Shift</kbd> + <kbd>Space</kbd> or <kbd>P</kbd> (for **p**revious)^[The arrow keys <kbd>←</kbd> and <kbd>↑</kbd> are specifically for navigating through [vertical slides](https://quarto.org/docs/presentations/revealjs/advanced.html#vertical-slides).]
-- Press <kbd>F</kbd> to switch to **f**ullscreen
-- Press <kbd>O</kbd> or <kbd>Esc</kbd> to show the slide **o**verview
-- Press <kbd>B</kbd> or <kbd>.</kbd> to pause (**b**lacken) the screen
-- Press <kbd>S</kbd> to open the **s**peaker notes
-- Press <kbd>M</kbd> to toggle a **m**enu that allows you to jump to any slide
-- Press <kbd>Ctrl</kbd> + click on the slide to zoom in
-- Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> to activate search
-- Press <kbd>?</kbd> to show the keyboard help
+- Navigate forward with {{< kbd Space >}} or {{< kbd N >}} (for **n**ext)^[The arrow keys {{< kbd → >}} and {{< kbd ↓ >}} are specifically for navigating through [vertical slides](https://quarto.org/docs/presentations/revealjs/advanced.html#vertical-slides).]
+- Navigate backward with {{< kbd Shift+Space >}} or {{< kbd P >}} (for **p**revious)^[The arrow keys {{< kbd ← >}} and {{< kbd ↑ >}} are specifically for navigating through [vertical slides](https://quarto.org/docs/presentations/revealjs/advanced.html#vertical-slides).]
+- Press {{< kbd F >}} to switch to **f**ullscreen
+- Press {{< kbd O >}} or {{< kbd Esc >}} to show the slide **o**verview
+- Press {{< kbd B >}} or {{< kbd . >}} to pause (**b**lacken) the screen
+- Press {{< kbd S >}} to open the **s**peaker notes
+- Press {{< kbd M >}} to toggle a **m**enu that allows you to jump to any slide
+- Press {{< kbd Ctrl >}} + click on the slide to zoom in
+- Press {{< kbd Ctrl+Shift+F >}} to activate search
+- Press {{< kbd ? >}} to show the keyboard help
 
-## Columns
+## Slide layout
 
-One can create multiple columns next to each other with the following syntax:
+Elements (e.g., text, images) on a slide are typically arranged in the order they appear in the markdown source. There are multiple ways, however, to add more structure to a slide.
+
+### Columns
+
+One can create multiple columns next to each other by structuring them using [Divs](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the classes `columns` and `column`:
 
 ```md
 ::: {.columns}
@@ -85,9 +89,9 @@ Right
 :::
 ```
 
-## Tabsets
+### Tabsets
 
-Tabsets allow to put more content on a slide than the available space normally allows:
+Tabsets allow to put more content on a slide than the available space normally allows. Use a [Divs](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the class `panel-tabset`:
 
 ```md
 ::: {.panel-tabset}
@@ -101,6 +105,114 @@ Content for `Tab A`
 Content for `Tab B`
 
 :::
+```
+
+### Layouts
+
+If the content on a slide is to be presented within two columns or two rows, one can set `layout-ncol` or `layout-nrow`:
+
+```md
+::: {layout-ncol=2}
+Content in first column
+
+Content in second column
+:::
+
+::: {layout-nrow=2}
+Content in first row
+
+Content in second row
+:::
+```
+
+If the content of one column/row spans multiple paragraphs, one can nest it inside a Div:
+
+```md
+::: {layout-ncol=2}
+:::: {}
+__Left__
+
+![](image.png)
+::::
+
+:::: {}
+__Right__
+
+![](image.png)
+::::
+:::
+```
+
+The [Quarto documentation on figure panels](https://quarto.org/docs/authoring/figures.html#figure-panels) provides additional examples.
+
+More complex layouts can be achieved by specifying `layout`:
+
+```md
+::: {layout="[[1,1], [1]]"}
+Top left
+
+Top right
+
+Bottom
+:::
+```
+
+You can read more about [panel layouts in the Quarto documentation](https://quarto.org/docs/interactive/layout.html#panel-layout).
+
+### Asides and footer
+
+Asides contain less important content and are displayed at the bottom of a slide:
+
+```md
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+```
+
+One can add a footer on any slide by creating a [Divs](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans) with the class `footer`:
+
+```md
+::: {.footer}
+Custom footer
+:::
+```
+
+## Positioning of elements
+
+### Center content vertically
+
+```md
+## Centered slide {.center}
+
+This will appear in the middle, rather than the top, of the slide.
+```
+
+### Absolute position
+
+One can also specify the exact position of elements by using the class `absolute`:
+
+```md
+![](image.png){.absolute top="200" left="50" width="300"}
+
+[Text at custom position]{.absolute top="400" left="600" width="300"}
+```
+
+### Fit words
+
+You can fit words to the slide by adding the class `r-fit-text`:
+
+```md
+[Two Words]{.r-fit-text}
+
+[Longer Explanation]{.r-fit-text}
+```
+
+### Border
+
+One can add a border around any element by adding the class `r-frame`:
+
+```md
+[Other content]{.r-frame}
 ```
 
 ## Incremental points
@@ -135,31 +247,19 @@ The same can be applied to images:
 
 ```md
 ::: {.fragment}
-![](flower.jpg){width=300px}
+![](image.png){width=300px}
 :::
 ```
 
-## Typography
-
-### Fit words
-
-You can fit words to the slide by adding the class `r-fit-text`:
-
-```md
-[Two Words]{.r-fit-text}
-
-[Longer Explanation]{.r-fit-text}
-```
-
-### Border
-
-One can add a border around any element by adding the class `r-frame`:
-
-```md
-[Other content]{.r-frame}
-```
-
 ## Interactivity
+
+### Lightbox images
+
+One can allow to open an enlarged version of images by adding the class `lightbox`:
+
+```md
+![](image.png){.lightbox}
+```
 
 ### Videos
 
@@ -271,9 +371,11 @@ Add a level one heading and a Div with the id `refs` at the end of the document:
 
 You can now cite from your bibliography using the syntax `[@id]`.
 
+For more information on how to cite literature, head over to the [Quarto documentation on citations](https://quarto.org/docs/authoring/footnotes-and-citations.html).
+
 ## Final notes
 
-For even more features like remote control, chalkboards, transitions, automatic progress, and link previews, head over to the [Quarto documentation](https://quarto.org/docs/presentations/revealjs/).
+For even more features like remote control, chalkboards, transitions, automatic progress, and link previews, head over to the [Quarto documentation on Reveal.js slides](https://quarto.org/docs/presentations/revealjs/).
 
 You can download the source of a presentation that uses all the features presented on this page via the following button:
 
