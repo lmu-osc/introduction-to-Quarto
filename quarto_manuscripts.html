@@ -316,7 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="description" class="level1">
 <h1>Description</h1>
-<p>In this unstructured exercise we would encourage you to …</p>
+<p>In this unstructured exercise we would encourage you to</p>
 <ul>
 <li>convert one of your own manuscripts into Quarto</li>
 <li>use Quarto Manuscripts to create a website for this publication</li>
@@ -327,7 +327,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="what-are-quarto-manuscripts" class="level1">
 <h1>What are Quarto Manuscripts?</h1>
-<p>The official <a href="https://quarto.org/docs/manuscripts/">Quarto Manuscripts</a> website reads:</p>
+<p>The <a href="https://quarto.org/docs/manuscripts/">Quarto documentation on manuscripts</a> reads:</p>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -340,10 +340,10 @@ Quote:
 <div class="callout-body-container callout-body">
 <p>Quarto manuscript projects provide a framework for writing and publishing scholarly articles. A Quarto manuscript lets you:</p>
 <ul>
-<li><p>Use one or more notebooks or .qmd documents as the source of content and computations, and then publish these computations alongside the manuscript, allowing readers to dive into your code.</p></li>
+<li><p>Use one or more notebooks or <code>.qmd</code> documents as the source of content and computations, and then publish these computations alongside the manuscript, allowing readers to dive into your code.</p></li>
 <li><p>Produce manuscripts in multiple formats (including LaTeX or MS Word formats required by journals), and give readers easy access to all of the formats through a manuscript website.</p></li>
 </ul>
-<p>The output of a Quarto manuscript is a website (live example). The article itself appears as the content of the website, and can include all the elements common to scholarly writing like figures, tables, equations, cross references and citations. The website also makes available other formats (e.g.&nbsp;PDF, Docx) as well as links to all of the computations used to create the article.</p>
+<p>The output of a Quarto manuscript is a website (<a href="https://quarto-ext.github.io/manuscript-template-jupyter/">live example</a>). The article itself appears as the content of the website, and can include all the elements common to scholarly writing like figures, tables, equations, cross references and citations. The website also makes available other formats (e.g.&nbsp;PDF, Docx) as well as links to all of the computations used to create the article.</p>
 </div>
 </div>
 </section>
@@ -366,39 +366,42 @@ Quote:
 <h1>Steps to convert a Quarto document into a Quarto Manuscripts project</h1>
 <p>If you already have written your manuscript with Quarto, there are only a small number of steps necessary to convert your document into a Quarto Manuscripts website. Without guarantee of completeness, the most important steps are:</p>
 <ul>
-<li><p>Create a <em>_quarto.yml</em> file in your RStudio project. A good starting point for the content of this file is:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="an">project:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">type:</span><span class="co"> manuscript</span></span>
+<li><p>Create the file <code>_quarto.yml</code> in your RStudio project. A good starting point for the content of this file is:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> manuscript</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>manuscript:</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  article: index.qmd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">manuscript</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">article</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>format:</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  html:</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    comments:</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      hypothesis: false</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  pdf: default</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  docx: default</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  jats: default</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">comments</span><span class="kw">:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">hypothesis</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">docx</span><span class="kw">:</span><span class="at"> default</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">jats</span><span class="kw">:</span><span class="at"> default</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>execute:</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  freeze: auto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>The main <em>.qmd</em> document containing your manuscript must be named <em>index.qmd</em> by default. If you want to use another name, adjust the <code>article: index.qmd</code> line in the <em>_quarto.yml</em> file.</p></li>
-<li><p>Make sure that you remove unnecessary (or conflicting) YAML options in your article and additional notebook <em>.qmd</em> files. We suggest to only use a minimum of options first, test that everything works and then add further options when needed.</p></li>
-<li><p>Quarto Manuscripts supports many useful YAML options that can be used in your <em>index.qmd</em> file. We suggest that you have a look on the Quarto documentation on scholarly writing <a href="https://quarto.org/docs/authoring/front-matter.html">this</a> and consecutive pages.</p></li>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">execute</span><span class="kw">:</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> auto</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>The main <code>.qmd</code> document containing your manuscript must be named <code>index.qmd</code> by default. If you want to use another name, adjust the line <code>article: index.qmd</code> in the file <code>_quarto.yml</code>.</p></li>
+<li><p>Make sure that you remove unnecessary (or conflicting) YAML options in your article and additional notebook <code>.qmd</code> files. We suggest to only use a minimum of options first, test that everything works and then add further options when needed.</p></li>
+<li><p>Quarto Manuscripts supports many useful YAML options that can be used in your <code>index.qmd</code> file. We suggest that you have a look on the Quarto documentation on scholarly writing <a href="https://quarto.org/docs/authoring/front-matter.html">this</a> and consecutive pages.</p></li>
 <li><p>If your project contains computations that take a long time to run, we suggest you make sure you understand how the <em>freeze</em> functionality of Quarto works by reading <a href="https://quarto.org/docs/manuscripts/authoring/rstudio.html#when-is-code-executed">this</a> and <a href="https://quarto.org/docs/projects/code-execution.html#freeze">this</a>.</p></li>
-<li><p><strong>Optional:</strong> If you need to format your manuscript in APA style, you might want that 1) your Quarto Manuscripts website uses standard hmtl themes and formatting but uses APA citation style, 2) your downloadable <em>.pdf</em> file is nicely formatted as a APA journal article that you can upload to the preprint server of your choice, and 3) your downloadable manuscript in <em>.docx</em> format is formatted as a APA manuscript, which is how many APA journals require manuscripts to be sent into peer review.</p>
-<p>You can achieve this by …</p>
+<li><p><strong>Optional:</strong> If you need to format your manuscript in APA style, you might want that 1) your Quarto Manuscripts website uses standard HTML themes and formatting but uses APA citation style, 2) your downloadable <code>.pdf</code> file is nicely formatted as a APA journal article that you can upload to the preprint server of your choice, and 3) your downloadable manuscript in <code>.docx</code> format is formatted as a APA manuscript, which is how many APA journals require manuscripts to be sent into peer review.</p>
+<p>You can achieve this by</p>
 <ul>
 <li><p>downloading the <em>apa-quarto</em> extension as explained in the <a href="./apa7_manuscript.html">previous exercise</a></p></li>
-<li><p>using the following code in your <em>_quarto.yml</em> file:</p>
+<li><p>using the following code in your <code>_quarto.yml</code> file:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  html: default</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  jats: default</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  apaquarto-pdf:</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    documentmode: jou</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  apaquarto-docx: default</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>using the YAML option <code>csl: apa.csl</code> in the <em>index.qmd</em> file (the <em>apa.csl</em> file can be downloaded <a href="https://github.com/citation-style-language/styles/blob/master/apa.csl">here</a>)</p></li>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    a4paper: true</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    pdf-engine: lualatex</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    keep-tex: false</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  apaquarto-docx: default</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>using the YAML option <code>csl: apa.csl</code> in the file <code>index.qmd</code> (the file <code>apa.csl</code> can be downloaded <a href="https://github.com/citation-style-language/styles/blob/master/apa.csl">here</a>)</p></li>
 </ul></li>
 </ul>
 
