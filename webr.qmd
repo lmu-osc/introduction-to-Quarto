@@ -97,6 +97,7 @@ The final result of the exercise using webR could look something like this:
      ```{{pyodide-python}}
      ```
      ````
+   - Declare the language of the document by setting e.g. `lang: en` in the YAML header  (see the [Quarto documentation on document language](https://quarto.org/docs/authoring/language.html) for more information)
    - Add some text or other things you want to see on your Quarto website
 6. Check that the file `mywebr.qmd` renders successfully locally. In RStudio you can just click the *Render* button
 
