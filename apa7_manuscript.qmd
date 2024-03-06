@@ -241,4 +241,4 @@ You can download a manuscript with all the features presented on this page via t
 
 {{< downloadthis demo_manuscript.zip dname="demo_manuscript" label="Download source files as ZIP">}}
 
-If you are interested in all the options provided by the `apaquarto` extension (e.g., masked citations for anonymous peer review), have a look at the [apaquarto documentation](https://wjschne.github.io/apaquarto/options.html).
+If you are interested in all the options provided by the `apaquarto` extension (e.g., [masked citations for anonymous peer review](https://wjschne.github.io/apaquarto/writing.html#masked-citations-for-anonymous-peer-review)), have a look at the [apaquarto documentation](https://wjschne.github.io/apaquarto/options.html). Also, we recommend reading the guide [APA Style via Markdown](https://wjschne.github.io/apaquarto/writing.html).

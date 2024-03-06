@@ -55,7 +55,7 @@ If you already have written your manuscript with Quarto, there are only a small 
   
   ```yml
   project:
-  type: manuscript
+    type: manuscript
 
   manuscript:
     article: index.qmd
@@ -72,7 +72,7 @@ If you already have written your manuscript with Quarto, there are only a small 
     freeze: auto
   ```
 
-- The main `.qmd` document containing your manuscript must be named `index.qmd` by default. If you want to use another name, adjust the `article: index.qmd` line in the file `_quarto.yml`.
+- The main `.qmd` document containing your manuscript must be named `index.qmd` by default. If you want to use another name, adjust the line `article: index.qmd` in the file `_quarto.yml`.
 
 - Make sure that you remove unnecessary (or conflicting) YAML options in your article and additional notebook `.qmd` files. We suggest to only use a minimum of options first, test that everything works and then add further options when needed.
 
