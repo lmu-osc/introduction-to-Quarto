@@ -110,7 +110,7 @@ The final result of the exercise using webR could look something like this:
    ```
    :::
    
-7. When you are finished with your Quarto document and everything renders correctly, you can commit the file `mywebr.qmd` and the *\_extensions/coatless* folder to your git repository and push your changes to your Github project (this step is recommended but optional)
+7. When you are finished with your Quarto document and everything renders correctly, you can commit the file `mywebr.qmd` and the folder `_extensions/coatless` to your git repository and push your changes to your Github project (this step is recommended but optional)
 
    ::: {.callout-note}
    - You find a screenshot on how to commit changes in RStudio [here](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/commit.html) 
