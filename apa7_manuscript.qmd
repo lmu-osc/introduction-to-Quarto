@@ -170,7 +170,19 @@ For more information on how to work with figures, head over to the [Quarto docum
 
 ## Tables
 
-The `apaquarto` extension is also special when it comes to tables. The R packages `tibble` and `flextable` are required for the following to work:
+Tables need to have labels prefixed with `tbl-`:
+
+```qmd
+| Letters | Numbers |
+|:-------:|:-------:|
+| A       | 1       |
+| B       | 2       |
+| C       | 3       |
+
+: My Caption {#tbl-mytable apa-note="Note below table" data-quarto-disable-processing="true"}
+```qmd
+
+As an alternative to using markdown, tables can be created dynamically, e.g. using the R packages `tibble` and `flextable`:
 
 ``````qmd
 ```{{r}}
@@ -191,7 +203,7 @@ tibble::tribble(
 
 When using the `apaquarto` extension, by default, tables appear at the end of the document, unless one sets `floatsintext: true` in the YAML header. One can refer to tables by using the `@` symbol followed by the reference label: `Key ingredients are given in @tbl-ingredients.`
 
-For more information on how to work with tables, head over to the [Quarto documentation on tables](https://quarto.org/docs/authoring/tables.html#computations).
+For more information on how to create tables, head over to the [Quarto documentation on tables](https://quarto.org/docs/authoring/tables.html).
 
 ## Footnotes
 
