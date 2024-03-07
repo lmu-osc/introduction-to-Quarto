@@ -145,7 +145,7 @@ For including images, it is recommended to define a label starting with `fig-` t
 <!-- image from <https://picsum.photos/id/360/1000/1000.jpg> -->
 
 ```md
-![This Image Depicts a Flower.](flower.jpg){#fig-flower apa-note="This is the note below the figure." out-height="5cm" out-width="5cm"}
+![This Image Depicts a Flower.](flower.jpg){#fig-flower apa-note="This is the note below the figure." height="5cm" width="5cm"}
 ```
 
 For figures that are computed dynamically, the following might serve as an example:
