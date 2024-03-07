@@ -80,7 +80,7 @@ The final result of the exercise using webR could look something like this:
 5. Create a new Quarto document, named e.g. `mywebr.qmd`
    - In RStudio, click *File* > *New File* > *Quarto Document*
    - Add the following options to the YAML header (only add the filter relevant to you):
-     ```md
+     ```yml
      format: html
      engine: knitr
      filters:
@@ -88,10 +88,10 @@ The final result of the exercise using webR could look something like this:
        - pyodide
      ```
    - Interactive R chunks must be formatted like this:
-     ````
+     ````qmd
      ```{{webr-r}}
      ```
-     ````
+     ````qmd
    - Interactive Python chunks must be formatted like this:
      ````
      ```{{pyodide-python}}
