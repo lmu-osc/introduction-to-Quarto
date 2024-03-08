@@ -50,7 +50,7 @@ The final result of the exercise using webR could look something like this:
 3. Download the *webR* Quarto extension
 
    ::: {.callout-note}
-   You find the *quarto-webr* documentation [here](https://quarto-webr.thecoatlessprofessor.com/)
+   You can find the *quarto-webr* documentation [here](https://quarto-webr.thecoatlessprofessor.com/)
    :::
    
    - Open the terminal in RStudio
@@ -65,7 +65,7 @@ The final result of the exercise using webR could look something like this:
 4. Download the Pyodide Quarto extension
 
    ::: {.callout-note}
-   You find the *quarto-pyodide* documentation [here](https://quarto.thecoatlessprofessor.com/pyodide/)
+   You can find the *quarto-pyodide* documentation [here](https://quarto.thecoatlessprofessor.com/pyodide/)
    :::
    
    - Open the terminal in RStudio
