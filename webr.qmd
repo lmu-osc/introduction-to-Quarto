@@ -30,13 +30,13 @@ The final result of the exercise using webR could look something like this:
    - If you need a refresher on how to work with Git and Github you can checkout the following two self-paced online tutorials:
      - [Introduction to version Control in R with RStudio, Git, and Github](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/)
      - [Collaborative coding with GitHub and RStudio](https://malikaihle.github.io/Collaborative-RStudio-GitHub/)
-   - You find a screenshot of how to create a new repository [here](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/github_sync.html)
+   - You can find a screenshot of how to create a new repository [here](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/github_sync.html)
    :::
    
 2. Create a new project in RStudio
    
    ::: {.callout-note}
-   You find a screenshot of how to create a new project [here](https://malikaihle.github.io/Collaborative-RStudio-GitHub/clone.html)
+   You can find a screenshot of how to create a new project [here](https://malikaihle.github.io/Collaborative-RStudio-GitHub/clone.html)
    :::
    
    - Click *File* > *New Project* > *Version control* > *Git*
@@ -113,14 +113,14 @@ The final result of the exercise using webR could look something like this:
 7. When you are finished with your Quarto document and everything renders correctly, you can commit the file `mywebr.qmd` and the folder `_extensions/coatless` to your git repository and push your changes to your Github project (this step is recommended but optional)
 
    ::: {.callout-note}
-   - You find a screenshot on how to commit changes in RStudio [here](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/commit.html) 
-   - You find a screenshot on hot to push commits in RStudio [here](https://malikaihle.github.io/Collaborative-RStudio-GitHub/push.html)
+   - You can find a screenshot on how to commit changes in RStudio [here](https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/commit.html) 
+   - You can find a screenshot on hot to push commits in RStudio [here](https://malikaihle.github.io/Collaborative-RStudio-GitHub/push.html)
    :::
    
 8. Upload the website to Github pages
    
    ::: {.callout-note}
-   You find the documentation on how to publish Quarto websites on Github pages [here](https://quarto.org/docs/publishing/github-pages.html)
+   You can find the documentation on how to publish Quarto websites on Github pages [here](https://quarto.org/docs/publishing/github-pages.html)
    :::
    
    - Publish your website (based on the file `mywebr.qmd`) by running the following command in the terminal within RStudio. This will commit the rendered website to a Github branch named `gh-pages`:
