@@ -74,18 +74,20 @@ The website we use for the workshop.
 
 - [Books](https://quarto.org/docs/books/) (html, pdf, docx, epub, ...)
 - [Interactive elements](https://quarto.org/docs/interactive/) (Shiny, htmlwidgets)
+- [Dashboards](https://quarto.org/docs/dashboards/)
 - [Blogs](https://quarto.org/docs/websites/website-blog.html)
+- [Manuscripts](https://quarto.org/docs/manuscripts/)
 - ...
 
 For more (professional) examples, see the official [Quarto Gallery](https://quarto.org/docs/gallery/).
 
 ## Quarto and R Markdown
 
-Quarto is relatively new and some things might still be more convenient with R Markdown...
+- Quarto is relatively new and some things might still be more convenient with R Markdown, but this seems to change rapidly.
 
-- [papaja](https://github.com/crsh/papaja): manuscripts formatted in APA style
-- [learnr](https://github.com/rstudio/learnr): interactive tutorials
-- [vitae](https://github.com/mitchelloharawild/vitae): academic CVs
-- [posterdown](https://github.com/brentthorne/posterdown): conference posters
-- [flexdashboard](https://pkgs.rstudio.com/flexdashboard/): flexible dashboards
+- Although [R Markdown is not going away](https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work), new features will probably only be implemented in Quarto.
+
+- We suggest to use Quarto instead of R Markdown for new projects, unless you know that some functionality you need is currently not yet available.
+
+
 
