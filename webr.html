@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.22">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Workshop LMU OSC – Exercise: Create a website with Quarto, WebR/Pyodide, and Github Pages, to use R/Python on your smartphone or tablet</title>
+<title>Quarto Workshop LMU OSC - Exercise: Create a website with Quarto, WebR/Pyodide, and Github Pages, to use R/Python on your smartphone or tablet</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -152,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
     <a href="https://github.com/FlorianPargent/Quarto_LMU_OSC" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -350,7 +350,7 @@ Note
 <li><a href="https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/">Introduction to version Control in R with RStudio, Git, and Github</a></li>
 <li><a href="https://malikaihle.github.io/Collaborative-RStudio-GitHub/">Collaborative coding with GitHub and RStudio</a></li>
 </ul></li>
-<li>You find a screenshot of how to create a new repository <a href="https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/github_sync.html">here</a></li>
+<li>You can find a screenshot of how to create a new repository <a href="https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/github_sync.html">here</a></li>
 </ul>
 </div>
 </div></li>
@@ -365,7 +365,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You find a screenshot of how to create a new project <a href="https://malikaihle.github.io/Collaborative-RStudio-GitHub/clone.html">here</a></p>
+<p>You can find a screenshot of how to create a new project <a href="https://malikaihle.github.io/Collaborative-RStudio-GitHub/clone.html">here</a></p>
 </div>
 </div>
 <ul>
@@ -391,7 +391,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You find the <em>quarto-webr</em> documentation <a href="https://quarto-webr.thecoatlessprofessor.com/">here</a></p>
+<p>You can find the <em>quarto-webr</em> documentation <a href="https://quarto-webr.thecoatlessprofessor.com/">here</a></p>
 </div>
 </div>
 <ul>
@@ -414,7 +414,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You find the <em>quarto-pyodide</em> documentation <a href="https://quarto.thecoatlessprofessor.com/pyodide/">here</a></p>
+<p>You can find the <em>quarto-pyodide</em> documentation <a href="https://quarto.thecoatlessprofessor.com/pyodide/">here</a></p>
 </div>
 </div>
 <ul>
@@ -430,17 +430,16 @@ Note
 <ul>
 <li><p>In RStudio, click <em>File</em> &gt; <em>New File</em> &gt; <em>Quarto Document</em></p></li>
 <li><p>Add the following options to the YAML header (only add the filter relevant to you):</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">engine:</span><span class="co"> knitr</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">filters:</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>webr</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>pyodide</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Interactive R chunks must be formatted like this:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{webr-r}</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">engine</span><span class="kw">:</span><span class="at"> knitr</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">filters</span><span class="kw">:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> webr</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> pyodide</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Interactive R chunks must be formatted like this: <code>qmd ```olhnuezodj ```</code>qmd</p></li>
 <li><p>Interactive Python chunks must be formatted like this:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{pyodide-python}</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{pyodide-python}</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Declare the language of the document by setting e.g.&nbsp;<code>lang: en</code> in the YAML header (see the <a href="https://quarto.org/docs/authoring/language.html">Quarto documentation on document language</a> for more information)</p></li>
 <li><p>Add some text or other things you want to see on your Quarto website</p></li>
 </ul></li>
 <li><p>Check that the file <code>mywebr.qmd</code> renders successfully locally. In RStudio you can just click the <em>Render</em> button</p>
@@ -455,11 +454,11 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p>You might face the issue that the status remains at <em>Loading…</em> because your browser restricts certain features of local files. In this case, spin up a simple web server by running one of the following and go to <a href="http://localhost:8000/"><code>http://localhost:8000/</code></a>:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> <span class="at">-e</span> <span class="st">"servr::httd()"</span> <span class="at">-p8000</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> http.server 8000</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> <span class="at">-e</span> <span class="st">"servr::httd()"</span> <span class="at">-p8000</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> http.server 8000</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div></li>
-<li><p>When you are finished with your Quarto document and everything renders correctly, you can commit the file <code>mywebr.qmd</code> and the <em>_extensions/coatless</em> folder to your git repository and push your changes to your Github project (this step is recommended but optional)</p>
+<li><p>When you are finished with your Quarto document and everything renders correctly, you can commit the file <code>mywebr.qmd</code> and the folder <code>_extensions/coatless</code> to your git repository and push your changes to your Github project (this step is recommended but optional)</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -471,8 +470,8 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>You find a screenshot on how to commit changes in RStudio <a href="https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/commit.html">here</a></li>
-<li>You find a screenshot on hot to push commits in RStudio <a href="https://malikaihle.github.io/Collaborative-RStudio-GitHub/push.html">here</a></li>
+<li>You can find a screenshot on how to commit changes in RStudio <a href="https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/commit.html">here</a></li>
+<li>You can find a screenshot on hot to push commits in RStudio <a href="https://malikaihle.github.io/Collaborative-RStudio-GitHub/push.html">here</a></li>
 </ul>
 </div>
 </div></li>
@@ -487,12 +486,12 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You find the documentation on how to publish Quarto websites on Github pages <a href="https://quarto.org/docs/publishing/github-pages.html">here</a></p>
+<p>You can find the documentation on how to publish Quarto websites on Github pages <a href="https://quarto.org/docs/publishing/github-pages.html">here</a></p>
 </div>
 </div>
 <ul>
 <li><p>Publish your website (based on the file <code>mywebr.qmd</code>) by running the following command in the terminal within RStudio. This will commit the rendered website to a Github branch named <code>gh-pages</code>:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages mywebr.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages mywebr.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Answer <em>Yes</em> that you want to upload the website to Github Pages</p></li>
 <li><p>When ready, a browser window should open automatically</p></li>
 </ul></li>
