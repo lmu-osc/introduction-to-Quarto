@@ -102,10 +102,10 @@ The final result of the exercise using webR could look something like this:
 6. Check that the file `mywebr.qmd` renders successfully locally. In RStudio you can just click the *Render* button
 
    ::: {.callout-note}
-   You might face the issue that the status remains at _Loading..._ because your browser restricts certain features of local files. In this case, spin up a simple web server by running one of the following and go to [`http://localhost:8000/`](http://localhost:8000/):
+   You might face the issue that the status remains at _Loading..._ because your browser restricts certain features of local files. In this case, spin up a simple web server by running one of the following, go to [`http://localhost:8000/`](http://localhost:8000/) and click on `mywebr.html`:
    
    ```sh
-   Rscript -e "servr::httd()" -p8000
+   Rscript -e "servr::httd(port = 8000)"
    python -m http.server 8000
    ```
    :::
