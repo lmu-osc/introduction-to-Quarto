@@ -91,9 +91,9 @@ The final result of the exercise using webR could look something like this:
      ````qmd
      ```{{webr-r}}
      ```
-     ````qmd
-   - Interactive Python chunks must be formatted like this:
      ````
+   - Interactive Python chunks must be formatted like this:
+     ````qmd
      ```{{pyodide-python}}
      ```
      ````
