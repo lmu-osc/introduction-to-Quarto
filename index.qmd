@@ -3,7 +3,7 @@ title: "1. Welcome to the Quarto Workshop"
 sidebar: true
 ---
 
-Welcome to the **Quarto workshop**, initially designed for the [LMU OSC Summer School 2023](https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/).
+Welcome to the **Quarto workshop**, initially designed for the [LMU OSC Summer School 2023](https://lmu-osc.github.io/OSC-Open-Research-Summer-School-2023/).
 
 ## Structure and Workflow of the Workshop
 
