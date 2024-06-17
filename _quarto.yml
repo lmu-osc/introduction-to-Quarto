@@ -14,7 +14,7 @@ website:
   navbar:
     tools:
       - icon: github
-        href: https://github.com/FlorianPargent/Quarto_LMU_OSC
+        href: https://github.com/lmu-osc/introduction-to-Quarto
     left:
       - text: "1. Welcome"
         href: "index.qmd"
@@ -73,7 +73,7 @@ website:
   #           - get-started_2.qmd
   #           - get-started_3.qmd
             
-  repo-url: https://github.com/FlorianPargent/Quarto_LMU_OSC
+  repo-url: https://github.com/lmu-osc/introduction-to-Quarto
   repo-actions: [issue, edit]
 
 format:
@@ -83,7 +83,7 @@ format:
     toc: true
     link-external-newwindow: true
     link-external-icon: true
-    link-external-filter: ^(?:http:|https:)\/\/florianpargent\.github\.io\/Quarto_LMU_OSC\/
+    link-external-filter: ^(?:http:|https:)\/\/lmu-osc\.github\.io\/introduction-to-Quarto\/
     df-print: paged
     code-overflow: wrap
 
