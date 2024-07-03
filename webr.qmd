@@ -62,7 +62,7 @@ The final result of the exercise using webR could look something like this:
    - Answer *Yes* that you want to install the webR filter
    - Answer *Yes* if you now want to open the *quarto-webr* documentation in your default browser (you do not have to)
    - You should now have a folder `_extensions/coatless/webr` in your project directory
-4. Download the Pyodide Quarto extension
+4. Download the *Pyodide* Quarto extension
 
    ::: {.callout-note}
    You can find the *quarto-pyodide* documentation [here](https://quarto.thecoatlessprofessor.com/pyodide/)
