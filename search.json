@@ -1,401 +1,35 @@
 [
   {
-    "objectID": "webr.html",
-    "href": "webr.html",
-    "title": "Exercise: Create a website with Quarto, WebR/Pyodide, and Github Pages, to use R/Python on your smartphone or tablet",
+    "objectID": "links.html",
+    "href": "links.html",
+    "title": "5. Links to Further Resources",
     "section": "",
-    "text": "Description\nIn this exercise you can practice how to\n\nhost a Quarto website with Github Pages\nuse WebR/Pyodide in a Quarto document that allows you to run R/Python in your browser\n\nThe final result of the exercise is a website on which you can run R/Python directly in your browser, without having it installed on your device like your smartphone or tablet.\nYou can just follow our step-by-step instructions or have a look at the relevant documentation we link to in the blue boxes.\n\n\nFinal result\nThe final result of the exercise using webR could look something like this:\n\nWebsite\nCode\n\n\n\nStep by step instructions\n\nLog into your Github account and create a new public Github repository\n\n\n\n\n\n\nNote\n\n\n\n\nIf you need a refresher on how to work with Git and Github you can checkout the following two self-paced online tutorials:\n\nIntroduction to version Control in R with RStudio, Git, and Github\nCollaborative coding with GitHub and RStudio\n\nYou can find a screenshot of how to create a new repository here\n\n\n\nCreate a new project in RStudio\n\n\n\n\n\n\nNote\n\n\n\nYou can find a screenshot of how to create a new project here\n\n\n\nClick File &gt; New Project &gt; Version control &gt; Git\nGo to your Github repository, click on Code and copy the HTTPS URL to the clipboard\nIn RStudio, insert the URL into the Repository URL field\nOptional:\n\nYou can leave the Project directory field blank to adopt the name of the Github repository\nYou can click on Open in new session to avoid closing your original RStudio session\n\nClick Browse to select where to save the project on your computer\nClick Create Project\n\nDownload the webR Quarto extension\n\n\n\n\n\n\nNote\n\n\n\nYou can find the quarto-webr documentation here\n\n\n\nOpen the terminal in RStudio\nInstall the Quarto extension with the following code:\nquarto add coatless/quarto-webr\nAnswer Yes that you trust the author\nAnswer Yes that you want to install the webR filter\nAnswer Yes if you now want to open the quarto-webr documentation in your default browser (you do not have to)\nYou should now have a folder _extensions/coatless/webr in your project directory\n\nDownload the Pyodide Quarto extension\n\n\n\n\n\n\nNote\n\n\n\nYou can find the quarto-pyodide documentation here\n\n\n\nOpen the terminal in RStudio\nInstall the Quarto extension with the following code:\nquarto add coatless-quarto/pyodide\nAnswer Yes that you trust the author\nAnswer Yes that you want to install the pyodide filter\nAnswer Yes if you now want to open the pyodide documentation in your default browser (you do not have to)\nYou should now have a folder _extensions/coatless-quarto/pyodide in your project directory\n\nCreate a new Quarto document, named e.g. mywebr.qmd\n\nIn RStudio, click File &gt; New File &gt; Quarto Document\nAdd the following options to the YAML header (only add the filter relevant to you):\nformat: html\nengine: knitr\nfilters:\n  - webr\n  - pyodide\nInteractive R chunks must be formatted like this: qmd ```olhnuezodj ```qmd\nInteractive Python chunks must be formatted like this:\n```{pyodide-python}\n```\nDeclare the language of the document by setting e.g. lang: en in the YAML header (see the Quarto documentation on document language for more information)\nAdd some text or other things you want to see on your Quarto website\n\nCheck that the file mywebr.qmd renders successfully locally. In RStudio you can just click the Render button\n\n\n\n\n\n\nNote\n\n\n\nYou might face the issue that the status remains at Loading… because your browser restricts certain features of local files. In this case, spin up a simple web server by running one of the following and go to http://localhost:8000/:\nRscript -e \"servr::httd()\" -p8000\npython -m http.server 8000\n\n\nWhen you are finished with your Quarto document and everything renders correctly, you can commit the file mywebr.qmd and the folder _extensions/coatless to your git repository and push your changes to your Github project (this step is recommended but optional)\n\n\n\n\n\n\nNote\n\n\n\n\nYou can find a screenshot on how to commit changes in RStudio here\nYou can find a screenshot on hot to push commits in RStudio here\n\n\n\nUpload the website to Github pages\n\n\n\n\n\n\nNote\n\n\n\nYou can find the documentation on how to publish Quarto websites on Github pages here\n\n\n\nPublish your website (based on the file mywebr.qmd) by running the following command in the terminal within RStudio. This will commit the rendered website to a Github branch named gh-pages:\nquarto publish gh-pages mywebr.qmd\nAnswer Yes that you want to upload the website to Github Pages\nWhen ready, a browser window should open automatically",
+    "text": "The official Quarto webpage you have already used in this workshop\n\nGet started tutorials: after the workshop, you already know these\nQuarto Guide: your main resource for everything Quarto related\nFunction Reference: to look up some Quarto option you have forgotten the name of\nMarkdown Basics: to look up the Pandoc Markdown syntax Quarto heavily relies on",
     "crumbs": [
       "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: WebR/Pyodide"
+      "5. Links to Further Resources"
     ]
   },
   {
-    "objectID": "quarto_manuscripts.html",
-    "href": "quarto_manuscripts.html",
-    "title": "Exercise: Create a Quarto Manuscripts website for one of your own scientific publications",
+    "objectID": "links.html#official-quarto-documentation",
+    "href": "links.html#official-quarto-documentation",
+    "title": "5. Links to Further Resources",
     "section": "",
-    "text": "Description\nIn this unstructured exercise we would encourage you to\n\nconvert one of your own manuscripts into Quarto\nuse Quarto Manuscripts to create a website for this publication\npublish this website with Github Pages\n\nThe final result of the exercise could be a Quarto Manuscript website which serves as a hub containing everything necessary to reproduce your manuscript.\nFor this exercise, we do not provide step-by-step instructions. Instead we link to the relevant Quarto Manuscript documentation, provide an example of how the final result of the exercise could look like, and list the most important steps when converting a Quarto document into a Quarto Manuscripts website.\n\n\nWhat are Quarto Manuscripts?\nThe Quarto documentation on manuscripts reads:\n\n\n\n\n\n\nQuote:\n\n\n\nQuarto manuscript projects provide a framework for writing and publishing scholarly articles. A Quarto manuscript lets you:\n\nUse one or more notebooks or .qmd documents as the source of content and computations, and then publish these computations alongside the manuscript, allowing readers to dive into your code.\nProduce manuscripts in multiple formats (including LaTeX or MS Word formats required by journals), and give readers easy access to all of the formats through a manuscript website.\n\nThe output of a Quarto manuscript is a website (live example). The article itself appears as the content of the website, and can include all the elements common to scholarly writing like figures, tables, equations, cross references and citations. The website also makes available other formats (e.g. PDF, Docx) as well as links to all of the computations used to create the article.\n\n\n\n\nInstructions\n\nWe suggest that, before you start with your own Quarto manuscript, you have a look at the Getting Started tutorial on how to create a Quarto Manuscript website.\nAdditional documentation on Quarto Manuscripts can be found here.\n\n\n\nFinal result\nThe final result of the exercise could look something like this:\n\nWebsite\nCode\n\n\n\nSteps to convert a Quarto document into a Quarto Manuscripts project\nIf you already have written your manuscript with Quarto, there are only a small number of steps necessary to convert your document into a Quarto Manuscripts website. Without guarantee of completeness, the most important steps are:\n\nCreate the file _quarto.yml in your RStudio project. A good starting point for the content of this file is:\nproject:\n  type: manuscript\n\nmanuscript:\n  article: index.qmd\n\nformat:\n  html:\n    comments:\n      hypothesis: false\n  pdf: default\n  docx: default\n  jats: default\n\nexecute:\n  freeze: auto\nThe main .qmd document containing your manuscript must be named index.qmd by default. If you want to use another name, adjust the line article: index.qmd in the file _quarto.yml.\nMake sure that you remove unnecessary (or conflicting) YAML options in your article and additional notebook .qmd files. We suggest to only use a minimum of options first, test that everything works and then add further options when needed.\nQuarto Manuscripts supports many useful YAML options that can be used in your index.qmd file. We suggest that you have a look on the Quarto documentation on scholarly writing this and consecutive pages.\nIf your project contains computations that take a long time to run, we suggest you make sure you understand how the freeze functionality of Quarto works by reading this and this.\nOptional: If you need to format your manuscript in APA style, you might want that 1) your Quarto Manuscripts website uses standard HTML themes and formatting but uses APA citation style, 2) your downloadable .pdf file is nicely formatted as a APA journal article that you can upload to the preprint server of your choice, and 3) your downloadable manuscript in .docx format is formatted as a APA manuscript, which is how many APA journals require manuscripts to be sent into peer review.\nYou can achieve this by\n\ndownloading the apa-quarto extension as explained in the previous exercise\nusing the following code in your _quarto.yml file:\nformat:\n  html: default\n  jats: default\n  apaquarto-pdf:\n    documentmode: jou\n    a4paper: true\n    pdf-engine: lualatex\n    keep-tex: false\n  apaquarto-docx: default\nusing the YAML option csl: apa.csl in the file index.qmd (the file apa.csl can be downloaded here)",
+    "text": "The official Quarto webpage you have already used in this workshop\n\nGet started tutorials: after the workshop, you already know these\nQuarto Guide: your main resource for everything Quarto related\nFunction Reference: to look up some Quarto option you have forgotten the name of\nMarkdown Basics: to look up the Pandoc Markdown syntax Quarto heavily relies on",
     "crumbs": [
       "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: Quarto Manuscripts"
+      "5. Links to Further Resources"
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This self-paced Quarto tutorial (excluding the external materials we link to) was developed by\n\nFlorian Pargent\nFlorian Kohrt\nPhilipp Sckopke\n\nand is published under a Creative Commons CC0 1.0 license. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."
-  },
-  {
-    "objectID": "apa7_manuscript.html",
-    "href": "apa7_manuscript.html",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "",
-    "text": "Note\n\n\n\nThis exercise is only relevant, if you are a psychologist or want to publish in journals that require manuscripts to be formatted in the APA 7 style (Publication Manual of the American Psychological Association: 7th Edition). If you are from another discipline, checkout whether Quarto already provides article templates for your most beloved journals.",
+    "objectID": "links.html#other-recommended-resources",
+    "href": "links.html#other-recommended-resources",
+    "title": "5. Links to Further Resources",
+    "section": "Other recommended resources",
+    "text": "Other recommended resources\n\nQuarto section in the r4ds book: https://r4ds.hadley.nz/quarto.html\nTwo especially noteworthy subsections are:\n\nEfficient strategies on how to set the figure size in .qmd documents:\nhttps://r4ds.hadley.nz/quarto.html#figure-sizing\nTips on how to use cache in quarto:\nhttps://r4ds.hadley.nz/quarto.html#sec-caching\n\nQuarto for academics:\n\nBlog post: https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/\nJournal article templates: https://quarto.org/docs/journals/formats.html\nQuarto manuscripts: https://quarto.org/docs/manuscripts/\n\nAwesome-Quarto link collection: https://github.com/mcanouil/awesome-quarto\nIt also contains an extensive section on other Quarto tutorials & workshops\nDocumentation of the RStudio Visual Markdown Editor",
     "crumbs": [
       "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#description",
-    "href": "apa7_manuscript.html#description",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Description",
-    "text": "Description\nPick a preprint of your own and implement it using Quarto in the APA 7 manuscript style. You also can view an example document that incorporates all features from this exercise.",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#getting-started",
-    "href": "apa7_manuscript.html#getting-started",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Getting started",
-    "text": "Getting started\nCurrently, there is no official Quarto extension to format documents according to the APA 7 guidelines1. However, the inofficial apaquarto extension can be utilized until better options emerge2. After installing it into the current project, we can set the format to apaquarto-pdf or apaquarto-docx. Here are the detailed steps that are necessary to create a manuscript in APA 7 style – skip step 1 if you want to use an existing Quarto document.\n\nPrerequisites\n\nInstall required packages\n\nClick on Console\nEnter\n\ninstall.packages(c(\"rmarkdown\", \"conflicted\", \"tidyverse\", \"flextable\", \"ftExtra\"))\n\nInstall TinyTeX\n\nClick on Terminal\nEnter quarto install tinytex\n\n\noptional: Create a new Quarto Document\n\nClick on File &gt; New File &gt; Quarto Document\nFill Title and Author\nChoose PDF\nClick Create\n\nAdd APA 7 Quarto extension\n\nGo to Terminal\nEnter quarto add wjschne/apaquarto\nConfirm installation by entering Y twice, then avoid opening the documentation by entering n\nIf you want to update the extension at a later point, enter quarto update wjschne/apaquarto\n\nDeclare the language of the document by setting e.g. lang: en in the YAML header (see the Quarto documentation on document language for more information)\nChange format as follows:\n\nformat:\n  apaquarto-pdf:\n    documentmode: man\n    a4paper: true\n    pdf-engine: lualatex\n    keep-tex: false\nClick on the disk symbol to save (maybe call the file manuscript.qmd)\nClick on Render\n\nWe can now provide additional information in the YAML header as detailed below.",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#short-title",
-    "href": "apa7_manuscript.html#short-title",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Short title",
-    "text": "Short title\nA running header in upper case can be added like this:\nshorttitle: \"My short title\"",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#authors",
-    "href": "apa7_manuscript.html#authors",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Authors",
-    "text": "Authors\nSay we have two authors called Ana Fulana and Blanca Zutana, each with their own ORCID, email address and CRediT roles. They have a common affiliation and Ana acts as corresponding author. In the YAML header this looks as follows:\nauthor:\n  - name: Ana Fulana\n    corresponding: true\n    orcid: \"0000-0000-0000-0000\"\n    email: \"af@example.org\"\n    roles:\n      - conceptualization\n      - writing\n    affiliations:\n      - id: \"lmu\"\n        name: \"Ludwig-Maximilians-Universität München, Munich, Germany\"\n        department: \"Department of Psychology\"\n        ror: \"https://ror.org/05591te55\"\n        url: \"https://www.lmu.de/\"\n  - name: Blanca Zutana\n    roles:\n      - project administration\n    affiliations: \n      - ref: lmu\nAvailable CRediT roles are:\n\nconceptualization\ndata curation\nformal analysis\nfunding acquisition\ninvestigation\nmethodology\nproject administration\nresources\nsoftware\nsupervision\nvalidation\nvisualization\nwriting\nediting\n\nSee the Quarto documentation on author roles for more information.",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#abstract",
-    "href": "apa7_manuscript.html#abstract",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Abstract",
-    "text": "Abstract\nYou can add an abstract using the abstract YAML key:\nabstract: \"Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#keywords",
-    "href": "apa7_manuscript.html#keywords",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Keywords",
-    "text": "Keywords\nOne can add multiple keywords by using a list:\nkeywords:\n  - meta science\n  - replication\n  - multiverse analysis",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#author-note",
-    "href": "apa7_manuscript.html#author-note",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Author Note",
-    "text": "Author Note\nThe author note can be populated with various disclosures as follows:\nauthor-note:\n  disclosures:\n    study-registration: \"This study was preregistered at OSF at ....\"\n    data-sharing: \"Code and data of this study are available at ...\"\n    related-report: \"This article is based on data published in ...\"\n    conflict-of-interest: \"We declare we have no competing interests.\"\n    financial-support: \"This research was funded by the German Research Foundation (DFG SCHO ..., Blanca Zutana).\"\n    gratitude: \"We would like to thank Carina Mengana and Dolorita Perengana for their very helpful comments and discussions on this project.\"\n    authorship-agreements: \"Because the authors are equal contributors, order of authorship was determined by a fair coin toss.\"",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#figures",
-    "href": "apa7_manuscript.html#figures",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Figures",
-    "text": "Figures\nFor including images, it is recommended to define a label starting with fig- to make the figure cross-referencable. One can also add a note and set the image width and height. In APA 7 style, captions are to be written in title case.\n\n![This Image Depicts a Flower.](flower.jpg){#fig-flower apa-note=\"This is the note below the figure.\" height=\"5cm\" width=\"5cm\"}\nFor figures that are computed dynamically, the following might serve as an example:\n```{r}\n#| label: fig-cars\n#| fig-cap: Plot of the cars Dataset.\n#| apa-note: Another note.\n#| out-height: 5cm\n#| out-width: 5cm\n#| fig-height: 3\n#| fig-width: 3\n\nplot(cars)\n```\nWhen using the apaquarto extension, by default, figures appear at the end of the document, unless one sets floatsintext: true in the YAML header. Therefore it might make sense to add a final heading Appendix below which the figures will appear. Figures can be cross-referenced by using the @ symbol followed by the reference label: For an image of a flower, see @fig-flower.\nFor more information on how to work with figures, head over to the Quarto documentation on figures.",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#tables",
-    "href": "apa7_manuscript.html#tables",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Tables",
-    "text": "Tables\nTables need to have labels prefixed with tbl-:\n| Letters | Numbers |\n|:-------:|:-------:|\n| A       | 1       |\n| B       | 2       |\n| C       | 3       |\n\n: My Caption {#tbl-mytable apa-note=\"Note below table\" data-quarto-disable-processing=\"true\"}\n```qmd\n\nAs an alternative to using markdown, tables can be created dynamically, e.g. using the R packages `tibble` and `flextable`:\n\n``````qmd\n```{r}\n#| label: tbl-ingredients\n#| tbl-cap: Substances and Their Key Ingredients.\n#| apa-note: The note below the table.\n\ntibble::tribble(\n  ~\"Substance\", ~\"Key Ingredient\",\n  \"a\",   \"None\",\n  \"b\",   \"Sugar\",\n  \"c\",   \"Salt\"\n  ) |&gt;\n  flextable::flextable() |&gt;\n  flextable::theme_apa()\n``````\nWhen using the apaquarto extension, by default, tables appear at the end of the document, unless one sets floatsintext: true in the YAML header. One can refer to tables by using the @ symbol followed by the reference label: Key ingredients are given in @tbl-ingredients.\nFor more information on how to create tables, head over to the Quarto documentation on tables.",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#footnotes",
-    "href": "apa7_manuscript.html#footnotes",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor a list of official Quarto extensions, see Journal Articles.↩︎\nOne can follow the discussion on GitHub at quarto-journals/article-format-template#11↩︎",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#references",
-    "href": "apa7_manuscript.html#references",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "References",
-    "text": "References\nPut your bibliography in a BibTeX file (extension .bib) and reference it in your YAML metadata:\nbibliography: literature.bib\nAdd a level one heading and a Div with the id refs at the end of the document (but before the appendix, if you have one):\n# References\n\n::: {#refs}\n:::\nYou can now cite from your bibliography using the syntax [@id].\nFor more information on how to cite literature, head over to the Quarto documentation on citations.",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#numbered-lines",
-    "href": "apa7_manuscript.html#numbered-lines",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Numbered lines",
-    "text": "Numbered lines\nIf you would like to have your lines numbered, set numbered-lines: true in the YAML header.",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#generate-.tex-file",
-    "href": "apa7_manuscript.html#generate-.tex-file",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Generate .tex file",
-    "text": "Generate .tex file\nSometimes you might need the intermediate .tex file in addition to the final .pdf file. In order to keep that, set keep-tex: true in the YAML header.",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#use-publication-style",
-    "href": "apa7_manuscript.html#use-publication-style",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Use publication style",
-    "text": "Use publication style\nIn the YAML header shared above, the style of the document is a manuscript as required when submitting to an APA journal. To switch to publication style which resembles the format of an article printed in an APA journal, change the document mode by setting documentmode: jou",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#generate-.docx-file",
-    "href": "apa7_manuscript.html#generate-.docx-file",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Generate .docx file",
-    "text": "Generate .docx file\nIf you prefer to create your manuscript as DOCX rather than PDF, you can set the format as follows:\nformat:\n  apaquarto-docx: default",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "apa7_manuscript.html#final-notes",
-    "href": "apa7_manuscript.html#final-notes",
-    "title": "Exercise: Formatting Quarto documents in APA 7 style",
-    "section": "Final notes",
-    "text": "Final notes\nYou can download a manuscript with all the features presented on this page via the following button:\n Download source files as ZIP \nIf you are interested in all the options provided by the apaquarto extension (e.g., masked citations for anonymous peer review), have a look at the apaquarto documentation. Also, we recommend reading the guide APA Style via Markdown.",
-    "crumbs": [
-      "1. Welcome",
-      "4. Advanced Exercises",
-      "Exercise: APA 7 Manuscripts"
-    ]
-  },
-  {
-    "objectID": "get-started_2.html",
-    "href": "get-started_2.html",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "",
-    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend to skip the caching section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the second tutorial, come back here and continue with the next tutorial on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the second tutorial at https://quarto.org/docs/get-started/computations/rstudio.html.\n\n\n\n\n\n\nWhenever you copy something from the tutorial website into your own .qmd document, always make sure that in RStudio you copy into Source mode instead of Visual mode. Otherwise, rendering the document will not work correctly because the visual mode adds some extra characters that brake the markdown syntax.\nThe tutorial discusses yaml options (e.g. df-print: paged) on how to display data.frames but does not actually print any data.frame in the .qmd document. You can add the following chunk to test the different df-print options:\n\n```{r}\nlibrary(palmerpenguins)\npenguins\n```\n\n\n  \n\n\n\nCode linking (code-link: true) sometimes does not seem to work on all systems, we also do not know why…\nWhen you render the final .qmd document, this will produce an html file (computations.html) that you might want to share with some colleagues to show them your new analysis. However, be aware that the html file does not contain all necessary content and will possibly not display correctly on its own. To produce a single standalone .html file that you can share with others, add embed-resources: true to the html options in the YAML header. The final .html then should look something like this (there is also an additional option self-contained-math: true which tries to make sure that all your equations can be displayed without a connection to the internet):\n Download standalone .html",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Tutorial: Computations"
-    ]
-  },
-  {
-    "objectID": "get-started_2.html#tutorial-computations",
-    "href": "get-started_2.html#tutorial-computations",
-    "title": "Quarto Workshop LMU OSC",
-    "section": "",
-    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend to skip the caching section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the second tutorial, come back here and continue with the next tutorial on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the second tutorial at https://quarto.org/docs/get-started/computations/rstudio.html.\n\n\n\n\n\n\nWhenever you copy something from the tutorial website into your own .qmd document, always make sure that in RStudio you copy into Source mode instead of Visual mode. Otherwise, rendering the document will not work correctly because the visual mode adds some extra characters that brake the markdown syntax.\nThe tutorial discusses yaml options (e.g. df-print: paged) on how to display data.frames but does not actually print any data.frame in the .qmd document. You can add the following chunk to test the different df-print options:\n\n```{r}\nlibrary(palmerpenguins)\npenguins\n```\n\n\n  \n\n\n\nCode linking (code-link: true) sometimes does not seem to work on all systems, we also do not know why…\nWhen you render the final .qmd document, this will produce an html file (computations.html) that you might want to share with some colleagues to show them your new analysis. However, be aware that the html file does not contain all necessary content and will possibly not display correctly on its own. To produce a single standalone .html file that you can share with others, add embed-resources: true to the html options in the YAML header. The final .html then should look something like this (there is also an additional option self-contained-math: true which tries to make sure that all your equations can be displayed without a connection to the internet):\n Download standalone .html",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Tutorial: Computations"
-    ]
-  },
-  {
-    "objectID": "preparations.html",
-    "href": "preparations.html",
-    "title": "Preparations",
-    "section": "",
-    "text": "During the official Quarto tutorials, you will be asked to install a number of software packages. Because the installation can take up some time, we recommend to install the following software beforehand, so you can skip these steps later:\n\nIn this workshop, we will use Quarto together with R but Quarto can also be used with Python, Julia, or Observable JS.\nMake sure that you have a recent version of R and RStudio installed. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio here.\nInstall tinytex, a small version of TeX that can be used to build pdf documents with Quarto:\n\nIn RStudio, open a Terminal window: Tools &gt; Terminal &gt; New Terminal\nRun the following code in the Terminal:\n\n\n\nTerminal\n\nquarto install tinytex",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Preparations"
-    ]
-  },
-  {
-    "objectID": "preparations.html#installation",
-    "href": "preparations.html#installation",
-    "title": "Preparations",
-    "section": "",
-    "text": "During the official Quarto tutorials, you will be asked to install a number of software packages. Because the installation can take up some time, we recommend to install the following software beforehand, so you can skip these steps later:\n\nIn this workshop, we will use Quarto together with R but Quarto can also be used with Python, Julia, or Observable JS.\nMake sure that you have a recent version of R and RStudio installed. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio here.\nInstall tinytex, a small version of TeX that can be used to build pdf documents with Quarto:\n\nIn RStudio, open a Terminal window: Tools &gt; Terminal &gt; New Terminal\nRun the following code in the Terminal:\n\n\n\nTerminal\n\nquarto install tinytex",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Preparations"
-    ]
-  },
-  {
-    "objectID": "preparations.html#create-an-rstudio-project",
-    "href": "preparations.html#create-an-rstudio-project",
-    "title": "Preparations",
-    "section": "Create an RStudio project",
-    "text": "Create an RStudio project\nDuring the Quarto tutorials, you will be asked to work with different files. This will be more intuitive and convenient, if you have performed the following steps beforehand:\n\nCreate an RStudio project for the workshop (if you need more details, see this tutorial)\n\nIn RStudio go to File &gt; New Project… &gt; New Directory &gt; New Project\nSelect where to put the project on your computer and select a meaningful name, e.g. Quarto_Workshop\nPress Create Project (then you can always close RStudio and come back there later)\n\nWhen downloading files during the Quarto tutorials, make sure to place all these files in the project folder\nYou can always double-click the .Rproj file in the project folder on your computer to open RStudio with the appropriate working directory set automatically, and the Files window in RStudio showing all files in the project folder",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Preparations"
-    ]
-  },
-  {
-    "objectID": "preparations.html#lets-start-the-tutorial",
-    "href": "preparations.html#lets-start-the-tutorial",
-    "title": "Preparations",
-    "section": "Let’s start the tutorial",
-    "text": "Let’s start the tutorial\nYou are now ready to start with the first tutorial on this page.",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Preparations"
-    ]
-  },
-  {
-    "objectID": "comments.html",
-    "href": "comments.html",
-    "title": "3. Tips and Comments",
-    "section": "",
-    "text": "Do not get frustrated when Quarto does not get you all the way to the final result that you want! Tinkering with layout options often takes a lot of time and is not always worth the effort. The most important reason for academics to use Quarto is usually to ensure the reproducibility of your analysis. For everything else, do not feel too bad when using some of the following workarounds:\n\nRender your document to .tex or .docx and do some manual formatting required by academic journals.\nInstead of forcing all your (very) senior collaborators to learn Quarto, just give them the rendered .pdf or .docx and incorporate their comments into the Quarto document yourself.\n\nMake sure that your project still renders without problems as often as possible:\n\nFrequently use the Render button when working on your Quarto documents, to ensure that you have not made a mistake. Debugging Quarto documents is very hard when you cannot say for sure which section in your code introduced an error that prevents rendering. Never leave a Quarto project at the end of your workday that does not render correctly! Trust us, just don’t do it!\nWe highly recommend to always use Quarto together with version control. For an introduction on how to use git within RStudio you can use this tutorial. Using version control is even more important when you want to collaborate with your colleagues.\n\nWhen using Quarto together with version control (as recommended!), it can be very useful to place each sentence in your .qmd document on a separate line. This makes it much easier to follow changes (e.g. fixing a small typo in a manuscript), because git will always highlight the whole line in which changes have been made.\nBe careful if you use the cache feature that we recommended to initially skip in the second tutorial. Although caching is powerful and can be very useful, it can lead to unexpected and invisible problems with respect to reproducibility. We recommend that you do not use the cache by default and that you carefully read this thoughtful chapter before using the cache in any of your own projects.\nWe recommend that you do not rely on the visual mode in RStudio too much: Even if you like the Visual Editor, make sure that you also gradually learn how do do everything in the raw source mode. When learning how to use Quarto, using the visual mode and then switching to source mode to see the result can be very useful.\nMake it a habit to set always specify the language of a document in the YAML header (e.g. lang: de for German). Hyphenation, for example, relies on having the correct language set.",
-    "crumbs": [
-      "1. Welcome",
-      "3. Tips and Comments"
-    ]
-  },
-  {
-    "objectID": "comments.html#some-personal-experiences-from-using-quarto-or-r-markdown",
-    "href": "comments.html#some-personal-experiences-from-using-quarto-or-r-markdown",
-    "title": "3. Tips and Comments",
-    "section": "",
-    "text": "Do not get frustrated when Quarto does not get you all the way to the final result that you want! Tinkering with layout options often takes a lot of time and is not always worth the effort. The most important reason for academics to use Quarto is usually to ensure the reproducibility of your analysis. For everything else, do not feel too bad when using some of the following workarounds:\n\nRender your document to .tex or .docx and do some manual formatting required by academic journals.\nInstead of forcing all your (very) senior collaborators to learn Quarto, just give them the rendered .pdf or .docx and incorporate their comments into the Quarto document yourself.\n\nMake sure that your project still renders without problems as often as possible:\n\nFrequently use the Render button when working on your Quarto documents, to ensure that you have not made a mistake. Debugging Quarto documents is very hard when you cannot say for sure which section in your code introduced an error that prevents rendering. Never leave a Quarto project at the end of your workday that does not render correctly! Trust us, just don’t do it!\nWe highly recommend to always use Quarto together with version control. For an introduction on how to use git within RStudio you can use this tutorial. Using version control is even more important when you want to collaborate with your colleagues.\n\nWhen using Quarto together with version control (as recommended!), it can be very useful to place each sentence in your .qmd document on a separate line. This makes it much easier to follow changes (e.g. fixing a small typo in a manuscript), because git will always highlight the whole line in which changes have been made.\nBe careful if you use the cache feature that we recommended to initially skip in the second tutorial. Although caching is powerful and can be very useful, it can lead to unexpected and invisible problems with respect to reproducibility. We recommend that you do not use the cache by default and that you carefully read this thoughtful chapter before using the cache in any of your own projects.\nWe recommend that you do not rely on the visual mode in RStudio too much: Even if you like the Visual Editor, make sure that you also gradually learn how do do everything in the raw source mode. When learning how to use Quarto, using the visual mode and then switching to source mode to see the result can be very useful.\nMake it a habit to set always specify the language of a document in the YAML header (e.g. lang: de for German). Hyphenation, for example, relies on having the correct language set.",
-    "crumbs": [
-      "1. Welcome",
-      "3. Tips and Comments"
-    ]
-  },
-  {
-    "objectID": "comments.html#optional-settings-to-the-visual-editor-in-rstudio",
-    "href": "comments.html#optional-settings-to-the-visual-editor-in-rstudio",
-    "title": "3. Tips and Comments",
-    "section": "Optional settings to the visual editor in RStudio",
-    "text": "Optional settings to the visual editor in RStudio\nThe Quarto tutorials use the Visual Editor in RStudio. If you followed the tutorial as intended, this should have helped you to make up your mind on whether you like this mode when working with Quarto. If you have come to the conclusion that you want to keep using the Visual Editor, we recommend to read this page and have a look at the following RStudio settings:\n\nIn RStudio go to Tools &gt; Global Options &gt; R Markdown &gt; Visual\nChoose the options:\n\nShow margin column indicator in code blocks\n\nDefault spacing between list items: spaced\nAutomatic text wrapping (line breaks): sentence",
-    "crumbs": [
-      "1. Welcome",
-      "3. Tips and Comments"
-    ]
-  },
-  {
-    "objectID": "comments.html#conclusion",
-    "href": "comments.html#conclusion",
-    "title": "3. Tips and Comments",
-    "section": "Conclusion",
-    "text": "Conclusion\nBefore we conclude the workshop, we want to point you towards our advanced exercises you might be interested in after you have completed the beginner tutorials, as well as a collection of links with our most recommended Quarto resources.\nWe wish you all the best on your future Quarto journeys! 🥳 👏 🎉",
-    "crumbs": [
-      "1. Welcome",
-      "3. Tips and Comments"
-    ]
-  },
-  {
-    "objectID": "quarto_tutorials.html",
-    "href": "quarto_tutorials.html",
-    "title": "2. Quarto Tutorials",
-    "section": "",
-    "text": "The Quarto website provides very well written beginner tutorials (Quarto “Getting Started”) and extensive online documentation (Quarto “Guide”). Instead of reinventing the wheel, we build around these tutorials and heavily link to the official resources.",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "quarto_tutorials.html#overview",
-    "href": "quarto_tutorials.html#overview",
-    "title": "2. Quarto Tutorials",
-    "section": "",
-    "text": "The Quarto website provides very well written beginner tutorials (Quarto “Getting Started”) and extensive online documentation (Quarto “Guide”). Instead of reinventing the wheel, we build around these tutorials and heavily link to the official resources.",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "quarto_tutorials.html#why-work-with-the-official-materials",
-    "href": "quarto_tutorials.html#why-work-with-the-official-materials",
-    "title": "2. Quarto Tutorials",
-    "section": "Why work with the official materials?",
-    "text": "Why work with the official materials?\n\nThe official tutorials are of a high quality.\nThe Quarto team keeps the official tutorials up to date.\nBecause Quarto is still relatively new, the usual channels to find help on the internet (Google, Stack Overflow) are not that useful yet. Thus, when using Quarto in your own project, you will probably have to consult the official documentation anyway.",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "quarto_tutorials.html#lets-prepare-our-setup-for-the-tutorials",
-    "href": "quarto_tutorials.html#lets-prepare-our-setup-for-the-tutorials",
-    "title": "2. Quarto Tutorials",
-    "section": "Let’s prepare our setup for the tutorials",
-    "text": "Let’s prepare our setup for the tutorials\nBefore you start with the tutorials, please follow the preparations on this page (you can always use the navigation arrows on the bottom of the current page).",
-    "crumbs": [
-      "1. Welcome",
-      "2. Quarto Tutorials",
-      "Overview"
+      "5. Links to Further Resources"
     ]
   },
   {
@@ -527,28 +161,79 @@
     ]
   },
   {
-    "objectID": "get-started_3.html",
-    "href": "get-started_3.html",
-    "title": "Quarto Workshop LMU OSC",
+    "objectID": "comments.html",
+    "href": "comments.html",
+    "title": "3. Tips and Comments",
     "section": "",
-    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend to skip the Publishing section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the third tutorial, come back here and continue with our personal tips and comments on using Quarto on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the third tutorial at https://quarto.org/docs/get-started/authoring/rstudio.html.\n\n\n\n\n\n\nThe tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is not always true.\nThe tutorial claims that “the format choice (HTML) is not even reflected in the YAML as it is the default output format for Quarto documents” when creating a new .qmd document, which is not true.\nThe tutorial does not talk about where to save the .qmd file. For our case, it is most practical to save it in the project folder you have created for the Quarto workshop.\nThe tutorial does not mention that the Render on Save option in RStudio is document specific and must again be ticked for the new .qmd file if you want to use it as showcased in the tutorial.\nWhen you render the .qmd file as .docx by use of the Render button in RStudio for the first time, RStudio might (misleadingly) ask where to safe the file, even though the .docx file has already been silently created in the background (because the yaml header specifies that all formats should be created on rendering).\nWhen you have used the Render button in RStudio to render .docx this might break the Viewer in RStudio (because RStudio seems to remember the last output format it has rendered and the Viewer does not work for .docx). One solution to fix this is to manually render once as .html or .pdf via the Render options, which should reactivate the Viewer.\nThe tutorial wants you to add a reference to the equation labeled #eq-slr, but this reference is actually already included in the .qmd file.\nRendering the final authoring-complete.qmd file you can download at the end of the tutorial will only work, if you also have the references.bib file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the citations section of the tutorial. The created bibliography file should look like this:\n Download references.bib \nWhen the .bib file is present, rendering authoring-complete.qmd should produce the following three output files (we have added embed-resources: true to the html options in the YAML header to produce a standalone html file that can be shared with others):\n Download .html   Download .pdf   Download .docx",
+    "text": "Do not get frustrated when Quarto does not get you all the way to the final result that you want! Tinkering with layout options often takes a lot of time and is not always worth the effort. The most important reason for academics to use Quarto is usually to ensure the reproducibility of your analysis. For everything else, do not feel too bad when using some of the following workarounds:\n\nRender your document to .tex or .docx and do some manual formatting required by academic journals.\nInstead of forcing all your (very) senior collaborators to learn Quarto, just give them the rendered .pdf or .docx and incorporate their comments into the Quarto document yourself.\n\nMake sure that your project still renders without problems as often as possible:\n\nFrequently use the Render button when working on your Quarto documents, to ensure that you have not made a mistake. Debugging Quarto documents is very hard when you cannot say for sure which section in your code introduced an error that prevents rendering. Never leave a Quarto project at the end of your workday that does not render correctly! Trust us, just don’t do it!\nWe highly recommend to always use Quarto together with version control. For an introduction on how to use git within RStudio you can use this tutorial. Using version control is even more important when you want to collaborate with your colleagues.\n\nWhen using Quarto together with version control (as recommended!), it can be very useful to place each sentence in your .qmd document on a separate line. This makes it much easier to follow changes (e.g. fixing a small typo in a manuscript), because git will always highlight the whole line in which changes have been made.\nBe careful if you use the cache feature that we recommended to initially skip in the second tutorial. Although caching is powerful and can be very useful, it can lead to unexpected and invisible problems with respect to reproducibility. We recommend that you do not use the cache by default and that you carefully read this thoughtful chapter before using the cache in any of your own projects.\nWe recommend that you do not rely on the visual mode in RStudio too much: Even if you like the Visual Editor, make sure that you also gradually learn how do do everything in the raw source mode. When learning how to use Quarto, using the visual mode and then switching to source mode to see the result can be very useful.\nMake it a habit to set always specify the language of a document in the YAML header (e.g. lang: de for German). Hyphenation, for example, relies on having the correct language set.",
     "crumbs": [
       "1. Welcome",
-      "2. Quarto Tutorials",
-      "Tutorial: Authoring"
+      "3. Tips and Comments"
     ]
   },
   {
-    "objectID": "get-started_3.html#tutorial-authoring",
-    "href": "get-started_3.html#tutorial-authoring",
+    "objectID": "comments.html#some-personal-experiences-from-using-quarto-or-r-markdown",
+    "href": "comments.html#some-personal-experiences-from-using-quarto-or-r-markdown",
+    "title": "3. Tips and Comments",
+    "section": "",
+    "text": "Do not get frustrated when Quarto does not get you all the way to the final result that you want! Tinkering with layout options often takes a lot of time and is not always worth the effort. The most important reason for academics to use Quarto is usually to ensure the reproducibility of your analysis. For everything else, do not feel too bad when using some of the following workarounds:\n\nRender your document to .tex or .docx and do some manual formatting required by academic journals.\nInstead of forcing all your (very) senior collaborators to learn Quarto, just give them the rendered .pdf or .docx and incorporate their comments into the Quarto document yourself.\n\nMake sure that your project still renders without problems as often as possible:\n\nFrequently use the Render button when working on your Quarto documents, to ensure that you have not made a mistake. Debugging Quarto documents is very hard when you cannot say for sure which section in your code introduced an error that prevents rendering. Never leave a Quarto project at the end of your workday that does not render correctly! Trust us, just don’t do it!\nWe highly recommend to always use Quarto together with version control. For an introduction on how to use git within RStudio you can use this tutorial. Using version control is even more important when you want to collaborate with your colleagues.\n\nWhen using Quarto together with version control (as recommended!), it can be very useful to place each sentence in your .qmd document on a separate line. This makes it much easier to follow changes (e.g. fixing a small typo in a manuscript), because git will always highlight the whole line in which changes have been made.\nBe careful if you use the cache feature that we recommended to initially skip in the second tutorial. Although caching is powerful and can be very useful, it can lead to unexpected and invisible problems with respect to reproducibility. We recommend that you do not use the cache by default and that you carefully read this thoughtful chapter before using the cache in any of your own projects.\nWe recommend that you do not rely on the visual mode in RStudio too much: Even if you like the Visual Editor, make sure that you also gradually learn how do do everything in the raw source mode. When learning how to use Quarto, using the visual mode and then switching to source mode to see the result can be very useful.\nMake it a habit to set always specify the language of a document in the YAML header (e.g. lang: de for German). Hyphenation, for example, relies on having the correct language set.",
+    "crumbs": [
+      "1. Welcome",
+      "3. Tips and Comments"
+    ]
+  },
+  {
+    "objectID": "comments.html#optional-settings-to-the-visual-editor-in-rstudio",
+    "href": "comments.html#optional-settings-to-the-visual-editor-in-rstudio",
+    "title": "3. Tips and Comments",
+    "section": "Optional settings to the visual editor in RStudio",
+    "text": "Optional settings to the visual editor in RStudio\nThe Quarto tutorials use the Visual Editor in RStudio. If you followed the tutorial as intended, this should have helped you to make up your mind on whether you like this mode when working with Quarto. If you have come to the conclusion that you want to keep using the Visual Editor, we recommend to read this page and have a look at the following RStudio settings:\n\nIn RStudio go to Tools &gt; Global Options &gt; R Markdown &gt; Visual\nChoose the options:\n\nShow margin column indicator in code blocks\n\nDefault spacing between list items: spaced\nAutomatic text wrapping (line breaks): sentence",
+    "crumbs": [
+      "1. Welcome",
+      "3. Tips and Comments"
+    ]
+  },
+  {
+    "objectID": "comments.html#conclusion",
+    "href": "comments.html#conclusion",
+    "title": "3. Tips and Comments",
+    "section": "Conclusion",
+    "text": "Conclusion\nBefore we conclude the workshop, we want to point you towards our advanced exercises you might be interested in after you have completed the beginner tutorials, as well as a collection of links with our most recommended Quarto resources.\nWe wish you all the best on your future Quarto journeys! 🥳 👏 🎉",
+    "crumbs": [
+      "1. Welcome",
+      "3. Tips and Comments"
+    ]
+  },
+  {
+    "objectID": "get-started_2.html",
+    "href": "get-started_2.html",
     "title": "Quarto Workshop LMU OSC",
     "section": "",
-    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend to skip the Publishing section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the third tutorial, come back here and continue with our personal tips and comments on using Quarto on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the third tutorial at https://quarto.org/docs/get-started/authoring/rstudio.html.\n\n\n\n\n\n\nThe tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is not always true.\nThe tutorial claims that “the format choice (HTML) is not even reflected in the YAML as it is the default output format for Quarto documents” when creating a new .qmd document, which is not true.\nThe tutorial does not talk about where to save the .qmd file. For our case, it is most practical to save it in the project folder you have created for the Quarto workshop.\nThe tutorial does not mention that the Render on Save option in RStudio is document specific and must again be ticked for the new .qmd file if you want to use it as showcased in the tutorial.\nWhen you render the .qmd file as .docx by use of the Render button in RStudio for the first time, RStudio might (misleadingly) ask where to safe the file, even though the .docx file has already been silently created in the background (because the yaml header specifies that all formats should be created on rendering).\nWhen you have used the Render button in RStudio to render .docx this might break the Viewer in RStudio (because RStudio seems to remember the last output format it has rendered and the Viewer does not work for .docx). One solution to fix this is to manually render once as .html or .pdf via the Render options, which should reactivate the Viewer.\nThe tutorial wants you to add a reference to the equation labeled #eq-slr, but this reference is actually already included in the .qmd file.\nRendering the final authoring-complete.qmd file you can download at the end of the tutorial will only work, if you also have the references.bib file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the citations section of the tutorial. The created bibliography file should look like this:\n Download references.bib \nWhen the .bib file is present, rendering authoring-complete.qmd should produce the following three output files (we have added embed-resources: true to the html options in the YAML header to produce a standalone html file that can be shared with others):\n Download .html   Download .pdf   Download .docx",
+    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend to skip the caching section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the second tutorial, come back here and continue with the next tutorial on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the second tutorial at https://quarto.org/docs/get-started/computations/rstudio.html.\n\n\n\n\n\n\nWhenever you copy something from the tutorial website into your own .qmd document, always make sure that in RStudio you copy into Source mode instead of Visual mode. Otherwise, rendering the document will not work correctly because the visual mode adds some extra characters that brake the markdown syntax.\nThe tutorial discusses yaml options (e.g. df-print: paged) on how to display data.frames but does not actually print any data.frame in the .qmd document. You can add the following chunk to test the different df-print options:\n\n```{r}\nlibrary(palmerpenguins)\npenguins\n```\n\n\n  \n\n\n\nCode linking (code-link: true) sometimes does not seem to work on all systems, we also do not know why…\nWhen you render the final .qmd document, this will produce an html file (computations.html) that you might want to share with some colleagues to show them your new analysis. However, be aware that the html file does not contain all necessary content and will possibly not display correctly on its own. To produce a single standalone .html file that you can share with others, add embed-resources: true to the html options in the YAML header. The final .html then should look something like this (there is also an additional option self-contained-math: true which tries to make sure that all your equations can be displayed without a connection to the internet):\n Download standalone .html",
     "crumbs": [
       "1. Welcome",
       "2. Quarto Tutorials",
-      "Tutorial: Authoring"
+      "Tutorial: Computations"
     ]
+  },
+  {
+    "objectID": "get-started_2.html#tutorial-computations",
+    "href": "get-started_2.html#tutorial-computations",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "",
+    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend to skip the caching section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the second tutorial, come back here and continue with the next tutorial on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the second tutorial at https://quarto.org/docs/get-started/computations/rstudio.html.\n\n\n\n\n\n\nWhenever you copy something from the tutorial website into your own .qmd document, always make sure that in RStudio you copy into Source mode instead of Visual mode. Otherwise, rendering the document will not work correctly because the visual mode adds some extra characters that brake the markdown syntax.\nThe tutorial discusses yaml options (e.g. df-print: paged) on how to display data.frames but does not actually print any data.frame in the .qmd document. You can add the following chunk to test the different df-print options:\n\n```{r}\nlibrary(palmerpenguins)\npenguins\n```\n\n\n  \n\n\n\nCode linking (code-link: true) sometimes does not seem to work on all systems, we also do not know why…\nWhen you render the final .qmd document, this will produce an html file (computations.html) that you might want to share with some colleagues to show them your new analysis. However, be aware that the html file does not contain all necessary content and will possibly not display correctly on its own. To produce a single standalone .html file that you can share with others, add embed-resources: true to the html options in the YAML header. The final .html then should look something like this (there is also an additional option self-contained-math: true which tries to make sure that all your equations can be displayed without a connection to the internet):\n Download standalone .html",
+    "crumbs": [
+      "1. Welcome",
+      "2. Quarto Tutorials",
+      "Tutorial: Computations"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This self-paced Quarto tutorial (excluding the external materials we link to) was developed by\n\nFlorian Pargent\nFlorian Kohrt\nPhilipp Sckopke\n\nand is published under a Creative Commons CC0 1.0 license. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission."
   },
   {
     "objectID": "get-started_1.html",
@@ -575,80 +260,303 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "1. Welcome to the Quarto Workshop",
+    "objectID": "quarto_manuscripts.html",
+    "href": "quarto_manuscripts.html",
+    "title": "Exercise: Create a Quarto Manuscripts website for one of your own scientific publications",
     "section": "",
-    "text": "Welcome to the Quarto workshop, initially designed for the LMU OSC Summer School 2023.",
+    "text": "Description\nIn this unstructured exercise we would encourage you to\n\nconvert one of your own manuscripts into Quarto\nuse Quarto Manuscripts to create a website for this publication\npublish this website with Github Pages\n\nThe final result of the exercise could be a Quarto Manuscript website which serves as a hub containing everything necessary to reproduce your manuscript.\nFor this exercise, we do not provide step-by-step instructions. Instead we link to the relevant Quarto Manuscript documentation, provide an example of how the final result of the exercise could look like, and list the most important steps when converting a Quarto document into a Quarto Manuscripts website.\n\n\nWhat are Quarto Manuscripts?\nThe Quarto documentation on manuscripts reads:\n\n\n\n\n\n\nQuote:\n\n\n\nQuarto manuscript projects provide a framework for writing and publishing scholarly articles. A Quarto manuscript lets you:\n\nUse one or more notebooks or .qmd documents as the source of content and computations, and then publish these computations alongside the manuscript, allowing readers to dive into your code.\nProduce manuscripts in multiple formats (including LaTeX or MS Word formats required by journals), and give readers easy access to all of the formats through a manuscript website.\n\nThe output of a Quarto manuscript is a website (live example). The article itself appears as the content of the website, and can include all the elements common to scholarly writing like figures, tables, equations, cross references and citations. The website also makes available other formats (e.g. PDF, Docx) as well as links to all of the computations used to create the article.\n\n\n\n\nInstructions\n\nWe suggest that, before you start with your own Quarto manuscript, you have a look at the Getting Started tutorial on how to create a Quarto Manuscript website.\nAdditional documentation on Quarto Manuscripts can be found here.\n\n\n\nFinal result\nThe final result of the exercise could look something like this:\n\nWebsite\nCode\n\n\n\nSteps to convert a Quarto document into a Quarto Manuscripts project\nIf you already have written your manuscript with Quarto, there are only a small number of steps necessary to convert your document into a Quarto Manuscripts website. Without guarantee of completeness, the most important steps are:\n\nCreate the file _quarto.yml in your RStudio project. A good starting point for the content of this file is:\nproject:\n  type: manuscript\n\nmanuscript:\n  article: index.qmd\n\nformat:\n  html:\n    comments:\n      hypothesis: false\n  pdf: default\n  docx: default\n  jats: default\n\nexecute:\n  freeze: auto\nThe main .qmd document containing your manuscript must be named index.qmd by default. If you want to use another name, adjust the line article: index.qmd in the file _quarto.yml.\nMake sure that you remove unnecessary (or conflicting) YAML options in your article and additional notebook .qmd files. We suggest to only use a minimum of options first, test that everything works and then add further options when needed.\nQuarto Manuscripts supports many useful YAML options that can be used in your index.qmd file. We suggest that you have a look on the Quarto documentation on scholarly writing this and consecutive pages.\nIf your project contains computations that take a long time to run, we suggest you make sure you understand how the freeze functionality of Quarto works by reading this and this.\nOptional: If you need to format your manuscript in APA style, you might want that 1) your Quarto Manuscripts website uses standard HTML themes and formatting but uses APA citation style, 2) your downloadable .pdf file is nicely formatted as a APA journal article that you can upload to the preprint server of your choice, and 3) your downloadable manuscript in .docx format is formatted as a APA manuscript, which is how many APA journals require manuscripts to be sent into peer review.\nYou can achieve this by\n\ndownloading the apa-quarto extension as explained in the previous exercise\nusing the following code in your _quarto.yml file:\nformat:\n  html: default\n  jats: default\n  apaquarto-pdf:\n    documentmode: jou\n    a4paper: true\n    pdf-engine: lualatex\n    keep-tex: false\n  apaquarto-docx: default\nusing the YAML option csl: apa.csl in the file index.qmd (the file apa.csl can be downloaded here)",
     "crumbs": [
       "1. Welcome",
-      "1. Welcome to the Quarto Workshop"
+      "4. Advanced Exercises",
+      "Exercise: Quarto Manuscripts"
     ]
   },
   {
-    "objectID": "index.html#structure-and-workflow-of-the-workshop",
-    "href": "index.html#structure-and-workflow-of-the-workshop",
-    "title": "1. Welcome to the Quarto Workshop",
-    "section": "Structure and Workflow of the Workshop",
-    "text": "Structure and Workflow of the Workshop\nThis is a self-paced tutorial of about 2 hours aimed at early-career researchers. It covers the absolute basics of the scientific and technical publishing system Quarto while using R in RStudio.\nThe workshop is structured in 4 consecutive parts you can navigate to on the top of the website, on the sidebar, or with the arrows at the bottom of each page:\n\nWelcome to the Quarto Workshop (you are here now)\nQuarto Tutorials from the official Quarto project\nTips and Comments from our own experiences of using Quarto\nAdvanced Exercises that are more challenging than the beginner Quarto tutorials\nLinks to further resources\n\nThe Quarto project provides well written tutorials (Quarto “Getting Started”) and online documentation (Quarto “Guide”). Instead of reinventing the wheel, we will heavily link to these resources.",
-    "crumbs": [
-      "1. Welcome",
-      "1. Welcome to the Quarto Workshop"
-    ]
-  },
-  {
-    "objectID": "index.html#what-is-quarto",
-    "href": "index.html#what-is-quarto",
-    "title": "1. Welcome to the Quarto Workshop",
-    "section": "What is Quarto?",
-    "text": "What is Quarto?\nThe official Quarto website reads:\n\n\n\n\n\n\nQuote:\n\n\n\nAn open-source scientific and technical publishing system\n\nAuthor using Jupyter notebooks or with plain text markdown in your favorite editor.\nCreate dynamic content with Python, R, Julia, and Observable.\nPublish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nShare knowledge and insights organization-wide by publishing to Posit Connect, Confluence, or other publishing systems.\nWrite using Pandoc markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\n\nThese features make Quarto an extremely useful tool for researchers to:\n\nwrite reproducible research reports, presentations or scientific articles\ncreate personal of project websites\npublish tutorials, textbooks, or other educational resources online\nand much more…\n\nIf you have not seen many examples yourself, go to the official Quarto Gallery or have a look at the following presentation for a few examples, where we have used Quarto in our own work:",
-    "crumbs": [
-      "1. Welcome",
-      "1. Welcome to the Quarto Workshop"
-    ]
-  },
-  {
-    "objectID": "index.html#learn-how-to-use-quarto-yourself",
-    "href": "index.html#learn-how-to-use-quarto-yourself",
-    "title": "1. Welcome to the Quarto Workshop",
-    "section": "Learn how to use Quarto yourself",
-    "text": "Learn how to use Quarto yourself\nWhen you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the Quarto Tutorials page next. 💻 🙀",
-    "crumbs": [
-      "1. Welcome",
-      "1. Welcome to the Quarto Workshop"
-    ]
-  },
-  {
-    "objectID": "links.html",
-    "href": "links.html",
-    "title": "5. Links to Further Resources",
+    "objectID": "preparations.html",
+    "href": "preparations.html",
+    "title": "Preparations",
     "section": "",
-    "text": "The official Quarto webpage you have already used in this workshop\n\nGet started tutorials: after the workshop, you already know these\nQuarto Guide: your main resource for everything Quarto related\nFunction Reference: to look up some Quarto option you have forgotten the name of\nMarkdown Basics: to look up the Pandoc Markdown syntax Quarto heavily relies on",
+    "text": "During the official Quarto tutorials, you will be asked to install a number of software packages. Because the installation can take up some time, we recommend to install the following software beforehand, so you can skip these steps later:\n\nIn this workshop, we will use Quarto together with R but Quarto can also be used with Python, Julia, or Observable JS.\nMake sure that you have a recent version of R and RStudio installed. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio here.\nInstall tinytex, a small version of TeX that can be used to build pdf documents with Quarto:\n\nIn RStudio, open a Terminal window: Tools &gt; Terminal &gt; New Terminal\nRun the following code in the Terminal:\n\n\n\nTerminal\n\nquarto install tinytex",
     "crumbs": [
       "1. Welcome",
-      "5. Links to Further Resources"
+      "2. Quarto Tutorials",
+      "Preparations"
     ]
   },
   {
-    "objectID": "links.html#official-quarto-documentation",
-    "href": "links.html#official-quarto-documentation",
-    "title": "5. Links to Further Resources",
+    "objectID": "preparations.html#installation",
+    "href": "preparations.html#installation",
+    "title": "Preparations",
     "section": "",
-    "text": "The official Quarto webpage you have already used in this workshop\n\nGet started tutorials: after the workshop, you already know these\nQuarto Guide: your main resource for everything Quarto related\nFunction Reference: to look up some Quarto option you have forgotten the name of\nMarkdown Basics: to look up the Pandoc Markdown syntax Quarto heavily relies on",
+    "text": "During the official Quarto tutorials, you will be asked to install a number of software packages. Because the installation can take up some time, we recommend to install the following software beforehand, so you can skip these steps later:\n\nIn this workshop, we will use Quarto together with R but Quarto can also be used with Python, Julia, or Observable JS.\nMake sure that you have a recent version of R and RStudio installed. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio here.\nInstall tinytex, a small version of TeX that can be used to build pdf documents with Quarto:\n\nIn RStudio, open a Terminal window: Tools &gt; Terminal &gt; New Terminal\nRun the following code in the Terminal:\n\n\n\nTerminal\n\nquarto install tinytex",
     "crumbs": [
       "1. Welcome",
-      "5. Links to Further Resources"
+      "2. Quarto Tutorials",
+      "Preparations"
     ]
   },
   {
-    "objectID": "links.html#other-recommended-resources",
-    "href": "links.html#other-recommended-resources",
-    "title": "5. Links to Further Resources",
-    "section": "Other recommended resources",
-    "text": "Other recommended resources\n\nQuarto section in the r4ds book: https://r4ds.hadley.nz/quarto.html\nTwo especially noteworthy subsections are:\n\nEfficient strategies on how to set the figure size in .qmd documents:\nhttps://r4ds.hadley.nz/quarto.html#figure-sizing\nTips on how to use cache in quarto:\nhttps://r4ds.hadley.nz/quarto.html#sec-caching\n\nQuarto for academics:\n\nBlog post: https://quarto.org/docs/blog/posts/2023-05-22-quarto-for-academics/\nJournal article templates: https://quarto.org/docs/journals/formats.html\nQuarto manuscripts: https://quarto.org/docs/manuscripts/\n\nAwesome-Quarto link collection: https://github.com/mcanouil/awesome-quarto\nIt also contains an extensive section on other Quarto tutorials & workshops\nDocumentation of the RStudio Visual Markdown Editor",
+    "objectID": "preparations.html#create-an-rstudio-project",
+    "href": "preparations.html#create-an-rstudio-project",
+    "title": "Preparations",
+    "section": "Create an RStudio project",
+    "text": "Create an RStudio project\nDuring the Quarto tutorials, you will be asked to work with different files. This will be more intuitive and convenient, if you have performed the following steps beforehand:\n\nCreate an RStudio project for the workshop (if you need more details, see this tutorial)\n\nIn RStudio go to File &gt; New Project… &gt; New Directory &gt; New Project\nSelect where to put the project on your computer and select a meaningful name, e.g. Quarto_Workshop\nPress Create Project (then you can always close RStudio and come back there later)\n\nWhen downloading files during the Quarto tutorials, make sure to place all these files in the project folder\nYou can always double-click the .Rproj file in the project folder on your computer to open RStudio with the appropriate working directory set automatically, and the Files window in RStudio showing all files in the project folder",
     "crumbs": [
       "1. Welcome",
-      "5. Links to Further Resources"
+      "2. Quarto Tutorials",
+      "Preparations"
+    ]
+  },
+  {
+    "objectID": "preparations.html#lets-start-the-tutorial",
+    "href": "preparations.html#lets-start-the-tutorial",
+    "title": "Preparations",
+    "section": "Let’s start the tutorial",
+    "text": "Let’s start the tutorial\nYou are now ready to start with the first tutorial on this page.",
+    "crumbs": [
+      "1. Welcome",
+      "2. Quarto Tutorials",
+      "Preparations"
+    ]
+  },
+  {
+    "objectID": "webr.html",
+    "href": "webr.html",
+    "title": "Exercise: Create a website with Quarto, WebR/Pyodide, and Github Pages, to use R/Python on your smartphone or tablet",
+    "section": "",
+    "text": "Description\nIn this exercise you can practice how to\n\nhost a Quarto website with Github Pages\nuse WebR/Pyodide in a Quarto document that allows you to run R/Python in your browser\n\nThe final result of the exercise is a website on which you can run R/Python directly in your browser, without having it installed on your device like your smartphone or tablet.\nYou can just follow our step-by-step instructions or have a look at the relevant documentation we link to in the blue boxes.\n\n\nFinal result\nThe final result of the exercise using webR could look something like this:\n\nWebsite\nCode\n\n\n\nStep by step instructions\n\nLog into your Github account and create a new public Github repository\n\n\n\n\n\n\nNote\n\n\n\n\nIf you need a refresher on how to work with Git and Github you can checkout the following two self-paced online tutorials:\n\nIntroduction to version Control in R with RStudio, Git, and Github\nCollaborative coding with GitHub and RStudio\n\nYou can find a screenshot of how to create a new repository here\n\n\n\nCreate a new project in RStudio\n\n\n\n\n\n\nNote\n\n\n\nYou can find a screenshot of how to create a new project here\n\n\n\nClick File &gt; New Project &gt; Version control &gt; Git\nGo to your Github repository, click on Code and copy the HTTPS URL to the clipboard\nIn RStudio, insert the URL into the Repository URL field\nOptional:\n\nYou can leave the Project directory field blank to adopt the name of the Github repository\nYou can click on Open in new session to avoid closing your original RStudio session\n\nClick Browse to select where to save the project on your computer\nClick Create Project\n\nDownload the webR Quarto extension\n\n\n\n\n\n\nNote\n\n\n\nYou can find the quarto-webr documentation here\n\n\n\nOpen the terminal in RStudio\nInstall the Quarto extension with the following code:\nquarto add coatless/quarto-webr\nAnswer Yes that you trust the author\nAnswer Yes that you want to install the webR filter\nAnswer Yes if you now want to open the quarto-webr documentation in your default browser (you do not have to)\nYou should now have a folder _extensions/coatless/webr in your project directory\n\nDownload the Pyodide Quarto extension\n\n\n\n\n\n\nNote\n\n\n\nYou can find the quarto-pyodide documentation here\n\n\n\nOpen the terminal in RStudio\nInstall the Quarto extension with the following code:\nquarto add coatless-quarto/pyodide\nAnswer Yes that you trust the author\nAnswer Yes that you want to install the pyodide filter\nAnswer Yes if you now want to open the pyodide documentation in your default browser (you do not have to)\nYou should now have a folder _extensions/coatless-quarto/pyodide in your project directory\n\nCreate a new Quarto document, named e.g. mywebr.qmd\n\nIn RStudio, click File &gt; New File &gt; Quarto Document\nAdd the following options to the YAML header (only add the filter relevant to you):\nformat: html\nengine: knitr\nfilters:\n  - webr\n  - pyodide\nInteractive R chunks must be formatted like this:\n```{webr-r}\n```\nInteractive Python chunks must be formatted like this:\n```{pyodide-python}\n```\nDeclare the language of the document by setting e.g. lang: en in the YAML header (see the Quarto documentation on document language for more information)\nAdd some text or other things you want to see on your Quarto website\n\nCheck that the file mywebr.qmd renders successfully locally. In RStudio you can just click the Render button\n\n\n\n\n\n\nNote\n\n\n\nYou might face the issue that the status remains at Loading… because your browser restricts certain features of local files. In this case, spin up a simple web server by running one of the following, go to http://localhost:8000/ and click on mywebr.html:\nRscript -e \"servr::httd(port = 8000)\"\npython -m http.server 8000\n\n\nWhen you are finished with your Quarto document and everything renders correctly, you can commit the file mywebr.qmd and the folder _extensions/coatless to your git repository and push your changes to your Github project (this step is recommended but optional)\n\n\n\n\n\n\nNote\n\n\n\n\nYou can find a screenshot on how to commit changes in RStudio here\nYou can find a screenshot on hot to push commits in RStudio here\n\n\n\nUpload the website to Github pages\n\n\n\n\n\n\nNote\n\n\n\nYou can find the documentation on how to publish Quarto websites on Github pages here\n\n\n\nPublish your website (based on the file mywebr.qmd) by running the following command in the terminal within RStudio. This will commit the rendered website to a Github branch named gh-pages:\nquarto publish gh-pages mywebr.qmd\nAnswer Yes that you want to upload the website to Github Pages\nWhen ready, a browser window should open automatically",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: WebR/Pyodide"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html",
+    "href": "apa7_manuscript.html",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "",
+    "text": "Note\n\n\n\nThis exercise is only relevant, if you are a psychologist or want to publish in journals that require manuscripts to be formatted in the APA 7 style (Publication Manual of the American Psychological Association: 7th Edition). If you are from another discipline, checkout whether Quarto already provides article templates for your most beloved journals.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#description",
+    "href": "apa7_manuscript.html#description",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Description",
+    "text": "Description\nPick a preprint of your own and implement it using Quarto in the APA 7 manuscript style. You also can view an example document that incorporates all features from this exercise.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#getting-started",
+    "href": "apa7_manuscript.html#getting-started",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Getting started",
+    "text": "Getting started\nCurrently, there is no official Quarto extension to format documents according to the APA 7 guidelines1. However, the inofficial apaquarto extension can be utilized until better options emerge2. After installing it into the current project, we can set the format to apaquarto-pdf or apaquarto-docx. Here are the detailed steps that are necessary to create a manuscript in APA 7 style – skip step 1 if you want to use an existing Quarto document.\n\nPrerequisites\n\nInstall required packages\n\nClick on Console\nEnter\n\ninstall.packages(c(\"rmarkdown\", \"conflicted\", \"tidyverse\", \"flextable\", \"ftExtra\"))\n\nInstall TinyTeX\n\nClick on Terminal\nEnter quarto install tinytex\n\n\noptional: Create a new Quarto Document\n\nClick on File &gt; New File &gt; Quarto Document\nFill Title and Author\nChoose PDF\nClick Create\n\nAdd APA 7 Quarto extension\n\nGo to Terminal\nEnter quarto add wjschne/apaquarto\nConfirm installation by entering Y twice, then avoid opening the documentation by entering n\nIf you want to update the extension at a later point, enter quarto update wjschne/apaquarto\n\nDeclare the language of the document by setting e.g. lang: en in the YAML header (see the Quarto documentation on document language for more information)\nChange format as follows:\n\nformat:\n  apaquarto-pdf:\n    documentmode: man\n    a4paper: true\n    pdf-engine: lualatex\n    keep-tex: false\nClick on the disk symbol to save (maybe call the file manuscript.qmd)\nClick on Render\n\nWe can now provide additional information in the YAML header as detailed below.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#short-title",
+    "href": "apa7_manuscript.html#short-title",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Short title",
+    "text": "Short title\nA running header in upper case can be added like this:\nshorttitle: \"My short title\"",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#authors",
+    "href": "apa7_manuscript.html#authors",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Authors",
+    "text": "Authors\nSay we have two authors called Ana Fulana and Blanca Zutana, each with their own ORCID, email address and CRediT roles. They have a common affiliation and Ana acts as corresponding author. In the YAML header this looks as follows:\nauthor:\n  - name: Ana Fulana\n    corresponding: true\n    orcid: \"0000-0000-0000-0000\"\n    email: \"af@example.org\"\n    roles:\n      - conceptualization\n      - writing\n    affiliations:\n      - id: \"lmu\"\n        name: \"Ludwig-Maximilians-Universität München, Munich, Germany\"\n        department: \"Department of Psychology\"\n        ror: \"https://ror.org/05591te55\"\n        url: \"https://www.lmu.de/\"\n  - name: Blanca Zutana\n    roles:\n      - project administration\n    affiliations: \n      - ref: lmu\nAvailable CRediT roles are:\n\nconceptualization\ndata curation\nformal analysis\nfunding acquisition\ninvestigation\nmethodology\nproject administration\nresources\nsoftware\nsupervision\nvalidation\nvisualization\nwriting\nediting\n\nSee the Quarto documentation on author roles for more information.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#abstract",
+    "href": "apa7_manuscript.html#abstract",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Abstract",
+    "text": "Abstract\nYou can add an abstract using the abstract YAML key:\nabstract: \"Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#keywords",
+    "href": "apa7_manuscript.html#keywords",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Keywords",
+    "text": "Keywords\nOne can add multiple keywords by using a list:\nkeywords:\n  - meta science\n  - replication\n  - multiverse analysis",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#author-note",
+    "href": "apa7_manuscript.html#author-note",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Author Note",
+    "text": "Author Note\nThe author note can be populated with various disclosures as follows:\nauthor-note:\n  disclosures:\n    study-registration: \"This study was preregistered at OSF at ....\"\n    data-sharing: \"Code and data of this study are available at ...\"\n    related-report: \"This article is based on data published in ...\"\n    conflict-of-interest: \"We declare we have no competing interests.\"\n    financial-support: \"This research was funded by the German Research Foundation (DFG SCHO ..., Blanca Zutana).\"\n    gratitude: \"We would like to thank Carina Mengana and Dolorita Perengana for their very helpful comments and discussions on this project.\"\n    authorship-agreements: \"Because the authors are equal contributors, order of authorship was determined by a fair coin toss.\"",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#figures",
+    "href": "apa7_manuscript.html#figures",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Figures",
+    "text": "Figures\nFor including images, it is recommended to define a label starting with fig- to make the figure cross-referencable. One can also add a note and set the image width and height. In APA 7 style, captions are to be written in title case.\n\n![This Image Depicts a Flower.](flower.jpg){#fig-flower apa-note=\"This is the note below the figure.\" height=\"5cm\" width=\"5cm\"}\nFor figures that are computed dynamically, the following might serve as an example:\n```{r}\n#| label: fig-cars\n#| fig-cap: Plot of the cars Dataset.\n#| apa-note: Another note.\n#| out-height: 5cm\n#| out-width: 5cm\n#| fig-height: 3\n#| fig-width: 3\n\nplot(cars)\n```\nWhen using the apaquarto extension, by default, figures appear at the end of the document, unless one sets floatsintext: true in the YAML header. Therefore it might make sense to add a final heading Appendix below which the figures will appear. Figures can be cross-referenced by using the @ symbol followed by the reference label: For an image of a flower, see @fig-flower.\nFor more information on how to work with figures, head over to the Quarto documentation on figures.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#tables",
+    "href": "apa7_manuscript.html#tables",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Tables",
+    "text": "Tables\nTables need to have labels prefixed with tbl-:\n| Letters | Numbers |\n|:-------:|:-------:|\n| A       | 1       |\n| B       | 2       |\n| C       | 3       |\n\n: My Caption {#tbl-mytable apa-note=\"Note below table\" data-quarto-disable-processing=\"true\"}\nAs an alternative to using markdown, tables can be created dynamically, e.g. using the R packages tibble and flextable:\n```{r}\n#| label: tbl-ingredients\n#| tbl-cap: Substances and Their Key Ingredients.\n#| apa-note: The note below the table.\n\ntibble::tribble(\n  ~\"Substance\", ~\"Key Ingredient\",\n  \"a\",   \"None\",\n  \"b\",   \"Sugar\",\n  \"c\",   \"Salt\"\n  ) |&gt;\n  flextable::flextable() |&gt;\n  flextable::theme_apa()\n```\nWhen using the apaquarto extension, by default, tables appear at the end of the document, unless one sets floatsintext: true in the YAML header. One can refer to tables by using the @ symbol followed by the reference label: Key ingredients are given in @tbl-ingredients.\nFor more information on how to create tables, head over to the Quarto documentation on tables.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#footnotes",
+    "href": "apa7_manuscript.html#footnotes",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor a list of official Quarto extensions, see Journal Articles.↩︎\nOne can follow the discussion on GitHub at quarto-journals/article-format-template#11↩︎",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#references",
+    "href": "apa7_manuscript.html#references",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "References",
+    "text": "References\nPut your bibliography in a BibTeX file (extension .bib) and reference it in your YAML metadata:\nbibliography: literature.bib\nAdd a level one heading and a Div with the id refs at the end of the document (but before the appendix, if you have one):\n# References\n\n::: {#refs}\n:::\nYou can now cite from your bibliography using the syntax [@id].\nFor more information on how to cite literature, head over to the Quarto documentation on citations.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#numbered-lines",
+    "href": "apa7_manuscript.html#numbered-lines",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Numbered lines",
+    "text": "Numbered lines\nIf you would like to have your lines numbered, set numbered-lines: true in the YAML header.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#generate-.tex-file",
+    "href": "apa7_manuscript.html#generate-.tex-file",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Generate .tex file",
+    "text": "Generate .tex file\nSometimes you might need the intermediate .tex file in addition to the final .pdf file. In order to keep that, set keep-tex: true in the YAML header.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#use-publication-style",
+    "href": "apa7_manuscript.html#use-publication-style",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Use publication style",
+    "text": "Use publication style\nIn the YAML header shared above, the style of the document is a manuscript as required when submitting to an APA journal. To switch to publication style which resembles the format of an article printed in an APA journal, change the document mode by setting documentmode: jou",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#generate-.docx-file",
+    "href": "apa7_manuscript.html#generate-.docx-file",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Generate .docx file",
+    "text": "Generate .docx file\nIf you prefer to create your manuscript as DOCX rather than PDF, you can set the format as follows:\nformat:\n  apaquarto-docx: default",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "apa7_manuscript.html#final-notes",
+    "href": "apa7_manuscript.html#final-notes",
+    "title": "Exercise: Formatting Quarto documents in APA 7 style",
+    "section": "Final notes",
+    "text": "Final notes\nYou can download a manuscript with all the features presented on this page via the following button:\n Download source files as ZIP \nIf you are interested in all the options provided by the apaquarto extension (e.g., masked citations for anonymous peer review), have a look at the apaquarto documentation. Also, we recommend reading the guide APA Style via Markdown.",
+    "crumbs": [
+      "1. Welcome",
+      "4. Advanced Exercises",
+      "Exercise: APA 7 Manuscripts"
+    ]
+  },
+  {
+    "objectID": "get-started_3.html",
+    "href": "get-started_3.html",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "",
+    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend to skip the Publishing section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the third tutorial, come back here and continue with our personal tips and comments on using Quarto on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the third tutorial at https://quarto.org/docs/get-started/authoring/rstudio.html.\n\n\n\n\n\n\nThe tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is not always true.\nThe tutorial claims that “the format choice (HTML) is not even reflected in the YAML as it is the default output format for Quarto documents” when creating a new .qmd document, which is not true.\nThe tutorial does not talk about where to save the .qmd file. For our case, it is most practical to save it in the project folder you have created for the Quarto workshop.\nThe tutorial does not mention that the Render on Save option in RStudio is document specific and must again be ticked for the new .qmd file if you want to use it as showcased in the tutorial.\nWhen you render the .qmd file as .docx by use of the Render button in RStudio for the first time, RStudio might (misleadingly) ask where to safe the file, even though the .docx file has already been silently created in the background (because the yaml header specifies that all formats should be created on rendering).\nWhen you have used the Render button in RStudio to render .docx this might break the Viewer in RStudio (because RStudio seems to remember the last output format it has rendered and the Viewer does not work for .docx). One solution to fix this is to manually render once as .html or .pdf via the Render options, which should reactivate the Viewer.\nThe tutorial wants you to add a reference to the equation labeled #eq-slr, but this reference is actually already included in the .qmd file.\nRendering the final authoring-complete.qmd file you can download at the end of the tutorial will only work, if you also have the references.bib file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the citations section of the tutorial. The created bibliography file should look like this:\n Download references.bib \nWhen the .bib file is present, rendering authoring-complete.qmd should produce the following three output files (we have added embed-resources: true to the html options in the YAML header to produce a standalone html file that can be shared with others):\n Download .html   Download .pdf   Download .docx",
+    "crumbs": [
+      "1. Welcome",
+      "2. Quarto Tutorials",
+      "Tutorial: Authoring"
+    ]
+  },
+  {
+    "objectID": "get-started_3.html#tutorial-authoring",
+    "href": "get-started_3.html#tutorial-authoring",
+    "title": "Quarto Workshop LMU OSC",
+    "section": "",
+    "text": "The tutorial uses the Visual Editor in RStudio. We recommend to frequently switch between Visual and Source mode during the tutorial to see how the raw markdown syntax looks like.\nRemember to put all .qmd files you download during the tutorial into the RStudio project directory you have created earlier.\nWe recommend to skip the Publishing section of the tutorial for now.\n\n\n\n\nIf you have problems during the tutorial come back here and see the next section for our list of anticipated issues. After completing the third tutorial, come back here and continue with our personal tips and comments on using Quarto on this page.\n\n\n\n\n\n\nLet’s start\n\n\n\nNow you can start the third tutorial at https://quarto.org/docs/get-started/authoring/rstudio.html.\n\n\n\n\n\n\nThe tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is not always true.\nThe tutorial claims that “the format choice (HTML) is not even reflected in the YAML as it is the default output format for Quarto documents” when creating a new .qmd document, which is not true.\nThe tutorial does not talk about where to save the .qmd file. For our case, it is most practical to save it in the project folder you have created for the Quarto workshop.\nThe tutorial does not mention that the Render on Save option in RStudio is document specific and must again be ticked for the new .qmd file if you want to use it as showcased in the tutorial.\nWhen you render the .qmd file as .docx by use of the Render button in RStudio for the first time, RStudio might (misleadingly) ask where to safe the file, even though the .docx file has already been silently created in the background (because the yaml header specifies that all formats should be created on rendering).\nWhen you have used the Render button in RStudio to render .docx this might break the Viewer in RStudio (because RStudio seems to remember the last output format it has rendered and the Viewer does not work for .docx). One solution to fix this is to manually render once as .html or .pdf via the Render options, which should reactivate the Viewer.\nThe tutorial wants you to add a reference to the equation labeled #eq-slr, but this reference is actually already included in the .qmd file.\nRendering the final authoring-complete.qmd file you can download at the end of the tutorial will only work, if you also have the references.bib file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the citations section of the tutorial. The created bibliography file should look like this:\n Download references.bib \nWhen the .bib file is present, rendering authoring-complete.qmd should produce the following three output files (we have added embed-resources: true to the html options in the YAML header to produce a standalone html file that can be shared with others):\n Download .html   Download .pdf   Download .docx",
+    "crumbs": [
+      "1. Welcome",
+      "2. Quarto Tutorials",
+      "Tutorial: Authoring"
     ]
   },
   {
@@ -817,6 +725,98 @@
       "1. Welcome",
       "4. Advanced Exercises",
       "Exercise: Slideshows"
+    ]
+  },
+  {
+    "objectID": "quarto_tutorials.html",
+    "href": "quarto_tutorials.html",
+    "title": "2. Quarto Tutorials",
+    "section": "",
+    "text": "The Quarto website provides very well written beginner tutorials (Quarto “Getting Started”) and extensive online documentation (Quarto “Guide”). Instead of reinventing the wheel, we build around these tutorials and heavily link to the official resources.",
+    "crumbs": [
+      "1. Welcome",
+      "2. Quarto Tutorials",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "quarto_tutorials.html#overview",
+    "href": "quarto_tutorials.html#overview",
+    "title": "2. Quarto Tutorials",
+    "section": "",
+    "text": "The Quarto website provides very well written beginner tutorials (Quarto “Getting Started”) and extensive online documentation (Quarto “Guide”). Instead of reinventing the wheel, we build around these tutorials and heavily link to the official resources.",
+    "crumbs": [
+      "1. Welcome",
+      "2. Quarto Tutorials",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "quarto_tutorials.html#why-work-with-the-official-materials",
+    "href": "quarto_tutorials.html#why-work-with-the-official-materials",
+    "title": "2. Quarto Tutorials",
+    "section": "Why work with the official materials?",
+    "text": "Why work with the official materials?\n\nThe official tutorials are of a high quality.\nThe Quarto team keeps the official tutorials up to date.\nBecause Quarto is still relatively new, the usual channels to find help on the internet (Google, Stack Overflow) are not that useful yet. Thus, when using Quarto in your own project, you will probably have to consult the official documentation anyway.",
+    "crumbs": [
+      "1. Welcome",
+      "2. Quarto Tutorials",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "quarto_tutorials.html#lets-prepare-our-setup-for-the-tutorials",
+    "href": "quarto_tutorials.html#lets-prepare-our-setup-for-the-tutorials",
+    "title": "2. Quarto Tutorials",
+    "section": "Let’s prepare our setup for the tutorials",
+    "text": "Let’s prepare our setup for the tutorials\nBefore you start with the tutorials, please follow the preparations on this page (you can always use the navigation arrows on the bottom of the current page).",
+    "crumbs": [
+      "1. Welcome",
+      "2. Quarto Tutorials",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "1. Welcome to the Quarto Workshop",
+    "section": "",
+    "text": "Welcome to the Quarto workshop, initially designed for the LMU OSC Summer School 2023.",
+    "crumbs": [
+      "1. Welcome",
+      "1. Welcome to the Quarto Workshop"
+    ]
+  },
+  {
+    "objectID": "index.html#structure-and-workflow-of-the-workshop",
+    "href": "index.html#structure-and-workflow-of-the-workshop",
+    "title": "1. Welcome to the Quarto Workshop",
+    "section": "Structure and Workflow of the Workshop",
+    "text": "Structure and Workflow of the Workshop\nThis is a self-paced tutorial of about 2 hours aimed at early-career researchers. It covers the absolute basics of the scientific and technical publishing system Quarto while using R in RStudio.\nThe workshop is structured in 4 consecutive parts you can navigate to on the top of the website, on the sidebar, or with the arrows at the bottom of each page:\n\nWelcome to the Quarto Workshop (you are here now)\nQuarto Tutorials from the official Quarto project\nTips and Comments from our own experiences of using Quarto\nAdvanced Exercises that are more challenging than the beginner Quarto tutorials\nLinks to further resources\n\nThe Quarto project provides well written tutorials (Quarto “Getting Started”) and online documentation (Quarto “Guide”). Instead of reinventing the wheel, we will heavily link to these resources.",
+    "crumbs": [
+      "1. Welcome",
+      "1. Welcome to the Quarto Workshop"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-quarto",
+    "href": "index.html#what-is-quarto",
+    "title": "1. Welcome to the Quarto Workshop",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\nThe official Quarto website reads:\n\n\n\n\n\n\nQuote:\n\n\n\nAn open-source scientific and technical publishing system\n\nAuthor using Jupyter notebooks or with plain text markdown in your favorite editor.\nCreate dynamic content with Python, R, Julia, and Observable.\nPublish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.\nShare knowledge and insights organization-wide by publishing to Posit Connect, Confluence, or other publishing systems.\nWrite using Pandoc markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.\n\nAnalyze. Share. Reproduce. You have a story to tell with data—tell it with Quarto.\n\n\nThese features make Quarto an extremely useful tool for researchers to:\n\nwrite reproducible research reports, presentations or scientific articles\ncreate personal of project websites\npublish tutorials, textbooks, or other educational resources online\nand much more…\n\nIf you have not seen many examples yourself, go to the official Quarto Gallery or have a look at the following presentation for a few examples, where we have used Quarto in our own work:",
+    "crumbs": [
+      "1. Welcome",
+      "1. Welcome to the Quarto Workshop"
+    ]
+  },
+  {
+    "objectID": "index.html#learn-how-to-use-quarto-yourself",
+    "href": "index.html#learn-how-to-use-quarto-yourself",
+    "title": "1. Welcome to the Quarto Workshop",
+    "section": "Learn how to use Quarto yourself",
+    "text": "Learn how to use Quarto yourself\nWhen you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the Quarto Tutorials page next. 💻 🙀",
+    "crumbs": [
+      "1. Welcome",
+      "1. Welcome to the Quarto Workshop"
     ]
   }
 ]
