@@ -1,1 +1,1 @@
-Sitemap: https://github.com/FlorianPargent/Quarto_LMU_OSC/sitemap.xml
+Sitemap: https://lmu-osc.github.io/introduction-to-Quarto/sitemap.xml
