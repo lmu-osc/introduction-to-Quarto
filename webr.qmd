@@ -19,8 +19,8 @@ You can just follow our step-by-step instructions or have a look at the relevant
  
 The final result of the exercise using webR could look something like this:
 
-- [Website](https://florianpargent.github.io/mywebr/)
-- [Code](https://github.com/FlorianPargent/mywebr)
+- [Website](https://lmu-osc.github.io/mywebr/)
+- [Code](https://github.com/lmu-osc/mywebr)
 
 # Step by step instructions
 

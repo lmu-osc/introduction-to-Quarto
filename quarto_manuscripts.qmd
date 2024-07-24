@@ -43,8 +43,8 @@ The output of a Quarto manuscript is a website ([live example](https://quarto-ex
  
 The final result of the exercise could look something like this:
 
-- [Website](https://florianpargent.github.io/myquartomanuscript/)
-- [Code](https://github.com/FlorianPargent/myquartomanuscript)
+- [Website](https://lmu-osc.github.io/myquartomanuscript/)
+- [Code](https://github.com/lmu-osc/myquartomanuscript)
 
 
 # Steps to convert a Quarto document into a Quarto Manuscripts project
