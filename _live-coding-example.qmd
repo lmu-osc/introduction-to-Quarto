@@ -1,0 +1,26 @@
+---
+title: Live Coding Example
+format: pdf
+bibliography: bibliography.bib
+---
+
+# Introduction
+
+Penguins are fun!
+
+```{r}
+#| label: fig-penguins
+#| fig-cap: Plot some flippers
+#| echo: false
+#| warning: false 
+library(palmerpenguins)
+library(ggplot2)
+ggplot(penguins, aes(x = flipper_length_mm)) +
+  geom_histogram()
+```
+
+@fig-penguins shows data from the *palmerpenguins* dataset.
+The dataset has `r nrow(penguins)` rows and `r ncol(penguins)` columns.
+The data has been published in @horst2020.
+
+# References
