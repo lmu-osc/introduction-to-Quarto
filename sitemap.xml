@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/links.html</loc>
-    <lastmod>2024-07-24T10:31:22.632Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/presentation.html</loc>
-    <lastmod>2024-07-24T10:31:22.632Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/quarto_exercises.html</loc>
-    <lastmod>2024-07-24T10:31:22.632Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/comments.html</loc>
-    <lastmod>2024-07-24T10:31:22.588Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/get-started_2.html</loc>
-    <lastmod>2024-07-24T10:31:22.616Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/about.html</loc>
-    <lastmod>2024-07-24T10:31:22.588Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/get-started_1.html</loc>
-    <lastmod>2024-07-24T10:31:22.616Z</lastmod>
-  </url>
-  <url>
     <loc>https://lmu-osc.github.io/introduction-to-Quarto/quarto_manuscripts.html</loc>
-    <lastmod>2024-07-24T10:31:22.632Z</lastmod>
+    <lastmod>2024-08-05T09:23:14.393Z</lastmod>
   </url>
   <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/preparations.html</loc>
-    <lastmod>2024-07-24T10:31:22.632Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/webr.html</loc>
-    <lastmod>2024-07-24T10:31:22.648Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/apa7_manuscript.html</loc>
-    <lastmod>2024-07-24T10:31:22.588Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/get-started_3.html</loc>
-    <lastmod>2024-07-24T10:31:22.616Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/slideshow.html</loc>
-    <lastmod>2024-07-24T10:31:22.648Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/introduction-to-Quarto/quarto_tutorials.html</loc>
-    <lastmod>2024-07-24T10:31:22.632Z</lastmod>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/links.html</loc>
+    <lastmod>2024-08-05T09:23:14.393Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/introduction-to-Quarto/index.html</loc>
-    <lastmod>2024-07-24T10:31:22.616Z</lastmod>
+    <lastmod>2024-08-05T09:23:14.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/presentation.html</loc>
+    <lastmod>2024-08-05T09:23:14.393Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/comments.html</loc>
+    <lastmod>2024-08-05T09:23:14.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/get-started_3.html</loc>
+    <lastmod>2024-08-05T09:23:14.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/preparations.html</loc>
+    <lastmod>2024-08-05T09:23:14.393Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/get-started_2.html</loc>
+    <lastmod>2024-08-05T09:23:14.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/quarto_exercises.html</loc>
+    <lastmod>2024-08-05T09:23:14.393Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/slideshow.html</loc>
+    <lastmod>2024-08-05T09:23:14.409Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/about.html</loc>
+    <lastmod>2024-08-05T09:23:14.349Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/webr.html</loc>
+    <lastmod>2024-08-05T09:23:14.409Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/quarto_tutorials.html</loc>
+    <lastmod>2024-08-05T09:23:14.393Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/get-started_1.html</loc>
+    <lastmod>2024-08-05T09:23:14.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/introduction-to-Quarto/apa7_manuscript.html</loc>
+    <lastmod>2024-08-05T09:23:14.349Z</lastmod>
   </url>
 </urlset>
