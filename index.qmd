@@ -3,7 +3,7 @@ title: "1. Welcome to the Quarto Workshop"
 sidebar: true
 ---
 
-Welcome to the **Quarto workshop**, initially designed for the [LMU OSC Summer School 2023](https://lmu-osc.github.io/OSC-Open-Research-Summer-School-2023/).
+Welcome to the **Quarto workshop**, initially designed for [LMU OSC Summer School 2023](https://lmu-osc.github.io/OSC-Open-Research-Summer-School-2023/) and [LMU & MPG Open Science Summer School 2024](https://osip.mpdl.mpg.de/lmu-mpg-open-science-summer-school-2024/).
 
 ## Structure and Workflow of the Workshop
 
@@ -47,7 +47,7 @@ These features make Quarto an extremely useful tool for researchers to:
 - publish tutorials, textbooks, or other educational resources online
 - and much more...
 
-If you have not seen many examples yourself, go to the official [Quarto Gallery](https://quarto.org/docs/gallery/) or have a look at the following presentation for a few examples, where we have used Quarto in our own work:
+If you have not seen many examples yourself, go to the official [Quarto Gallery](https://quarto.org/docs/gallery/), the [Quarto Blog](https://quarto.org/docs/blog/), or have a look at the following presentation for a few examples, where we have used Quarto in our own work:
 
 ```{=html}
 <iframe class="slide-deck" width="100%" height="500" src="presentation.html"></iframe>
@@ -55,6 +55,12 @@ If you have not seen many examples yourself, go to the official [Quarto Gallery]
 
 <!-- ```{.markdown code-preview="presentation.qmd" width="780" height="500"} -->
 <!-- ``` -->
+
+::: {.callout-note collapse="true"}
+## Live coding example
+If you have attended the in-person workshop, you can download the result of the live coding example here:  
+{{< downloadthis _live-coding-example.zip dname="live-coding-example" label="Download .zip file">}}
+:::
 
 ## Learn how to use Quarto yourself
 
