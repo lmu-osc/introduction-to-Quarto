@@ -46,7 +46,8 @@ Currently, there is no official Quarto extension to format documents according t
        keep-tex: false
    ```
 5. Click on the disk symbol to save (maybe call the file `manuscript.qmd`)
-6. Click on _Render_
+6. Click on _Render_\
+   (alternatively, go to the _Terminal_ and enter `quarto render manuscript.qmd`)
 
 We can now provide additional information in the YAML header as detailed below.
 
