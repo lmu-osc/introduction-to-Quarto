@@ -5,7 +5,7 @@ project:
     - "lib"
 
 website:
-  title: "Quarto Workshop LMU OSC"
+  title: "Introduction to Quarto"
   page-navigation: true
   page-footer:
     center: 
