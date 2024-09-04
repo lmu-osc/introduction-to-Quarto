@@ -11,6 +11,11 @@ website:
     center: 
       - text: "About"
         href: about.qmd
+  favicon: resources/LMU_OSC_Book.png
+  margin-header: |
+    ![](/resources/LMU-OSC_logo.jpg){width="175"}
+
+
   navbar:
     tools:
       - icon: github
@@ -78,7 +83,9 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - cosmo
+      - custom.scss
     css: styles.css
     toc: true
     link-external-newwindow: true
