@@ -11,7 +11,7 @@ website:
     center: 
       - text: "About"
         href: about.qmd
-  favicon: resources/LMU_OSC_Book.png
+  favicon: resources/LMU-OSC_favicon.jpg
   margin-header: |
     ![](/resources/LMU-OSC_logo.jpg){width="175"}
 
