@@ -1,5 +1,5 @@
 ---
-title: "1. Introduction to Quarto"
+title: "1. Welcome to the Quarto Workshop"
 sidebar: true
 ---
 
