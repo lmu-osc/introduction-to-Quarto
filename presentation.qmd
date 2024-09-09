@@ -44,46 +44,44 @@ format:
 ![](resources/pictures/betterposterport.png){height="200"}
 :::
 
+# Some examples from our own work
 
 ## Presentations (html, pptx, pdf)
 
 ![](resources/pictures/presentation.png){fig-align=center}
 
-The html presentation you see right now.
+The html [presentation](presentation.qmd) you see right now.
 
-## Websites
+## Websites: Quarto Workshop
 
-![](resources/pictures/website.png){fig-align=center}
+![](resources/pictures/website_workshop.png){fig-align=center}
 
+The [website](https://lmu-osc.github.io/introduction-to-Quarto/) we use for our Quarto workshop.
 
-The website we use for the workshop.
+## Websites: Teaching Materials
 
-## Teaching Materials
+![](resources/pictures/website_teaching.png){fig-align=center}
 
-![](resources/pictures/tutorial.png){fig-align=center}
+A [website](https://www.oer.psy.lmu.de/) with R exercises from our statistics courses.
 
-[Website](https://shiny.psy.lmu.de/oer/) with R exercises from our statistics courses.
+## Journal articles (pdf, docx, html) 
 
-## Journal articles (pdf, tex, docx) 
-
-![](resources/pictures/pca_commentary.png){fig-align=center}
-
-[OSF repository](https://osf.io/5symf/) with all materials.
+![](resources/pictures/journal_article.png){fig-align=center}
+Use pdf for your [preprint](https://osf.io/preprints/psyarxiv/rpjem), submit docx to the journal, publish a [website](https://timo-ko.github.io/glmm_simulation_tutorial/) that contains all materials.
 
 ## Other Possible Content
 
 - [Books](https://quarto.org/docs/books/) (html, pdf, docx, epub, ...)
-- [Interactive elements](https://quarto.org/docs/interactive/) (Shiny, htmlwidgets)
-- [Dashboards](https://quarto.org/docs/dashboards/)
-- [Blogs](https://quarto.org/docs/websites/website-blog.html)
-- [Manuscripts](https://quarto.org/docs/manuscripts/)
+- [Blogs](https://quarto.org/docs/websites/website-blog.html) (works nicely together with [GitHub Pages](https://quarto.org/docs/publishing/github-pages.html))
+- [Quarto Manuscripts](https://quarto.org/docs/manuscripts/) (a reproducible website for your journal article)
+- [Interactive elements](https://quarto.org/docs/interactive/) (Shiny, htmlwidgets) and [Dashboards](https://quarto.org/docs/dashboards/)
 - ...
 
-For more (professional) examples, see the official [Quarto Gallery](https://quarto.org/docs/gallery/).
+For more (professional) examples, see the official [Quarto Gallery](https://quarto.org/docs/gallery/) and [Quarto Blog](https://quarto.org/docs/blog/).
 
 ## Quarto and R Markdown
 
-- Quarto is relatively new and some things might still be more convenient with R Markdown, but this seems to change rapidly.
+- Quarto is the successor of R Markdown and now contains almost all of R Markdown's features (and a lot more).
 
 - Although [R Markdown is not going away](https://quarto.org/docs/faq/rmarkdown.html#is-r-markdown-going-away-will-my-r-markdown-documents-continue-to-work), new features will probably only be implemented in Quarto.
 
