@@ -320,8 +320,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>During the official <a href="https://quarto.org/docs/get-started/">Quarto tutorials</a>, you will be asked to install a number of software packages. Because the installation can take up some time, we recommend to install the following software beforehand, so you can skip these steps later:</p>
 <ul>
 <li><p>In this workshop, we will use Quarto together with <a href="https://quarto.org/docs/computations/r.html">R</a> but Quarto can also be used with <a href="https://quarto.org/docs/computations/python.html">Python</a>, <a href="https://quarto.org/docs/computations/julia.html">Julia</a>, or <a href="https://quarto.org/docs/computations/ojs.html">Observable JS</a>.</p></li>
-<li><p>Make sure that you have a recent version of R and RStudio installed. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio <a href="https://posit.co/download/rstudio-desktop/">here</a>.</p></li>
-<li><p>Install <a href="https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex">tinytex</a>, a small version of TeX that can be used to build pdf documents with Quarto:</p>
+<li><p>Make sure that you have a recent version of R and RStudio installed. You find instructions on how to install R and RStudio <a href="https://posit.co/download/rstudio-desktop/">here</a>.</p></li>
+<li><p>RStudio comes with a version of Quarto preinstalled. However, this version can be outdated because Quarto is updated more frequently than RStudio. It is therefore recommended to install a recent version of Quarto after installing RStudio. You can download the current release version of Quarto <a href="https://quarto.org/docs/download/">here</a>.</p></li>
+<li><p>Install <a href="https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex">tinytex</a>, a small version of TeX that can be used to build pdf documents with Quarto. Installed in this way, tinytex should not interfere with other TeX installations you might already have on your computer, but you can skip this step if you know that you already have TeX installed:</p>
 <ul>
 <li>In RStudio, open a Terminal window: <em>Tools</em> <strong>&gt;</strong> <em>Terminal</em> <strong>&gt;</strong> <em>New Terminal</em></li>
 <li>Run the following code in the Terminal:</li>
@@ -336,7 +337,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="create-an-rstudio-project" class="level2">
 <h2 class="anchored" data-anchor-id="create-an-rstudio-project">Create an RStudio project</h2>
-<p>During the <a href="https://quarto.org/docs/get-started/">Quarto tutorials</a>, you will be asked to work with different files. This will be more intuitive and convenient, if you have performed the following steps beforehand:</p>
+<p>During the <a href="https://quarto.org/docs/get-started/">Quarto tutorials</a>, you will be asked to work with different files. This will be more intuitive and convenient if you have performed the following steps beforehand:</p>
 <ul>
 <li>Create an RStudio project for the workshop (if you need more details, see this <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/rstudio_project.html">tutorial</a>)
 <ul>
