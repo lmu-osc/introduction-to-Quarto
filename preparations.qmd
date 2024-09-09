@@ -8,9 +8,11 @@ During the official [Quarto tutorials](https://quarto.org/docs/get-started/), yo
 
 - In this workshop, we will use Quarto together with [R](https://quarto.org/docs/computations/r.html) but Quarto can also be used with [Python](https://quarto.org/docs/computations/python.html), [Julia](https://quarto.org/docs/computations/julia.html), or [Observable JS](https://quarto.org/docs/computations/ojs.html).
 
-- Make sure that you have a recent version of R and RStudio installed. RStudio automatically comes with a version of Quarto. You find instructions on how to install R and RStudio [here](https://posit.co/download/rstudio-desktop/).
+- Make sure that you have a recent version of R and RStudio installed. You find instructions on how to install R and RStudio [here](https://posit.co/download/rstudio-desktop/).
 
-- Install [tinytex](https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex), a small version of TeX that can be used to build pdf documents with Quarto:
+- RStudio comes with a version of Quarto preinstalled. However, this version can be outdated because Quarto is updated more frequently than RStudio. It is therefore recommended to install a recent version of Quarto after installing RStudio. You can download the current release version of Quarto [here](https://quarto.org/docs/download/).
+
+- Install [tinytex](https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex), a small version of TeX that can be used to build pdf documents with Quarto. Installed in this way, tinytex should not interfere with other TeX installations you might already have on your computer, but you can skip this step if you know that you already have TeX installed:
     - In RStudio, open a Terminal window: *Tools* **>** *Terminal* **>** *New Terminal*
     - Run the following code in the Terminal:
     ``` {.bash filename="Terminal"}
@@ -19,7 +21,7 @@ During the official [Quarto tutorials](https://quarto.org/docs/get-started/), yo
 
 ## Create an RStudio project
 
-During the [Quarto tutorials](https://quarto.org/docs/get-started/), you will be asked to work with different files. This will be more intuitive and convenient, if you have performed the following steps beforehand:
+During the [Quarto tutorials](https://quarto.org/docs/get-started/), you will be asked to work with different files. This will be more intuitive and convenient if you have performed the following steps beforehand:
 
 - Create an RStudio project for the workshop (if you need more details, see this [tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/rstudio_project.html))
     - In RStudio go to *File* **>** *New Project...* **>** *New Directory* **>** *New Project*
