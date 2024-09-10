@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise: Create a website with Quarto, WebR/Pyodide, and Github Pages, to use R/Python on your smartphone or tablet – Introduction to Quarto</title>
+<title>Exercise: Create a website with Quarto, WebR (or Pyodide), and Github Pages to use R (or Python) on your smartphone or tablet – Introduction to Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./quarto_exercises.html">4. Advanced Exercises</a></li><li class="breadcrumb-item"><a href="./webr.html">Exercise: WebR/Pyodide</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Exercise: Create a website with Quarto, WebR/Pyodide, and Github Pages, to use R/Python on your smartphone or tablet</h1>
+<h1 class="title">Exercise: Create a website with Quarto, WebR (or Pyodide), and Github Pages to use R (or Python) on your smartphone or tablet</h1>
 </div>
 
 
@@ -317,17 +317,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="description" class="level1">
 <h1>Description</h1>
-<p>In this exercise you can practice how to</p>
+<p>In this exercise you can practice how to:</p>
 <ul>
-<li>host a Quarto website with Github Pages</li>
-<li>use WebR/Pyodide in a Quarto document that allows you to run R/Python in your browser</li>
+<li>Host a Quarto website with Github Pages</li>
+<li>Use WebR in a Quarto document that allows you to run R in your browser</li>
+<li><strong>Optional.</strong> Use Pyodide to run Python</li>
 </ul>
-<p>The final result of the exercise is a website on which you can run R/Python directly in your browser, without having it installed on your device like your smartphone or tablet.</p>
+<p>The final result of the exercise is a website on which you can run R (or Python) directly in your browser, without having it installed on the device like your smartphone or tablet.</p>
 <p>You can just follow our step-by-step instructions or have a look at the relevant documentation we link to in the blue boxes.</p>
 </section>
 <section id="final-result" class="level1">
 <h1>Final result</h1>
-<p>The final result of the exercise using webR could look something like this:</p>
+<p>The final result of the exercise using webR could look something like this:<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <ul>
 <li><a href="https://lmu-osc.github.io/mywebr/">Website</a></li>
 <li><a href="https://github.com/lmu-osc/mywebr">Code</a></li>
@@ -383,7 +384,7 @@ Note
 <li>Click <em>Browse</em> to select where to save the project on your computer</li>
 <li>Click <em>Create Project</em></li>
 </ul></li>
-<li><p>Download the <em>webR</em> Quarto extension</p>
+<li><p>Download the <em>webR</em> Quarto extension (needed to run R in the browser)</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -406,7 +407,7 @@ Note
 <li><p>Answer <em>Yes</em> if you now want to open the <em>quarto-webr</em> documentation in your default browser (you do not have to)</p></li>
 <li><p>You should now have a folder <code>_extensions/coatless/webr</code> in your project directory</p></li>
 </ul></li>
-<li><p>Download the <em>Pyodide</em> Quarto extension</p>
+<li><p><strong>Optional.</strong> Download the <em>Pyodide</em> Quarto extension (needed to run Python in the browser)</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -441,7 +442,7 @@ Note
 <li><p>Interactive R chunks must be formatted like this:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode markdown qmd code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{webr-r}</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
-<li><p>Interactive Python chunks must be formatted like this:</p>
+<li><p><strong>Optional.</strong> Interactive Python chunks must be formatted like this:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode markdown qmd code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{pyodide-python}</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>Declare the language of the document by setting e.g.&nbsp;<code>lang: en</code> in the YAML header (see the <a href="https://quarto.org/docs/authoring/language.html">Quarto documentation on document language</a> for more information)</p></li>
@@ -458,7 +459,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You might face the issue that the status remains at <em>Loading…</em> because your browser restricts certain features of local files. In this case, spin up a simple web server by running one of the following, go to <a href="http://localhost:8000/"><code>http://localhost:8000/</code></a> and click on <code>mywebr.html</code>:</p>
+<p>You might face the issue that the status remains at <em>Loading…</em> because your browser restricts certain features of local files. In this case, you could spin up a simple web server by running one of the following, go to <a href="http://localhost:8000/"><code>http://localhost:8000/</code></a> and click on <code>mywebr.html</code>:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> <span class="at">-e</span> <span class="st">"servr::httd(port = 8000)"</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> http.server 8000</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -505,7 +506,13 @@ Note
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This example only showcases R in the browser with webR, but the following sections also describe how to run Python with Pyodide.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
