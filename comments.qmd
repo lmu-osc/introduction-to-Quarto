@@ -19,7 +19,7 @@ sidebar: true
 
 - We recommend that you do not rely on the visual mode in RStudio too much: Even if you like the [Visual Editor](https://quarto.org/docs/visual-editor/), make sure that you also gradually learn how do do everything in the raw source mode. When learning how to use Quarto, using the visual mode and then switching to source mode to see the result can be very useful.
 
-- Make it a habit to set always specify the language of a document in the YAML header (e.g. `lang: de` for German). Hyphenation, for example, relies on having the correct language set.
+- Make it a habit to specify the language of a document in the YAML header (e.g. `lang: de` for German). Hyphenation, for example, relies on having the correct language set.
 
 ## Optional settings to the visual editor in RStudio
 
