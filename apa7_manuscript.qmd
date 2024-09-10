@@ -4,16 +4,16 @@ lang: en
 ---
 
 ::: {.callout-note}
-This exercise is only relevant, if you are a psychologist or want to publish in journals that require manuscripts to be formatted in the APA 7 style (Publication Manual of the American Psychological Association: 7th Edition). If you are from another discipline, checkout whether Quarto already provides [article templates](https://quarto.org/docs/journals/formats.html) for your most beloved journals.
+This exercise is only relevant, if you are a psychologist or want to publish in journals that require manuscripts to be formatted in the [APA 7 style](https://apastyle.apa.org/) (Publication Manual of the American Psychological Association: 7th Edition). If you are from another discipline, checkout whether Quarto already provides [article templates](https://quarto.org/docs/journals/formats.html) for your most beloved journals.
 :::
 
 ## Description
 
-Pick a preprint of your own and implement it using Quarto in the APA 7 manuscript style. You also can view an [example document](demo_manuscript.pdf) that incorporates all features from this exercise.
+Pick a preprint of your own and implement it using Quarto in the [APA 7](https://apastyle.apa.org/) manuscript style. You also can view an [example document](demo_manuscript.pdf) that incorporates all features from this exercise.
 
 ## Getting started
 
-Currently, there is no official Quarto extension to format documents according to the APA 7 guidelines^[For a list of official Quarto extensions, see [Journal Articles](https://quarto.org/docs/extensions/listing-journals.html).]. However, the inofficial [`apaquarto`](https://github.com/wjschne/apaquarto) extension can be utilized until better options emerge^[One can follow the discussion on GitHub at [quarto-journals/article-format-template#11](https://github.com/quarto-journals/article-format-template/issues/11)]. After installing it into the current project, we can set the `format` to `apaquarto-pdf` or `apaquarto-docx`. Here are the detailed steps that are necessary to create a manuscript in APA 7 style -- skip step 1 if you want to use an existing Quarto document.
+The official Quarto extension [`apaquarto`](https://github.com/wjschne/apaquarto) can be used to format documents according to the [APA 7](https://apastyle.apa.org/) guidelines^[For a list of Quarto extensions for specific journal formats, click [here](https://quarto.org/docs/extensions/listing-journals.html).]. After installing the extension into the current project, we can set the `format` to `apaquarto-pdf` or `apaquarto-docx`. Here are the detailed steps that are necessary to create a manuscript in APA 7 style (**Note:** skip step 1 if you want to use an already existing Quarto document).
 
 0. Prerequisites
    - Install required packages
@@ -25,7 +25,7 @@ Currently, there is no official Quarto extension to format documents according t
    - Install TinyTeX
      - Click on _Terminal_
      - Enter `quarto install tinytex`
-1. optional: Create a new Quarto Document
+1. **Optional:** Create a new Quarto Document
    - Click on _File_ > _New File_ > _Quarto Document_
    - Fill _Title_ and _Author_
    - Choose _PDF_
