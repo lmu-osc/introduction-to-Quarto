@@ -7,10 +7,10 @@ Welcome to the **Quarto workshop**, initially designed for [LMU OSC Summer Schoo
 
 ## Structure and Workflow of the Workshop
 
-This is a **self-paced tutorial** of about **2 hours** aimed at **early-career researchers**.
+This is a **self-paced tutorial** of about **2 hours** (when skipping the advanced exercises) aimed at **early-career researchers**.
 It covers the absolute basics of the scientific and technical publishing system [Quarto](https://quarto.org/) while using [R in RStudio](https://quarto.org/docs/tools/rstudio.html).
 
-The workshop is structured in 4 consecutive parts you can navigate to on the top of the website, on the sidebar, or with the arrows at the bottom of each page:
+The workshop is structured in 5 consecutive parts, which you can navigate to at the top of the website, in the sidebar or using the arrows at the bottom of each page:
 
 1. [Welcome](index.qmd) to the Quarto Workshop (**you are here now**)
 2. [Quarto Tutorials](quarto_tutorials.qmd) from the official Quarto project
@@ -20,7 +20,7 @@ The workshop is structured in 4 consecutive parts you can navigate to on the top
 
 
 The Quarto project provides well written tutorials ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and online documentation ([Quarto "Guide"](https://quarto.org/docs/guide/)).
-Instead of reinventing the wheel, we will heavily link to these resources.
+Instead of reinventing the wheel, we will heavily link to these resources (and complement them with our own comments and some advanced exercises).
 
 ## What is Quarto?
 
