@@ -36,6 +36,8 @@ Now you can start the third tutorial at <https://quarto.org/docs/get-started/aut
 
 - The tutorial wants you to add a reference to the equation labeled \#eq-slr, but this reference is actually already included in the .qmd file.
 
+- In the section on [Cross References](https://quarto.org/docs/get-started/authoring/rstudio.html#cross-references), the tutorial could make it more clear that cross-references **must** use the *reserved keywords* (`fig-`, `tbl-`, `eq-`, ...) in the respective labels. This means that when you want to reference a *figure* with the `@` syntax, the label for the R chunk that produces that figure must begin with the reserved keyword `fig-` (e.g. `#| label: fig-myfigure`). Similarly, the label for a chunk that produces a *table* must begin with `tbl-` and so on. For more details, check the cross-referencing [documentation](https://quarto.org/docs/authoring/cross-references.html).
+
 - Rendering the final *authoring-complete.qmd* file you can download at the end of the tutorial will only work, if you also have the *references.bib* file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the [citations](https://quarto.org/docs/get-started/authoring/rstudio.html#citations) section of the tutorial. The created bibliography file should look like this:
 
   {{< downloadthis _references.bib dname="references" label="Download references.bib">}}
