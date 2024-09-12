@@ -1,18 +1,18 @@
 ---
-title: Live Coding Example
+title: "Live Coding Example"
 format: pdf
-bibliography: bibliography.bib
+bibliography: refs.bib
 ---
 
 # Introduction
 
-Penguins are fun!
+Penguins are **fun**!
 
 ```{r}
-#| label: fig-penguins
-#| fig-cap: Plot some flippers
+#| warning: false
 #| echo: false
-#| warning: false 
+#| fig-cap: "Plot some flippers"
+#| label: fig-penguins
 library(palmerpenguins)
 library(ggplot2)
 ggplot(penguins, aes(x = flipper_length_mm)) +
