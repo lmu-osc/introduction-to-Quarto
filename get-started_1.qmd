@@ -1,5 +1,6 @@
-
-## Tutorial: Hello, Quarto
+---
+title: "Tutorial: Hello, Quarto"
+---
 
 ### Some comments before the tutorial
 

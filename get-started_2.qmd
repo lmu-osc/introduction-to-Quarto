@@ -1,5 +1,6 @@
-
-## Tutorial: Computations
+---
+title: "Tutorial: Computations"
+---
 
 ### Some comments before the tutorial
 

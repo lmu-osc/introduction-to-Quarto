@@ -1,5 +1,6 @@
-
-## Tutorial: Authoring
+---
+title: "Tutorial: Authoring"
+---
 
 ### Some comments before the tutorial
 
