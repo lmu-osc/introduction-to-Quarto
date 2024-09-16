@@ -24,7 +24,14 @@ Now you can start the second tutorial at <https://quarto.org/docs/get-started/co
 
 - Whenever you copy something from the tutorial website into your own *.qmd* document, always make sure that in RStudio you copy into *Source* mode instead of *Visual* mode. Otherwise, rendering the document will not work correctly because the visual mode adds some extra characters that brake the markdown syntax.
 
-- [Code Linking](https://quarto.org/docs/get-started/computations/rstudio.html#code-linking) (`code-link: true`) does not always work on all systems but we do not know why.
+- Note that when using [cell options](https://quarto.org/docs/reference/cells/cells-knitr.html) in an R chunk, there cannot be any empty lines before the options. For example, this does not work:
+  ```{{r}}
+  
+  #| echo: false
+  plot(1)
+  ```
+
+- [Code Linking](https://quarto.org/docs/get-started/computations/rstudio.html#code-linking) (`code-link: true`) only works if you manually install the R packages *downlit* and *xml2*.
 
 - The tutorial discusses yaml options (e.g. `df-print: paged`) on how to display [Data Frames](https://quarto.org/docs/get-started/computations/rstudio.html#data-frames) but does not actually print any data.frame in the *.qmd* document. You can add the following chunk to test the different `df-print` options:
   ```{r}

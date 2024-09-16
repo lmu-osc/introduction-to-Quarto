@@ -22,7 +22,7 @@ Now you can start the first tutorial at <https://quarto.org/docs/get-started/hel
 
 ### Possible problems and related comments
 
-- If the preview does not automatically open on the right side when you click *Render*, go to the gear wheel next to the *Render* button, select *Preview in Viewer Pane* and then click *Render* again.
+- If the preview does not automatically open on the right side when you click *Render*, go to the gear wheel next to the *Render* button, select *Preview in Viewer Pane* and then click *Render* again. The other option (which seems to be the default for some people) is *Preview in Window* which displays the rendered document in your default web browser instead of whithin RStudio.
 
 - The tutorial mentions the Markdown syntax (e.g. `**bold**`) used in Quarto but never gives you [this link](https://quarto.org/docs/authoring/markdown-basics.html) where the Pandoc Markdown syntax is described in-depth. 
 
