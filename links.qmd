@@ -30,3 +30,17 @@ sidebar: true
   It also contains an extensive section on other Quarto tutorials & workshops
 
 - [Documentation of the RStudio Visual Markdown Editor](https://rstudio.github.io/visual-markdown-editing/)
+
+## Other self-paced tutorials by the LMU Open Science Center
+
+This Quarto workshop is part of the self-paced tutorial series by the [LMU Open Science Center](https://www.osc.uni-muenchen.de/index.html):
+
+- [Introduction to version control with git and GitHub within RStudio](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/): How to set up a simple project with version control.
+- [Collaborative coding with GitHub and RStudio](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/): How to collaborate with others on code projects using GitHub.
+- [Introduction to R](https://lmu-osc.github.io/introduction-to-R/): An introduction to the R programming language.
+- [Introduction to `renv`](https://lmu-osc.github.io/introduction-to-renv/): How to manage the dependencies of an R project.
+- [Introduction to Quarto](https://lmu-osc.github.io/introduction-to-Quarto/): How to combine prose and code to make documents more reproducible (**you are here**).
+- [Introduction to Zotero](https://lmu-osc.github.io/introduction-to-zotero/): An introduction to the reference management software Zotero.
+- [FAIR research data management](https://lmu-osc.github.io/FAIR-Data-Management/): How to make your data findable, accessible, interoperable, and reusable.
+- [Code publishing](https://lmu-osc.github.io/code-publishing/): How to make your code available to others. Wraps up the complete self-paced tutorial series.
+
