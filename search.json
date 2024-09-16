@@ -385,6 +385,17 @@
     ]
   },
   {
+    "objectID": "links.html#other-self-paced-tutorials-by-the-lmu-open-science-center",
+    "href": "links.html#other-self-paced-tutorials-by-the-lmu-open-science-center",
+    "title": "5. Links to Further Resources",
+    "section": "Other self-paced tutorials by the LMU Open Science Center",
+    "text": "Other self-paced tutorials by the LMU Open Science Center\nThis Quarto workshop is part of the self-paced tutorial series by the LMU Open Science Center:\n\nIntroduction to version control with git and GitHub within RStudio: How to set up a simple project with version control.\nCollaborative coding with GitHub and RStudio: How to collaborate with others on code projects using GitHub.\nIntroduction to R: An introduction to the R programming language.\nIntroduction to renv: How to manage the dependencies of an R project.\nIntroduction to Quarto: How to combine prose and code to make documents more reproducible (you are here).\nIntroduction to Zotero: An introduction to the reference management software Zotero.\nFAIR research data management: How to make your data findable, accessible, interoperable, and reusable.\nCode publishing: How to make your code available to others. Wraps up the complete self-paced tutorial series.",
+    "crumbs": [
+      "1. Welcome",
+      "5. Links to Further Resources"
+    ]
+  },
+  {
     "objectID": "quarto_exercises.html",
     "href": "quarto_exercises.html",
     "title": "4. Advanced Exercises",
