@@ -59,6 +59,7 @@ Content on third slide
 - Press {{< kbd F >}} to switch to **f**ullscreen
 - Press {{< kbd O >}} or {{< kbd Esc >}} to show the slide **o**verview
 - Press {{< kbd B >}} or {{< kbd . >}} to pause (**b**lacken) the screen
+- Press {{< kbd G >}} to **g**o to any slide by number
 - Press {{< kbd S >}} to open the **s**peaker notes
 - Press {{< kbd M >}} to toggle a **m**enu that allows you to jump to any slide
 - Press {{< kbd Ctrl >}} + click on the slide to zoom in
