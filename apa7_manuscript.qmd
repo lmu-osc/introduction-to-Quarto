@@ -4,7 +4,7 @@ lang: en
 ---
 
 ::: {.callout-note}
-This exercise is only relevant, if you are a psychologist or want to publish in journals that require manuscripts to be formatted in the [APA 7 style](https://apastyle.apa.org/) (Publication Manual of the American Psychological Association: 7th Edition). If you are from another discipline, checkout whether Quarto already provides [article templates](https://quarto.org/docs/journals/formats.html) for your most beloved journals.
+This exercise is only relevant, if you are a psychologist or want to publish in journals that require manuscripts to be formatted in the [APA 7 style](https://apastyle.apa.org/) (Publication Manual of the American Psychological Association: 7th Edition). If you are from another discipline, checkout whether Quarto already provides [article templates](https://quarto.org/docs/extensions/listing-journals.html) for your most beloved journals.
 :::
 
 ## Description
