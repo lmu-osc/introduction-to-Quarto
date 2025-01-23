@@ -13,7 +13,7 @@ Pick a preprint of your own and implement it using Quarto in the [APA 7](https:/
 
 ## Getting started
 
-The official Quarto extension [`apaquarto`](https://github.com/wjschne/apaquarto) can be used to format documents according to the [APA 7](https://apastyle.apa.org/) guidelines^[For a list of Quarto extensions for specific journal formats, click [here](https://quarto.org/docs/extensions/listing-journals.html).]. After installing the extension into the current project, we can set the `format` to `apaquarto-pdf` or `apaquarto-docx`. Here are the detailed steps that are necessary to create a manuscript in APA 7 style (**Note:** skip step 1 if you want to use an already existing Quarto document).
+The official Quarto extension [`apaquarto`](https://github.com/wjschne/apaquarto) can be used to format documents according to the [APA 7](https://apastyle.apa.org/) guidelines. After installing the extension into the current project, we can set the `format` to `apaquarto-pdf` or `apaquarto-docx`. Here are the detailed steps that are necessary to create a manuscript in APA 7 style (**Note:** skip step 1 if you want to use an already existing Quarto document).
 
 0. Prerequisites
    - Install required packages
