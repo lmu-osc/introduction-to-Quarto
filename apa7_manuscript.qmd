@@ -173,7 +173,7 @@ For more information on how to work with figures, head over to the [Quarto docum
 
 Tables need to have labels prefixed with `tbl-`:
 
-```{.qmd .code-overflow-wrap}
+```{.md .code-overflow-wrap}
 | Letters | Numbers |
 |:-------:|:-------:|
 | A       | 1       |
