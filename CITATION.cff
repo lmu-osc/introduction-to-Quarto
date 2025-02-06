@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Pargent"
+  given-names: "Florian"
+  orcid: "https://orcid.org/0000-0002-2388-553X"
+- family-names: "Kohrt"
+  given-names: "Florian"
+  orcid: "https://orcid.org/0000-0003-0374-5625"
+- family-names: "Sckopke"
+  given-names: "Phillip"
+  orcid: "https://orcid.org/0000-0002-3504-5837"
+title: "Introduction to Quarto"
+version: 1.0.0
+doi: 
+date-released: 2024-09-15
+repository-code: "https://github.com/lmu-osc/introduction-to-Quarto"
+url: "https://github.com/lmu-osc/introduction-to-Quarto"
