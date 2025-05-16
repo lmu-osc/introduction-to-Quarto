@@ -93,5 +93,7 @@ format:
     link-external-filter: ^(?:http:|https:)\/\/lmu-osc\.github\.io\/introduction-to-Quarto\/
     df-print: paged
     code-overflow: wrap
+    include-in-header:
+      - file: matomo-analytics.html
 
 from: markdown+emoji
