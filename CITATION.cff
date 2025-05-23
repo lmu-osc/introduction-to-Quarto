@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Pargent"
+  given-names: "Florian"
+  orcid: "https://orcid.org/0000-0002-2388-553X"
+  affiliation:
+    - name: "Ludwig-Maximilians-Universität München"
+- family-names: "Kohrt"
+  given-names: "Florian"
+  orcid: "https://orcid.org/0000-0003-0374-5625"
+  affiliation:
+    - name: "Ludwig-Maximilians-Universität München"
+- family-names: "Sckopke"
+  given-names: "Phillip"
+  orcid: "https://orcid.org/0000-0002-3504-5837"
+  affiliation:
+    - name: "Ludwig-Maximilians-Universität München"
+title: "Introduction to Quarto"
+version: 0.1.0
+doi: "DOI_HERE_AFTER_GENERATED"
+date-released: 2024-06-03
+repository-code: "https://github.com/lmu-osc/introduction-to-Quarto"
+url: "https://lmu-osc.github.io/introduction-to-Quarto/"
+preferred-citation:
+  authors:
+    - family-names: "Pargent"
+      given-names: "Florian"
+      orcid: "https://orcid.org/0000-0002-2388-553X"
+    - family-names: "Kohrt"
+      given-names: "Florian"
+      orcid: "https://orcid.org/0000-0003-0374-5625"
+    - family-names: "Sckopke"
+      given-names: "Phillip"
+      orcid: "https://orcid.org/0000-0002-3504-5837"
+  title: "Introduction to Quarto"
+  year: 2024
+  doi: "10.1000/182"
+  publisher:
+    name: "LMU Open Science Center"
+    ror: "https://ror.org/029e6qe04"
+  repository-code: "https://github.com/lmu-osc/introduction-to-Quarto"
+  url: "https://lmu-osc.github.io/introduction-to-Quarto/"
+  type: "book"
