@@ -10,7 +10,7 @@ During the official [Quarto tutorials](https://quarto.org/docs/get-started/), yo
 
 - Make sure that you have a recent version of R and RStudio installed. You find instructions on how to install R and RStudio [here](https://posit.co/download/rstudio-desktop/).
 
-- RStudio comes with a version of Quarto preinstalled. However, this version can be outdated because Quarto is updated more frequently than RStudio. It is therefore recommended to install a recent version of Quarto after installing RStudio. You can download the current release version of Quarto [here](https://quarto.org/docs/download/).
+- RStudio comes with a version of Quarto preinstalled. However, this version can be outdated because Quarto is updated more frequently than RStudio. It is therefore recommended to install a recent version of Quarto after installing RStudio. You can download the current release version of Quarto [here](https://quarto.org/docs/download/release.html).
 
 - Install [tinytex](https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex), a small version of TeX that can be used to build pdf documents with Quarto. Installed in this way, tinytex should not interfere with other TeX installations you might already have on your computer, but you can skip this step if you know that you already have TeX installed:
     - In RStudio, open a Terminal window: *Tools* **>** *Terminal* **>** *New Terminal*
