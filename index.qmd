@@ -13,9 +13,9 @@ It covers the absolute basics of the scientific and technical publishing system 
 The workshop is structured in 5 consecutive parts, which you can navigate to at the top of the website, in the sidebar or using the arrows at the bottom of each page:
 
 1. [Welcome](index.qmd) to the Quarto Workshop (**you are here now**)
-2. [Quarto Tutorials](quarto_tutorials.qmd) from the official Quarto project
+2. [Quarto Tutorials](quarto-tutorials.qmd) from the official Quarto project
 3. [Tips and Comments](comments.qmd) from our own experiences of using Quarto
-4. [Advanced Exercises](quarto_exercises.qmd) that are more challenging than the beginner Quarto tutorials
+4. [Advanced Exercises](quarto-exercises.qmd) that are more challenging than the beginner Quarto tutorials
 5. [Links](links.qmd) to further resources
 
 
@@ -64,4 +64,4 @@ If you have attended the in-person workshop, you can download the result of the 
 
 ## Learn how to use Quarto yourself
 
-When you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the [Quarto Tutorials](quarto_tutorials.qmd) page next. :computer: :scream_cat:
+When you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the [Quarto Tutorials](quarto-tutorials.qmd) page next. :computer: :scream_cat:

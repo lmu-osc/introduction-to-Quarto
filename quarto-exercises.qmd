@@ -16,8 +16,8 @@ If you want to go beyond the scope of the previous tutorials, we have prepared s
 
 ## Exercise: APA 7 Manuscripts
 
-[Pick a preprint of your own and implement it using Quarto in the APA 7 manuscript style.](apa7_manuscript.qmd)
+[Pick a preprint of your own and implement it using Quarto in the APA 7 manuscript style.](apa7-manuscript.qmd)
 
 ## Exercise: Quarto Manuscripts
 
-[Pick a preprint of your own and convert it into a Quarto Manuscripts website.](quarto_manuscripts.qmd)
+[Pick a preprint of your own and convert it into a Quarto Manuscripts website.](quarto-manuscripts.qmd)

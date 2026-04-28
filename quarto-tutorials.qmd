@@ -19,5 +19,5 @@ Before you start with the tutorials, please follow the preparations [on this pag
 
 <!-- Download the raw .qmd file for this exercise: -->
 
-<!-- {{< downloadthis quarto_tutorials.qmd dname="Exercise_One.qmd" label="Download .qmd">}} -->
+<!-- {{< downloadthis quarto-tutorials.qmd dname="Exercise_One.qmd" label="Download .qmd">}} -->
 

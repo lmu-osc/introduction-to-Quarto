@@ -84,7 +84,7 @@ If you already have written your manuscript with Quarto, there are only a small 
 
   You can achieve this by
   
-  - downloading the *apa-quarto* extension as explained in the [previous exercise](apa7_manuscript.qmd)
+  - downloading the *apa-quarto* extension as explained in the [previous exercise](apa7-manuscript.qmd)
   - using the following code in your `_quarto.yml` file:
     
     ```markdown
