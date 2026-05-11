@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>license – Introduction to Quarto</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,10 +40,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7bed94b00e994df0801b25c49df0ad15.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-085a3148f172766c8705f97213fc8f71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">1. Welcome</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./quarto_tutorials.html"> 
+    <a class="nav-link" href="./quarto-tutorials.html"> 
 <span class="menu-text">2. Quarto Tutorials</span></a>
   </li>  
   <li class="nav-item">
@@ -118,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">3. Tips and Comments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./quarto_exercises.html"> 
+    <a class="nav-link" href="./quarto-exercises.html"> 
 <span class="menu-text">4. Advanced Exercises</span></a>
   </li>  
   <li class="nav-item">
@@ -172,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto_tutorials.html" class="sidebar-item-text sidebar-link">
+  <a href="./quarto-tutorials.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -184,19 +187,19 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./get-started_1.html" class="sidebar-item-text sidebar-link">
+  <a href="./tutorial-hello-quarto.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tutorial: Hello, Quarto</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./get-started_2.html" class="sidebar-item-text sidebar-link">
+  <a href="./tutorial-computations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tutorial: Computations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./get-started_3.html" class="sidebar-item-text sidebar-link">
+  <a href="./tutorial-authoring.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tutorial: Authoring</span></a>
   </div>
 </li>
@@ -219,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto_exercises.html" class="sidebar-item-text sidebar-link">
+  <a href="./quarto-exercises.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
@@ -237,13 +240,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./apa7_manuscript.html" class="sidebar-item-text sidebar-link">
+  <a href="./apa7-manuscript.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise: APA 7 Manuscripts</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./quarto_manuscripts.html" class="sidebar-item-text sidebar-link">
+  <a href="./quarto-manuscripts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise: Quarto Manuscripts</span></a>
   </div>
 </li>
@@ -483,13 +486,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
