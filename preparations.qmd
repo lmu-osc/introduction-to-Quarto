@@ -33,5 +33,5 @@ During the [Quarto tutorials](https://quarto.org/docs/get-started/), you will be
 
 ## Let's start the tutorial
 	
-You are now ready to start with the first tutorial [on this page](get-started_1.qmd).
+You are now ready to start with the first tutorial [on this page](tutorial-hello-quarto.qmd).
 	

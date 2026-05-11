@@ -24,11 +24,11 @@ website:
       - text: "1. Welcome"
         href: "index.qmd"
       - text: "2. Quarto Tutorials"
-        file: "quarto_tutorials.qmd"
+        file: "quarto-tutorials.qmd"
       - text: "3. Tips and Comments"
         file: "comments.qmd"
       - text: "4. Advanced Exercises"
-        file: "quarto_exercises.qmd"
+        file: "quarto-exercises.qmd"
       - text: "5. Links"
         file: "links.qmd"
     right:
@@ -41,24 +41,24 @@ website:
       - section: "2. Quarto Tutorials"
         contents:
           - text: "Overview"
-            href: "quarto_tutorials.qmd"
+            href: "quarto-tutorials.qmd"
           - preparations.qmd
-          - get-started_1.qmd
-          - get-started_2.qmd
-          - get-started_3.qmd
+          - tutorial-hello-quarto.qmd
+          - tutorial-computations.qmd
+          - tutorial-authoring.qmd
       - comments.qmd
       - section: "4. Advanced Exercises"
         contents:
           - text: "Overview"
-            href: "quarto_exercises.qmd"
+            href: "quarto-exercises.qmd"
           - text: "Exercise: WebR/Pyodide"
             href: "webr.qmd"
           - text: "Exercise: Slideshows"
             file: slideshow.qmd
           - text: "Exercise: APA 7 Manuscripts"
-            file: apa7_manuscript.qmd
+            file: apa7-manuscript.qmd
           - text: "Exercise: Quarto Manuscripts"
-            file: quarto_manuscripts.qmd
+            file: quarto-manuscripts.qmd
       - links.qmd
 
         
@@ -70,13 +70,13 @@ website:
   #       - section: "2. Quarto Tutorials"
   #         contents:
   #           - text: "Overview"
-  #             href: "quarto_tutorials.qmd"
+  #             href: "quarto-tutorials.qmd"
   #           - preparations.qmd
   #       - section: "  Quarto Tutorials"
   #         contents:
-  #           - get-started_1.qmd
-  #           - get-started_2.qmd
-  #           - get-started_3.qmd
+  #           - tutorial-hello-quarto.qmd
+  #           - tutorial-computations.qmd
+  #           - tutorial-authoring.qmd
             
   repo-url: https://github.com/lmu-osc/introduction-to-Quarto
   repo-actions: [issue, edit]
