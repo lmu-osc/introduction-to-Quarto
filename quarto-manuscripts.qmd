@@ -1,5 +1,5 @@
 ---
-title: "Exercise: Create a Quarto Manuscripts website for one of your own scientific publications"
+title: "Create a Quarto Manuscripts website for one of your own scientific publications"
 format: html
 lang: en
 ---

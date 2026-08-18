@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Computations"
+title: "Computations"
 ---
 
 ### Some comments before the tutorial

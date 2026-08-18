@@ -10,7 +10,7 @@ format:
 :::: {.columns}
 
 ::: {.column width="40%"}
-![](resources/pictures/qmd.png){fig-align=center}
+![](assets/qmd.png){fig-align=center}
 :::
 
 
@@ -35,38 +35,38 @@ format:
 ## ...and convert it to different output formats
 
 ::: r-stack
-![](resources/pictures/presentation.png){height="200"}
-![](resources/pictures/blogs.png){height="200"}
-![](resources/pictures/dashboard.png){height="200"}
-![](resources/pictures/tutorial.png){height="200"}
-![](resources/pictures/website.png){height="200"}
-![](resources/pictures/article.png){height="200"}
-![](resources/pictures/betterposterport.png){height="200"}
+![](assets/presentation.png){height="200"}
+![](assets/blogs.png){height="200"}
+![](assets/dashboard.png){height="200"}
+![](assets/tutorial.png){height="200"}
+![](assets/website.png){height="200"}
+![](assets/article.png){height="200"}
+![](assets/betterposterport.png){height="200"}
 :::
 
 # Some examples from our own work
 
 ## Presentations (html, pptx, pdf)
 
-![](resources/pictures/presentation.png){fig-align=center}
+![](assets/presentation.png){fig-align=center}
 
 The html [presentation](presentation.qmd) you see right now.
 
 ## Websites: Quarto Workshop
 
-![](resources/pictures/website_workshop.png){fig-align=center}
+![](assets/website-workshop.png){fig-align=center}
 
 The [website](https://lmu-osc.github.io/introduction-to-Quarto/) we use for our Quarto workshop.
 
 ## Websites: Teaching Materials
 
-![](resources/pictures/website_teaching.png){fig-align=center}
+![](assets/website-teaching.png){fig-align=center}
 
 A [website](https://www.oer.psy.lmu.de/) with R exercises from our statistics courses.
 
 ## Journal articles (pdf, docx, html) 
 
-![](resources/pictures/journal_article.png){fig-align=center}
+![](assets/journal-article.png){fig-align=center}
 Use pdf for your [preprint](https://osf.io/preprints/psyarxiv/rpjem), submit docx to the journal, publish a [website](https://timo-ko.github.io/glmm_simulation_tutorial/) that contains all materials.
 
 ## Other Possible Content

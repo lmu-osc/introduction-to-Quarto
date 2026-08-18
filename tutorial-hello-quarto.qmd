@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Hello, Quarto"
+title: "Hello, Quarto"
 ---
 
 ### Some comments before the tutorial

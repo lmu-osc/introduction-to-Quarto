@@ -1,5 +1,5 @@
 ---
-title: "Exercise: Formatting Quarto documents in APA 7 style"
+title: "Formatting Quarto documents in APA 7 style"
 lang: en
 ---
 
