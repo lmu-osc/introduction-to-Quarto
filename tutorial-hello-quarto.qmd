@@ -28,4 +28,4 @@ Now you can start the first tutorial at <https://quarto.org/docs/get-started/hel
 
 - The tutorial discusses the `format: html` option in the YAML header and implies that you can also use `format: pdf` or `format: docx`. Indeed the results for these two options will look like this:
 
-  {{< downloadthis _hello.pdf dname="hello" label="Download .pdf file">}}  {{< downloadthis _hello.docx dname="hello" label="Download .docx file">}}
+  {{< downloadthis downloadable/_hello.pdf dname="hello" label="Download .pdf file">}}  {{< downloadthis downloadable/_hello.docx dname="hello" label="Download .docx file">}}

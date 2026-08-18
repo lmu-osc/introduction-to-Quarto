@@ -3,18 +3,18 @@ project:
   resources:
     - "gt.html"
     - "lib"
+    - "downloadable"
 
 website:
   title: "Introduction to Quarto"
   page-navigation: true
   page-footer:
-    center: 
+    center:
       - text: "About"
         href: about.qmd
   favicon: resources/LMU-OSC_favicon.jpg
   margin-header: |
     ![](/resources/LMU-OSC_logo.jpg){width="175"}
-
 
   navbar:
     tools:
@@ -34,9 +34,9 @@ website:
     right:
       - text: "About"
         file: "about.qmd"
-  
-  sidebar: 
-    contents: 
+
+  sidebar:
+    contents:
       - index.qmd
       - section: "2. Quarto Tutorials"
         contents:
@@ -61,7 +61,6 @@ website:
             file: quarto-manuscripts.qmd
       - links.qmd
 
-        
   # sidebar:
   #   - title: "2. Quarto Tutorials"
   #     style: "docked"
@@ -77,13 +76,13 @@ website:
   #           - tutorial-hello-quarto.qmd
   #           - tutorial-computations.qmd
   #           - tutorial-authoring.qmd
-            
+
   repo-url: https://github.com/lmu-osc/introduction-to-Quarto
   repo-actions: [issue, edit]
 
 format:
   html:
-    theme: 
+    theme:
       - cosmo
       - custom.scss
     css: styles.css

@@ -8,7 +8,7 @@ lang: en
 Pick a previous slideshow of yours and try to recreate it using Quarto. The following slideshow incorporates all features from this exercise. You can download it at the end of this page.
 
 ```{=html}
-<iframe class="slide-deck" width="100%" height="450" src="demo_slideshow.html"></iframe>
+<iframe class="slide-deck" width="100%" height="450" src="downloadable/demo_slideshow.html"></iframe>
 ```
 
 ## Getting started
@@ -393,4 +393,4 @@ For even more features like remote control, chalkboards, transitions, automatic 
 
 You can download the source of a presentation that uses all the features presented on this page via the following button:
 
-{{< downloadthis demo_slideshow.zip dname="demo_slideshow" label="Download source files as ZIP">}}
+{{< downloadthis downloadable/demo_slideshow.zip dname="demo_slideshow" label="Download source files as ZIP">}}

@@ -59,7 +59,7 @@ If you have not seen many examples yourself, go to the official [Quarto Gallery]
 ::: {.callout-note collapse="true"}
 ## Live coding example
 If you have attended the in-person workshop, you can download the result of the live coding example here:  
-{{< downloadthis _live-coding-example.zip dname="live-coding-example" label="Download .zip file">}}
+{{< downloadthis downloadable/_live-coding-example.zip dname="live-coding-example" label="Download .zip file">}}
 :::
 
 ## Learn how to use Quarto yourself
