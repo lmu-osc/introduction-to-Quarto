@@ -1,8 +1,6 @@
 ---
-title: Quarto, WebR, and Code on Mobile Devices"
+title: Quarto, WebR, and Code on Mobile Devices
 subtitle: "Create a website with Quarto, WebR (or Pyodide), and Github Pages to use R (or Python) on your smartphone or tablet"
-format: html
-lang: en
 ---
 
 # Description

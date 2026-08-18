@@ -1,5 +1,5 @@
 ---
-title: Creating a slideshow with Quarto"
+title: Creating a Slideshow
 lang: en
 ---
 

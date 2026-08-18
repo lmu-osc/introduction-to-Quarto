@@ -1,6 +1,6 @@
 ---
-title: "Create a Quarto Manuscripts website for one of your own scientific publications"
-format: html
+title: Create a Quarto Manuscripts Website 
+subtitle: Turn one of your own scientific publications into a Quarto site
 lang: en
 ---
 
