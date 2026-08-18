@@ -1,26 +1,30 @@
 ---
-title: "1. Welcome to the Quarto Workshop"
-sidebar: true
+title: "Welcome to the Quarto Workshop!"
+subtitle: A self-paced tutorial on scientific and technical publishing with Quarto
+description: The LMU Open Science Center's self-paced Quarto workshop, covering the absolute basics of the scientific and technical publishing system Quarto while using R in RStudio.
 ---
 
 Welcome to the **Quarto workshop**, initially designed for [LMU OSC Summer School 2023](https://lmu-osc.github.io/OSC-Open-Research-Summer-School-2023/) and [LMU & MPG Open Science Summer School 2024](https://osip.mpdl.mpg.de/lmu-mpg-open-science-summer-school-2024/).
 
-## Structure and Workflow of the Workshop
+## Tutorial Overview
 
-This is a **self-paced tutorial** of about **2 hours** (when skipping the advanced exercises) aimed at **early-career researchers**.
-It covers the absolute basics of the scientific and technical publishing system [Quarto](https://quarto.org/) while using [R in RStudio](https://quarto.org/docs/tools/rstudio.html).
+This **self-paced tutorial** is intended to take about **2 hours** to complete (when skipping the advanced exercises) and is aimed at **early-career researchers**. It covers the absolute basics of the scientific and technical publishing system [Quarto](https://quarto.org/) while using [R in RStudio](https://quarto.org/docs/tools/rstudio.html).
 
-The workshop is structured in 5 consecutive parts, which you can navigate to at the top of the website, in the sidebar or using the arrows at the bottom of each page:
+The tutorial is split into the following sections:
 
-1. [Welcome](index.qmd) to the Quarto Workshop (**you are here now**)
-2. [Quarto Tutorials](quarto-tutorials.qmd) from the official Quarto project
-3. [Tips and Comments](comments.qmd) from our own experiences of using Quarto
-4. [Advanced Exercises](quarto-exercises.qmd) that are more challenging than the beginner Quarto tutorials
-5. [Links](links.qmd) to further resources
+1. [**Quarto Tutorials**](quarto-tutorials.qmd) from the official Quarto project
+2. [**Tips and Comments**](comments.qmd) from our own experiences of using Quarto
+3. [**Advanced Exercises**](quarto-exercises.qmd) that are more challenging than the beginner Quarto tutorials
+4. [**Links**](links.qmd) to further resources
 
+::: {.callout-warning title="Recommended Software"}
+This tutorial assumes you have the following software installed:
 
-The Quarto project provides well written tutorials ([Quarto "Getting Started"](https://quarto.org/docs/get-started/)) and online documentation ([Quarto "Guide"](https://quarto.org/docs/guide/)).
-Instead of reinventing the wheel, we will heavily link to these resources (and complement them with our own comments and some advanced exercises).
+-   [R](https://cran.r-project.org/) and [RStudio](https://posit.co/download/rstudio-desktop/)
+-   [Quarto](https://quarto.org/docs/get-started/)
+-   A [GitHub](https://github.com/) account (needed for the advanced exercises)
+
+:::
 
 ## What is Quarto?
 
@@ -53,9 +57,6 @@ If you have not seen many examples yourself, go to the official [Quarto Gallery]
 <iframe class="slide-deck" width="100%" height="500" src="presentation.html"></iframe>
 ```
 
-<!-- ```{.markdown code-preview="presentation.qmd" width="780" height="500"} -->
-<!-- ``` -->
-
 ::: {.callout-note collapse="true"}
 ## Live coding example
 If you have attended the in-person workshop, you can download the result of the live coding example here:  
@@ -65,3 +66,27 @@ If you have attended the in-person workshop, you can download the result of the 
 ## Learn how to use Quarto yourself
 
 When you have finished reading this short introduction and want to learn how to use Quarto for your own projects, go to the [Quarto Tutorials](quarto-tutorials.qmd) page next. :computer: :scream_cat:
+
+:::: {.columns}
+
+::: {.column width="47.5%"}
+
+::: {.callout-tip title="Support the LMU Open Science Center!"}
+
+**Like this tutorial? Be sure to give [the repository]({{< meta repo-url >}}) a star and [follow us on GitHub](https://github.com/lmu-osc)!**
+:::
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47.5%"}
+
+::: {.callout-tip title="Questions about this tutorial?"}
+**If you have questions for the author of this tutorial, please take a look at the [About](about.qmd) page.**
+:::
+
+:::
+
+::::
