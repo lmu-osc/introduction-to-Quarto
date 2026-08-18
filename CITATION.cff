@@ -1,23 +1,23 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: "Pargent"
-  given-names: "Florian"
-  orcid: "https://orcid.org/0000-0002-2388-553X"
-  affiliation:
-    - name: "Ludwig-Maximilians-Universität München"
-- family-names: "Kohrt"
-  given-names: "Florian"
-  orcid: "https://orcid.org/0000-0003-0374-5625"
-  affiliation:
-    - name: "Ludwig-Maximilians-Universität München"
-- family-names: "Sckopke"
-  given-names: "Phillip"
-  orcid: "https://orcid.org/0000-0002-3504-5837"
-  affiliation:
-    - name: "Ludwig-Maximilians-Universität München"
+  - family-names: "Pargent"
+    given-names: "Florian"
+    orcid: "https://orcid.org/0000-0002-2388-553X"
+    affiliation:
+      - name: "Ludwig-Maximilians-Universität München"
+  - family-names: "Kohrt"
+    given-names: "Florian"
+    orcid: "https://orcid.org/0000-0003-0374-5625"
+    affiliation:
+      - name: "Ludwig-Maximilians-Universität München"
+  - family-names: "Sckopke"
+    given-names: "Phillip"
+    orcid: "https://orcid.org/0000-0002-3504-5837"
+    affiliation:
+      - name: "Ludwig-Maximilians-Universität München"
 title: "Introduction to Quarto"
-version: 0.1.0
+version: 0.2.0
 doi: "DOI_HERE_AFTER_GENERATED"
 date-released: 2024-06-03
 repository-code: "https://github.com/lmu-osc/introduction-to-Quarto"
