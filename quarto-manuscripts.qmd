@@ -4,7 +4,7 @@ subtitle: Turn one of your own scientific publications into a Quarto site
 lang: en
 ---
 
-# Description
+## Description
 
 In this unstructured exercise we would encourage you to
 
@@ -16,12 +16,12 @@ The final result of the exercise could be a Quarto Manuscript website which serv
 
 For this exercise, we do not provide step-by-step instructions. Instead we link to the relevant Quarto Manuscript documentation, provide an example of how the final result of the exercise could look like, and list the most important steps when converting a Quarto document into a Quarto Manuscripts website.
 
-# What are Quarto Manuscripts?
+## What are Quarto Manuscripts?
 
 The [Quarto documentation on manuscripts](https://quarto.org/docs/manuscripts/) reads:
 
 ::: {.callout-tip appearance="minimal" icon=false}
-## Quote:
+### Quote:
 
 Quarto manuscript projects provide a framework for writing and publishing scholarly articles. A Quarto manuscript lets you:
 
@@ -32,14 +32,14 @@ Quarto manuscript projects provide a framework for writing and publishing schola
 The output of a Quarto manuscript is a website ([live example](https://quarto-ext.github.io/manuscript-template-jupyter/)). The article itself appears as the content of the website, and can include all the elements common to scholarly writing like figures, tables, equations, cross references and citations. The website also makes available other formats (e.g. PDF, Docx) as well as links to all of the computations used to create the article.
 :::
 
-# Instructions
+## Instructions
 
 - We suggest that, before you start with your own Quarto manuscript, you have a look at the [Getting Started](https://quarto.org/docs/manuscripts/) tutorial on how to create a Quarto Manuscript website.
 
 - Additional documentation on Quarto Manuscripts can be found [here](https://quarto.org/docs/manuscripts/components.html).
 
 
-# Final result
+## Final result
  
 The final result of the exercise could look something like this:
 
@@ -47,7 +47,7 @@ The final result of the exercise could look something like this:
 - [Code](https://github.com/lmu-osc/myquartomanuscript)
 
 
-# Steps to convert a Quarto document into a Quarto Manuscripts project
+## Steps to convert a Quarto document into a Quarto Manuscripts project
 
 If you already have written your manuscript with Quarto, there are only a small number of steps necessary to convert your document into a Quarto Manuscripts website. Without guarantee of completeness, the most important steps are:
 

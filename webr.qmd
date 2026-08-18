@@ -3,7 +3,7 @@ title: Quarto, WebR, and Code on Mobile Devices
 subtitle: "Create a website with Quarto, WebR (or Pyodide), and Github Pages to use R (or Python) on your smartphone or tablet"
 ---
 
-# Description
+## Description
 
 In this exercise you can practice how to:
 
@@ -15,14 +15,14 @@ The final result of the exercise is a website on which you can run R (or Python)
 
 You can just follow our step-by-step instructions or have a look at the relevant documentation we link to in the blue boxes.
 
-# Final result
+## Final result
  
 The final result of the exercise using webR could look something like this:^[This example only showcases R in the browser with webR, but the following sections also describe how to run Python with Pyodide.]
 
 - [Website](https://lmu-osc.github.io/mywebr/)
 - [Code](https://github.com/lmu-osc/mywebr)
 
-# Step by step instructions
+## Step by step instructions
 
 1. Log into your Github account and create a new **public** Github repository
 

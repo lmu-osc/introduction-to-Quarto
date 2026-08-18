@@ -2,7 +2,7 @@
 title: "Computations"
 ---
 
-### Some comments before the tutorial
+## Some comments before the tutorial
 
 - The tutorial uses the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. We recommend to frequently switch between *Visual* and *Source* mode during the tutorial to see how the raw markdown syntax looks like.
 
@@ -10,7 +10,7 @@ title: "Computations"
 
 - We recommend to skip the [caching](https://quarto.org/docs/get-started/computations/rstudio.html#caching) section of the tutorial for now.
 
-### Start the tutorial
+## Start the tutorial
 
 If you have problems during the tutorial come back **here** and see the next section for our list of anticipated issues.
 *After* completing the second tutorial, come back **here** and continue with the next tutorial [on this page](tutorial-authoring.qmd).
@@ -20,7 +20,7 @@ If you have problems during the tutorial come back **here** and see the next sec
 Now you can start the second tutorial at <https://quarto.org/docs/get-started/computations/rstudio.html>.
 :::
 
-### Possible problems and related comments
+## Possible problems and related comments
 
 - Whenever you copy something from the tutorial website into your own *.qmd* document, always make sure that in RStudio you copy into *Source* mode instead of *Visual* mode. Otherwise, rendering the document will not work correctly because the visual mode adds some extra characters that brake the markdown syntax.
 

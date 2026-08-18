@@ -2,7 +2,7 @@
 title: "Authoring"
 ---
 
-### Some comments before the tutorial
+## Some comments before the tutorial
 
 - The tutorial uses the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. We recommend to frequently switch between *Visual* and *Source* mode during the tutorial to see how the raw markdown syntax looks like.
 
@@ -10,7 +10,7 @@ title: "Authoring"
 
 - We recommend to skip the [Publishing](https://quarto.org/docs/get-started/authoring/rstudio#publishing) section of the tutorial for now.
 
-### Start the tutorial
+## Start the tutorial
 
 If you have problems during the tutorial come back **here** and see the next section for our list of anticipated issues.
 *After* completing the third tutorial, come back **here** and continue with our personal tips and comments on using Quarto [on this page](comments.qmd).
@@ -21,7 +21,7 @@ Now you can start the third tutorial at <https://quarto.org/docs/get-started/aut
 :::
 
 
-### Possible problems and related comments
+## Possible problems and related comments
 
 - The tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is *not* always true.
 

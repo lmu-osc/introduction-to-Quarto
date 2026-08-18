@@ -2,7 +2,7 @@
 title: "Hello, Quarto"
 ---
 
-### Some comments before the tutorial
+## Some comments before the tutorial
 
 - The tutorial uses the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. We recommend to frequently switch between *Visual* and *Source* mode (the tutorial will explain how to do that) to see how the raw markdown syntax looks like.
 
@@ -10,7 +10,7 @@ title: "Hello, Quarto"
 
 - Skip watching the [video introduction](https://youtu.be/_f3latmOhew) for now (the video is great, but too long for the 2h workshop). 
 
-### Start the tutorial
+## Start the tutorial
 
 If you have problems during the tutorial come back **here** and see the next section for our list of anticipated issues.
 *After* completing the first tutorial, come back **here** and continue with the next tutorial [on this page](tutorial-computations.qmd).
@@ -20,7 +20,7 @@ If you have problems during the tutorial come back **here** and see the next sec
 Now you can start the first tutorial at <https://quarto.org/docs/get-started/hello/rstudio.html>.
 :::
 
-### Possible problems and related comments
+## Possible problems and related comments
 
 - If the preview does not automatically open on the right side when you click *Render*, go to the gear wheel next to the *Render* button, select *Preview in Viewer Pane* and then click *Render* again. The other option (which seems to be the default for some people) is *Preview in Window* which displays the rendered document in your default web browser instead of whithin RStudio.
 
