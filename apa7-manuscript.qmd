@@ -1,5 +1,5 @@
 ---
-title: "Exercise: Formatting Quarto documents in APA 7 style"
+title: "Formatting Quarto documents in APA 7 style"
 lang: en
 ---
 
@@ -9,7 +9,7 @@ This exercise is only relevant, if you are a psychologist or want to publish in 
 
 ## Description
 
-Pick a preprint of your own and implement it using Quarto in the [APA 7](https://apastyle.apa.org/) manuscript style. You also can view an [example document](demo_manuscript.pdf) that incorporates all features from this exercise.
+Pick a preprint of your own and implement it using Quarto in the [APA 7](https://apastyle.apa.org/) manuscript style. You also can view an [example document](downloadable/demo_manuscript.pdf) that incorporates all features from this exercise.
 
 ## Getting started
 
@@ -260,6 +260,6 @@ format:
 
 You can download a manuscript with all the features presented on this page via the following button:
 
-{{< downloadthis demo_manuscript.zip dname="demo_manuscript" label="Download source files as ZIP">}}
+{{< downloadthis downloadable/demo_manuscript.zip dname="demo_manuscript" label="Download source files as ZIP">}}
 
 If you are interested in all the options provided by the `apaquarto` extension (e.g., [masked citations for anonymous peer review](https://wjschne.github.io/apaquarto/writing.html#masked-citations-for-anonymous-peer-review)), have a look at the [apaquarto documentation](https://wjschne.github.io/apaquarto/options.html). Also, we recommend reading the guide [APA Style via Markdown](https://wjschne.github.io/apaquarto/writing.html).

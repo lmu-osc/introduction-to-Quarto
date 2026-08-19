@@ -1,99 +1,85 @@
+# Begin Project
 project:
-  type: website
+  type: tutorial-template
+  # FYI: the tutorial-template project type is defined in the lmu-osc/tutorial-template extension
+  brand: brand.yml
   resources:
     - "gt.html"
     - "lib"
+    - "downloadable"
+# End Project
 
+# Begin Website
+repo-url: https://github.com/lmu-osc/introduction-to-Quarto
 website:
   title: "Introduction to Quarto"
-  page-navigation: true
   page-footer:
-    center: 
-      - text: "About"
-        href: about.qmd
-  favicon: resources/LMU-OSC_favicon.jpg
-  margin-header: |
-    ![](/resources/LMU-OSC_logo.jpg){width="175"}
-
+    border: false
+    center: © 2024 Florian Pargent, Florian Kohrt, Phillip Sckopke. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
+  repo-url: https://github.com/lmu-osc/introduction-to-Quarto
 
   navbar:
+    right:
+      - about.qmd
+    left:
+      - href: index.qmd
+        text: Home
     tools:
       - icon: github
-        href: https://github.com/lmu-osc/introduction-to-Quarto
-    left:
-      - text: "1. Welcome"
-        href: "index.qmd"
-      - text: "2. Quarto Tutorials"
-        file: "quarto-tutorials.qmd"
-      - text: "3. Tips and Comments"
-        file: "comments.qmd"
-      - text: "4. Advanced Exercises"
-        file: "quarto-exercises.qmd"
-      - text: "5. Links"
-        file: "links.qmd"
-    right:
-      - text: "About"
-        file: "about.qmd"
-  
-  sidebar: 
-    contents: 
-      - index.qmd
-      - section: "2. Quarto Tutorials"
+        menu:
+          - text: Source Code
+            href: https://github.com/lmu-osc/introduction-to-Quarto
+          - text: Report a Bug
+            href: https://github.com/lmu-osc/introduction-to-Quarto/issues
+      - icon: house-heart
+        url: https://www.osc.lmu.de/
+
+  sidebar:
+    style: "docked"
+    contents:
+      - text: "Overview"
+        href: index.qmd
+      - section: "Quarto Tutorials"
+        href: quarto-tutorials.qmd
         contents:
-          - text: "Overview"
-            href: "quarto-tutorials.qmd"
           - preparations.qmd
           - tutorial-hello-quarto.qmd
           - tutorial-computations.qmd
           - tutorial-authoring.qmd
-      - comments.qmd
-      - section: "4. Advanced Exercises"
+      - text: "Tips and Comments"
+        href: comments.qmd
+      - section: "Advanced Exercises"
+        href: quarto-exercises.qmd
         contents:
-          - text: "Overview"
-            href: "quarto-exercises.qmd"
-          - text: "Exercise: WebR/Pyodide"
-            href: "webr.qmd"
-          - text: "Exercise: Slideshows"
-            file: slideshow.qmd
-          - text: "Exercise: APA 7 Manuscripts"
-            file: apa7-manuscript.qmd
-          - text: "Exercise: Quarto Manuscripts"
-            file: quarto-manuscripts.qmd
-      - links.qmd
+          - webr.qmd
+          - slideshow.qmd
+          - apa7-manuscript.qmd
+          - quarto-manuscripts.qmd
+      - text: "Links"
+        href: links.qmd
+# End Website
 
-        
-  # sidebar:
-  #   - title: "2. Quarto Tutorials"
-  #     style: "docked"
-  #     background: light
-  #     contents:
-  #       - section: "2. Quarto Tutorials"
-  #         contents:
-  #           - text: "Overview"
-  #             href: "quarto-tutorials.qmd"
-  #           - preparations.qmd
-  #       - section: "  Quarto Tutorials"
-  #         contents:
-  #           - tutorial-hello-quarto.qmd
-  #           - tutorial-computations.qmd
-  #           - tutorial-authoring.qmd
-            
-  repo-url: https://github.com/lmu-osc/introduction-to-Quarto
-  repo-actions: [issue, edit]
+# Begin Includes
+include-in-header:
+  - file: matomo-analytics.html
+include-after-body:
+  - file: footer/footer.html
+# End Includes
 
+# Begin Format
+# the default format for `tutorial-template` projects is tutorial-template-html+tutorial;
+# extend it below only if you need to make format changes
 format:
-  html:
-    theme: 
-      - cosmo
-      - custom.scss
-    css: styles.css
-    toc: true
-    link-external-newwindow: true
-    link-external-icon: true
-    link-external-filter: ^(?:http:|https:)\/\/lmu-osc\.github\.io\/introduction-to-Quarto\/
+  tutorial-template-html+tutorial:
+    css:
+      - footer/footer-style.css
     df-print: paged
-    code-overflow: wrap
-    include-in-header:
-      - file: matomo-analytics.html
+    link-external-filter: ^(?:http:|https:)\/\/lmu-osc\.github\.io\/introduction-to-Quarto\/
+# End Format
+
+# Begin Editor
+editor: source
+# End Editor
 
 from: markdown+emoji
+bibliography: references.bib

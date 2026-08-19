@@ -1,8 +1,8 @@
 ---
-title: "Tutorial: Authoring"
+title: "Authoring"
 ---
 
-### Some comments before the tutorial
+## Some comments before the tutorial
 
 - The tutorial uses the [Visual Editor](https://quarto.org/docs/visual-editor/) in RStudio. We recommend to frequently switch between *Visual* and *Source* mode during the tutorial to see how the raw markdown syntax looks like.
 
@@ -10,7 +10,7 @@ title: "Tutorial: Authoring"
 
 - We recommend to skip the [Publishing](https://quarto.org/docs/get-started/authoring/rstudio#publishing) section of the tutorial for now.
 
-### Start the tutorial
+## Start the tutorial
 
 If you have problems during the tutorial come back **here** and see the next section for our list of anticipated issues.
 *After* completing the third tutorial, come back **here** and continue with our personal tips and comments on using Quarto [on this page](comments.qmd).
@@ -21,7 +21,7 @@ Now you can start the third tutorial at <https://quarto.org/docs/get-started/aut
 :::
 
 
-### Possible problems and related comments
+## Possible problems and related comments
 
 - The tutorial claims that creating a new .qmd document through the RStudio menu will create an empty document, which is *not* always true.
 
@@ -41,10 +41,10 @@ Now you can start the third tutorial at <https://quarto.org/docs/get-started/aut
 
 - Rendering the final *authoring-complete.qmd* file you can download at the end of the tutorial will only work, if you also have the *references.bib* file in the same folder. This file was created automatically by RStudio when you inserted your first reference in the [citations](https://quarto.org/docs/get-started/authoring/rstudio.html#citations) section of the tutorial. The created bibliography file should look like this:
 
-  {{< downloadthis _references.bib dname="references" label="Download references.bib">}}
+  {{< downloadthis downloadable/_references.bib dname="references" label="Download references.bib">}}
   
   When the .bib file is present, rendering *authoring-complete.qmd* should produce the following three output files (we have added `embed-resources: true` to the html options in the YAML header to produce a standalone html file that can be shared with others):
   
-  {{< downloadthis _authoring-complete.html dname="authoring-complete-standalone" label="Download .html">}}  {{< downloadthis _authoring-complete.pdf dname="authoring-complete" label="Download .pdf">}}  {{< downloadthis _authoring-complete.docx dname="authoring-complete" label="Download .docx">}}
+  {{< downloadthis downloadable/_authoring-complete.html dname="authoring-complete-standalone" label="Download .html">}}  {{< downloadthis downloadable/_authoring-complete.pdf dname="authoring-complete" label="Download .pdf">}}  {{< downloadthis downloadable/_authoring-complete.docx dname="authoring-complete" label="Download .docx">}}
 
   
