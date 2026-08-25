@@ -4,6 +4,14 @@ subtitle: A self-paced tutorial on scientific and technical publishing with Quar
 description: The LMU Open Science Center's self-paced Quarto workshop, covering the absolute basics of the scientific and technical publishing system Quarto while using R in RStudio.
 ---
 
+```{r}
+#| eval: true
+#| echo: false
+#| warning: false
+library(downlit)
+library(xml2)
+```
+
 Welcome to the **Quarto workshop**, initially designed for [LMU OSC Summer School 2023](https://lmu-osc.github.io/OSC-Open-Research-Summer-School-2023/) and [LMU & MPG Open Science Summer School 2024](https://osip.mpdl.mpg.de/lmu-mpg-open-science-summer-school-2024/).
 
 ## Tutorial Overview
